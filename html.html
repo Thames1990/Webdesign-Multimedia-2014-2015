@@ -1,0 +1,359 @@
+<!DOCTYPE HTML>
+<html lang="de">
+<head>
+	<title>Webdesign-Multimedia</title>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	
+	<meta name="author" content="Thomas Mohr, Michael Hermel, Adrian Nitschmann, Niko Rothe">
+	<meta charset="UTF-8">
+	<meta name="description" content="Grundlegende Prinzipien des Webdesign">
+	<meta name="keywords" content="HTML, CSS, Javascript, Photoshop, Perspektive, Farbenlehre, Typographie, Webdesign, Multimedia">
+	
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src="js/skel-layers.js"></script>
+	<script src="js/jquery.scrollzer.js"></script>
+	<script src="js/jquery.scrolly.js"></script>
+	<script src="js/skel.js"></script>
+	<script src="js/init.js"></script>
+	
+	<script>
+		function easterEggMode() {
+			var img = document.getElementById("avatar").src;
+			
+			if (img.indexOf("images/avatar.jpg") != -1) {
+				document.getElementById("avatar").src  = "images/avatar alt.jpg";
+			} else {
+				document.getElementById("avatar").src = "images/avatar.jpg";
+			}
+		}
+	</script>
+	
+	<noscript>
+		<link rel="stylesheet" href="css/skel.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-xlarge.css" />
+	</noscript>
+</head>
+
+<body>
+<div id="wrapper"> 
+	
+	<!-- Header -->
+	<section id="header" class="skel-layers-fixed">
+		<header>
+			<span class="image avatar"><img src="images/avatar.jpg" alt="avatar" id="avatar" onDblClick="easterEggMode()"/></span>
+			<h1 id="logo"><a href="index.html">Webdesign-Multimedia</a></h1>
+		</header>
+		<nav id="nav">
+			<ul>
+				<li><a href="#one" class="active">Entwicklung</a></li>
+				<li><a href="#two">Syntax</a></li>
+				<li><a href="#three">Struktur</a></li>
+				<li><a href="#four">Textformatierung</a></li>
+				<li><a href="#five">Strukturierung</a></li>
+				<li><a href="#six">Medien</a></li>
+			</ul>
+		</nav>
+	</section>
+	
+	<!-- Main -->
+	<div id="main"> 
+		
+		<!-- One -->
+		<section id="one">
+			<div class="container">
+				<header class="major">
+					<h2>Hypertext Markup Language</h2>
+					<p>Entwicklung</p>
+				</header>
+				<p>HTML: "<b>H</b>yper<b>t</b>ext <b>M</b>arkup <b>L</b>anguage" ist eine Formatierungssprache wie z.B. <i>LaTeX</i>, welche am  13. März 1989 von Tim Bernes-Lee festgelegt wurde. Die erste Version wurde am 3. November 1992 veröffentlicht. Diese Version orientierte sich lediglich am Text und hatte noch keine Versionsnummer. Am 30. April 1993 erhielt HTML die Fähigkeit Bilder einzubinden und Textattribute wie <b>fett</b>, <i>kursiv</i>, usw. zu verwenden. Seit dem 24. Dezember 1999 wurde HTML in der Version 4.01 weiterentwickelt und erhielt viele neue Möglichkeiten, wie Skripte, Stylesheets, Formulare, usw.</p>
+				<p>Ab 2014 steht der neue Standard HTML 5, welcher neue Funktionen unterstüzt wie Video, Audio, lokalen Speicher und dynamische 2D- und 3D-Grafiken, die von HTML4 nicht direkt unterstützt wurden und sich ohne HTML5 nur mit zusätzlichen Plugins (z. B. Adobe Flash) umsetzen ließen. </p>
+			</div>
+		</section>
+		
+		<!-- Two -->
+		<section id="two">
+			<div class="container">
+				<h2>Syntax</h2>
+				<p> "Befehle" werden als sogenannte <i>Tags</i> dargestellt, z.B. für <b>hervorgehobenen</b> Text:<br>
+					<code>&lt;strong&gt;Fett!&lt;/strong&gt;</code> </p>
+				<p> Kommentare werden in HTML wie folgt dargestellt:<br>
+					<code>&lt;!-- Kommentar --&gt;<br>
+					</code></p>
+				<p> Ein Problem von HTML ist die Darstellung von für HTML reservierten Zeichen wie z.B. &lt;, &gt;, oder &amp;. Diese Sonderzeichen heißen "HTML entities".</p>
+				<table width="100%" border="1">
+					<colgroup width="50%" span="2">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>HTML</th>
+							<th>Darstellung</th>
+						</tr>
+						<tr>
+							<td><code>&amp;lt;</code></td>
+							<td>&lt;</td>
+						</tr>
+						<tr>
+							<td><code>&amp;gt;</code></td>
+							<td>&gt;</td>
+						</tr>
+						<tr>
+							<td><code>&amp;amp;</code></td>
+							<td>&amp;</td>
+						</tr>
+					</tbody>
+				</table>
+				<p> <a href="http://de.selfhtml.org/html/referenz/zeichen.htm" target="_blank">Weitere Informationen zur HTML-Zeichenreferenz</a> </p>
+			</div>
+		</section>
+		
+		<!-- Three -->
+		<section id="three">
+			<div class="container">
+				<h2>Strukturierung</h2>
+				<pre>
+            <code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;!-- Hier kommen &quot;Kopfinformationen&quot; rein. --&gt;
+    &lt;meta ... /&gt;
+    &lt;title&gt;Seitentitel&lt;/title&gt;
+    &lt;!-- ... --&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Hier steht der eigentliche Inhalt. --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code>
+            </pre>
+				<p> <code>&lt;head&gt;...&lt;/head&gt;</code><br>
+					In den Kopf des Dokuments ("head") kommt alles rein, was nicht zum Inhalt der Seite gehört, wie z.B. Seitentitel, Meta-Informationen, Skripte, Stylesheets, usw. </p>
+				<p> <code>&lt;body&gt;...&lt;/body&gt;</code><br>
+					In den Körper des Dokuments ("body") kommt der eigentliche Inhalt der Seite, wie z.B. Text, Bilder, Videos, Sound, Formulare, usw. </p>
+			</div>
+		</section>
+		
+		<!-- Four -->
+		<section id="four">
+			<div class="container">
+				<h2>Textformatierung</h2>
+				<p> Überschriften werden durch folgende Tags repräsentiert. “1” ist die gröbste Unterteilung, “2” sind Unter-Sektionen, “3” Unter-Unter-Sektionen, usw. <br>
+					<code>&lt;h1&gt;...&lt;/h1&gt; bis &lt;h6&gt;...&lt;/h6&gt;</code> </p>
+				<p> HTML bietet verschiedene Tags, die Text verschieden darstellen.</p>
+				<table width="100%" border="1">
+					<colgroup width="50%" span="2">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>HTML</th>
+							<th>Darstellung</th>
+						</tr>
+						<tr>
+							<td><code>&lt;b&gt;...&lt;/b&gt;</code></td>
+							<td><strong>fett</strong></td>
+						</tr>
+						<tr>
+							<td><code>&lt;i&gt;...&lt;/i&gt;</code></td>
+							<td><i>kursiv</i></td>
+						</tr>
+						<tr>
+							<td><code>&lt;u&gt;...&lt;/u&gt;</code></td>
+							<td><u>unterstrichen</u></td>
+						</tr>
+					</tbody>
+				</table>
+				<p> Intern darf der Text beliebig formatiert werden. Der Browser wird immer einzelne Leerzeichen statt mehreren oder Zeilenumbrüchen anzeigen. Zeilenumbrüche und Absätze werden durch "HTML entities" oder Tags dargestellt.</p>
+				<table width="100%" border="1">
+					<colgroup width="50%" span="2">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>HTML</th>
+							<th>Textformatierung</th>
+						</tr>
+						<tr>
+							<td><code>&amp;nbsp;</code></td>
+							<td>Zeilenumbruch verhindern</td>
+						</tr>
+						<tr>
+							<td><code>&lt;br /&gt;</code></td>
+							<td>Zeilenumbruch erzwingen</td>
+						</tr>
+						<tr>
+							<td><code>&lt;p&gt;...&lt;/p&gt;</code></td>
+							<td>Absätze</td>
+						</tr>
+					</tbody>
+				</table>
+				<a href="http://de.selfhtml.org/css/eigenschaften/schrift.htm" target="_blank">Weitere Informationen zur Textformatierung</a> </div>
+		</section>
+		
+		<!-- Five -->
+		<section id="five">
+			<div class="container">
+				<h2>Strukturierung</h2>
+				<p> Strukturierung erfolgt mittels sogenannter Bereiche.</p>
+				<table width="100%" border="1">
+					<colgroup width="50%" span="2">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>HTML</th>
+							<th>Strukturierung</th>
+						</tr>
+						<tr>
+							<td><code>&lt;div&gt;</code></td>
+							<td>Bereiche</td>
+						</tr>
+						<tr>
+							<td><code>&lt;aside&gt;</code></td>
+							<td>Nebeninformationen</td>
+						</tr>
+						<tr>
+							<td><code>&lt;header&gt;</code></td>
+							<td>Seitenkopf</td>
+						</tr>
+						<tr>
+							<td><code>&lt;footer&gt;</code></td>
+							<td>Fußzeile</td>
+						</tr>
+						<tr>
+							<td><code>&lt;nav&gt;</code></td>
+							<td>Navigation</td>
+						</tr>
+						<tr>
+							<td><code>&lt;article&gt;</code></td>
+							<td>Abgeschlossener Inhalt</td>
+						</tr>
+						<tr>
+							<td><code>&lt;section&gt;</code></td>
+							<td>Abschnitt</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>Tabellen sind für tabellarische Inhalte (z.B. wissenschaftliche Ergebnisse) und <strong>nicht</strong> etwa für die Webseitenstrukturierung gedacht.</p>
+				<table>
+					<tbody>
+						<tr>
+							<td rowspan="2">Cell 1</td>
+							<td>Cell 2</td>
+							<td>Cell 3</td>
+						</tr>
+						<tr>
+							<td colspan="2">Cell 4</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>Diese Tabelle werden durch den folgenden Code repräsentiert:</p>
+				<pre>
+<code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td rowspan=&quot;2&quot;&gt;Cell 1&lt;/td&gt;
+        &lt;td&gt;Cell 2&lt;/td&gt;
+        &lt;td&gt;Cell 3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td colspan=&quot;2&quot;&gt;Cell 4&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code>
+            </pre>
+			</div>
+		</section>
+		
+		<!-- Six -->
+		<section id="six">
+			<div class="container">
+				<h2>Medien</h2>
+				<p> Externe Dateien, z.B. Bilder, sollten möglichst relativ referenziert werden. Relative Pfade suchen in dem Ordner, in dem die Quelldatei liegt und orientieren sich an dessen Struktur. Anstatt eines absoluten Pfades, wie z.B. <code>"C:\Users\...\images\bild.jpg"</code> sollte ein relativer Pfad, wie <code>"images/bild.jpg"</code> verwendet werden. Dieser findet das Bild unabhängig vom Pfad des Ordners. </p>
+				<p> Bilder werden mit dem HTML-Tag &lt;img&gt; eingebunden. Das Bild "logo.png" wird im Verzeichnis "images" eingebunden. Das Attribut "alt" wird benötigt, falls das Bild nicht vorhanden ist. In diesem Fall kann man ein Fehlerbild oder einen Fehlertext darstellen. <br>
+					<code>&lt;img src=&quot;images/logo.png&quot; alt=&quot;Logo&quot;&gt;</code><br>
+					<a href="http://de.selfhtml.org/html/referenz/attribute.htm#img" target="_blank">Weitere Informationen zu Attributen von Bildern</a> </p>
+				<p> Links können unter HTML wie folgt verwendet werden: <br>
+					<code>&lt;a href=&quot;https://www.google.de/&quot;&gt;Google&lt;/a&gt;</code> </p>
+				<p> Bei einzelnen Punkten innerhalb eines Dokuments spricht man von "Ankern":<br>
+					<code>&lt;a id=&quot;Anker&quot;&gt;&lt;/a&gt;</code><br>
+					Hiermit definiert man einen Anker mit der ID "Anker". Dieser kann wie folgt referenziert werden: <br>
+					<code>&lt;a href=&quot;#Anker&quot;&gt;Klick mich!&lt;/a&gt;</code> </p>
+				<p>Seit HTML 5 gibt es die Möglichkeit, Audio und Video direkt einzubinden, ganz ohne Flash-Plugins. Leider beherrschen nicht alle Browser diese Formate.</p>
+				<table width="100%" border="1">
+					<tbody>
+						<tr>
+							<th scope="col"></th>
+							<th scope="col"></th>
+							<th scope="col"><strong>Audio</strong></th>
+							<th scope="col"></th>
+							<th scope="col"></th>
+							<th scope="col"><strong>Video</strong></th>
+							<th scope="col"></th>
+						</tr>
+						<tr>
+							<td scope="row"></td>
+							<td>MP3</td>
+							<td>Wav</td>
+							<td>Ogg</td>
+							<td>MP4</td>
+							<td>WebM</td>
+							<td>Ogg</td>
+						</tr>
+						<tr>
+							<td scope="row">Internet Explorer</td>
+							<td>&#10004;</td>
+							<td>&#10007;</td>
+							<td>&#10007;</td>
+							<td>&#10004;</td>
+							<td>&#10007;</td>
+							<td>&#10007;</td>
+						</tr>
+						<tr>
+							<td scope="row">Chrome</td>
+							<td>&#10004;</td>
+							<td>&#10004;</td>
+							<td>&#10004;</td>
+							<td>&#10004;</td>
+							<td>&#10004;</td>
+							<td>&#10004;</td>
+						</tr>
+						<tr>
+							<td scope="row">Firefox</td>
+							<td>v21</td>
+							<td>&#10004;</td>
+							<td>&#10004;</td>
+							<td>v21</td>
+							<td>&#10004;</td>
+							<td>&#10004;</td>
+						</tr>
+						<tr>
+							<td scope="row">Safari</td>
+							<td>&#10004;</td>
+							<td>&#10004;</td>
+							<td>&#10007;</td>
+							<td>&#10004;</td>
+							<td>&#10007;</td>
+							<td>&#10007;</td>
+						</tr>
+						<tr>
+							<td scope="row">Opera</td>
+							<td>&#10007;</td>
+							<td>&#10004;</td>
+							<td>&#10004;</td>
+							<td>&#10007;</td>
+							<td>&#10004;</td>
+							<td>&#10004;</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>Momentan beherrschen nur IE10, Opera und Chrome Untertitel.</p>
+			</div>
+		</section>
+	</div>
+	
+	<!-- Footer -->
+	<section id="footer">
+		<div class="container">
+			<ul class="copyright">
+				<li>Entwickler: Michael Hermelschmidt, Thomas Mohr, Adrian Nitschmann, Niko Rotde</li>
+			</ul>
+		</div>
+	</section>
+</div>
+</body>
+</html>

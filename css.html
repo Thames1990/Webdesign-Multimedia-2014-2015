@@ -1,0 +1,302 @@
+<!DOCTYPE HTML>
+<html lang="de">
+<head>
+    <title>Webdesign-Multimedia</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <meta name="author" content="Thomas Mohr, Michael Hermel, Adrian Nitschmann, Niko Rothe">
+    <meta charset="UTF-8">
+    <meta name="description" content="Grundlegende Prinzipien des Webdesign">
+    <meta name="keywords" content="HTML, CSS, Javascript, Photoshop, Perspektive, Farbenlehre, Typographie, Webdesign, Multimedia">
+
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/skel-layers.js"></script>
+    <script src="js/jquery.scrollzer.js"></script>
+    <script src="js/jquery.scrolly.js"></script>
+    <script src="js/skel.js"></script>
+    <script src="js/init.js"></script>
+
+    <script>
+        function easterEggMode() {
+            var img = document.getElementById("avatar").src;
+
+            if (img.indexOf("images/avatar.jpg") != -1) {
+                document.getElementById("avatar").src  = "images/avatar alt.jpg";
+            } else {
+                document.getElementById("avatar").src = "images/avatar.jpg";
+            }
+        }
+    </script>
+
+    <noscript>
+        <link rel="stylesheet" href="css/skel.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style-xlarge.css" />
+    </noscript>
+</head>
+
+<body>
+<div id="wrapper">
+
+    <!-- Header -->
+    <section id="header" class="skel-layers-fixed">
+        <header>
+            <span class="image avatar"><img src="images/avatar.jpg" alt="avatar" id="avatar" onDblClick="easterEggMode()"/></span>
+            <h1 id="logo"><a href="index.html">Webdesign-Multimedia</a></h1>
+        </header>
+        <nav id="nav">
+            <ul>
+                <li><a href="#one" class="active">Entwicklung</a></li>
+                <li><a href="#two">CSS vs HTML</a></li>
+                <li><a href="#three">Link-Tag</a></li>
+                <li><a href="#four">Basis-Syntax</a></li>
+                <li><a href="#five">Strukturierung</a></li>
+                <li><a href="#six">Medien</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- Main -->
+    <div id="main">
+
+        <!-- One -->
+        <section id="one">
+            <div class="container">
+                <header class="major">
+                    <h2>CSS</h2>
+                    <p>Entwicklung</p>
+                </header>
+                <p>CSS: "<b>C</b>ascading <b>S</b>tyle <b>S</b>heet" ist eine Beschreibungssprache für Stylesheets. Sie dient als "Formatvorlage" für HTML-Seiten und wurde im Dezember 1996 vom W3C herausgegeben. Der Vorgänger von CSS war "<b>C</b>ascading <b>H</b>TML <b>S</b>tyle <b>S</b>heet" (CHSS), welcher im Oktober 1994 von Håkon Wium Lie vorgeschlagen wurde.</p>
+
+            </div>
+        </section>
+
+        <!-- Two -->
+        <section id="two">
+            <div class="container">
+                <h2>CSS vs HTML</h2>
+                <p style="margin-bottom: auto">Der Style der Seite kann in reinem HTML wie folgt festgelegt werden:</p>
+                <pre>
+                    <code>&lt;html&gt;
+    ...
+    &lt;body bgcolor=&quot;black&quot;&gt;
+        ...
+        &lt;div bgcolor=&quot;red&quot;&gt;...&lt;/div&gt;
+        ...
+        &lt;div bgcolor=&quot;red&quot;&gt;...&lt;/div&gt;
+        ...
+        &lt;div bgcolor=&quot;red&quot;&gt;...&lt;/div&gt;
+        ...
+    &lt;/body&gt;
+&lt;/html&gt;</code>
+                </pre>
+                <p style="margin-bottom: auto">Der Style kann durch die Kombination aus HTML und CSS wie folgt festgelegt werden:</p>
+                <pre>
+                    <code>&lt;html&gt;&lt;head&gt;
+    ...
+    &lt;style&gt;
+        body {
+            background-color:black;
+        }
+
+        div {
+            background-color:red;
+        }
+    &lt;/style&gt;&lt;/head&gt;&lt;body&gt;
+    ...
+    &lt;div&gt;...&lt;/div&gt; ...
+    &lt;div&gt;...&lt;/div&gt; ...
+&lt;/body&gt;&lt;/html&gt;</code>
+                </pre>
+                <p> <a href="http://de.selfhtml.org/css/formate/einbinden.htm" target="_blank">Weitere Informationen zum Vergleich von der Anwendung von Stylesheets durch CSS und HTML</a> </p>
+            </div>
+        </section>
+
+        <!-- Three -->
+        <section id="three">
+            <div class="container">
+                <h2>Link-Tag</h2>
+                <p>Der Link-Tag verweist auf eine CSS Datei, die von mehreren HTML-Seiten gleichzeitig genutzt werden kann. Dadurch spart man sich Speicherplatz und Ladezeit.</p>
+                <pre><code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;<br>href=&quot;config/style.css&quot; media=&quot;screen&quot;&gt;</code></pre>
+                <p>Hierbei wird eine logische Dateibeziehung (link = Verweis, rel = relationship) auf das "stylesheet" erstellt. Dies gibt den Bezug zu einer Datei (style.css) mit Style-Definitionen, die zur Darstellung herangezogen werden.</p>
+            </div>
+        </section>
+
+        <!-- Four -->
+        <section id="four">
+            <div class="container">
+                <h2>Basis-Syntax</h2>
+
+                <a href="http://de.selfhtml.org/css/eigenschaften/schrift.htm" target="_blank">Weitere Informationen zur Textformatierung</a> </div>
+        </section>
+
+        <!-- Five -->
+        <section id="five">
+            <div class="container">
+                <h2>Strukturierung</h2>
+                <p> Strukturierung erfolgt mittels sogenannter Bereiche.</p>
+                <table width="100%" border="1">
+                    <colgroup width="50%" span="2">
+                    </colgroup>
+                    <tbody>
+                    <tr>
+                        <th>HTML</th>
+                        <th>Strukturierung</th>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;div&gt;</code></td>
+                        <td>Bereiche</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;aside&gt;</code></td>
+                        <td>Nebeninformationen</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;header&gt;</code></td>
+                        <td>Seitenkopf</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;footer&gt;</code></td>
+                        <td>Fußzeile</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;nav&gt;</code></td>
+                        <td>Navigation</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;article&gt;</code></td>
+                        <td>Abgeschlossener Inhalt</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;section&gt;</code></td>
+                        <td>Abschnitt</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p>Tabellen sind für tabellarische Inhalte (z.B. wissenschaftliche Ergebnisse) und <strong>nicht</strong> etwa für die Webseitenstrukturierung gedacht.</p>
+                <table>
+                    <tbody>
+                    <tr>
+                        <td rowspan="2">Cell 1</td>
+                        <td>Cell 2</td>
+                        <td>Cell 3</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Cell 4</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p>Diese Tabelle werden durch den folgenden Code repräsentiert:</p>
+				<pre>
+<code>&lt;table&gt;
+    &lt;tr&gt;
+    &lt;td rowspan=&quot;2&quot;&gt;Cell 1&lt;/td&gt;
+    &lt;td&gt;Cell 2&lt;/td&gt;
+    &lt;td&gt;Cell 3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td colspan=&quot;2&quot;&gt;Cell 4&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/table&gt;</code>
+            </pre>
+            </div>
+        </section>
+
+        <!-- Six -->
+        <section id="six">
+            <div class="container">
+                <h2>Medien</h2>
+                <p> Externe Dateien, z.B. Bilder, sollten möglichst relativ referenziert werden. Relative Pfade suchen in dem Ordner, in dem die Quelldatei liegt und orientieren sich an dessen Struktur. Anstatt eines absoluten Pfades, wie z.B. <code>"C:\Users\...\images\bild.jpg"</code> sollte ein relativer Pfad, wie <code>"images/bild.jpg"</code> verwendet werden. Dieser findet das Bild unabhängig vom Pfad des Ordners. </p>
+                <p> Bilder werden mit dem HTML-Tag &lt;img&gt; eingebunden. Das Bild "logo.png" wird im Verzeichnis "images" eingebunden. Das Attribut "alt" wird benötigt, falls das Bild nicht vorhanden ist. In diesem Fall kann man ein Fehlerbild oder einen Fehlertext darstellen. <br>
+                    <code>&lt;img src=&quot;images/logo.png&quot; alt=&quot;Logo&quot;&gt;</code><br>
+                    <a href="http://de.selfhtml.org/html/referenz/attribute.htm#img" target="_blank">Weitere Informationen zu Attributen von Bildern</a> </p>
+                <p> Links können unter HTML wie folgt verwendet werden: <br>
+                    <code>&lt;a href=&quot;https://www.google.de/&quot;&gt;Google&lt;/a&gt;</code> </p>
+                <p> Bei einzelnen Punkten innerhalb eines Dokuments spricht man von "Ankern":<br>
+                    <code>&lt;a id=&quot;Anker&quot;&gt;&lt;/a&gt;</code><br>
+                    Hiermit definiert man einen Anker mit der ID "Anker". Dieser kann wie folgt referenziert werden: <br>
+                    <code>&lt;a href=&quot;#Anker&quot;&gt;Klick mich!&lt;/a&gt;</code> </p>
+                <p>Seit HTML 5 gibt es die Möglichkeit, Audio und Video direkt einzubinden, ganz ohne Flash-Plugins. Leider beherrschen nicht alle Browser diese Formate.</p>
+                <table width="100%" border="1">
+                    <tbody>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"><strong>Audio</strong></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"><strong>Video</strong></th>
+                        <th scope="col"></th>
+                    </tr>
+                    <tr>
+                        <td scope="row"></td>
+                        <td>MP3</td>
+                        <td>Wav</td>
+                        <td>Ogg</td>
+                        <td>MP4</td>
+                        <td>WebM</td>
+                        <td>Ogg</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Internet Explorer</td>
+                        <td>&#10004;</td>
+                        <td>&#10007;</td>
+                        <td>&#10007;</td>
+                        <td>&#10004;</td>
+                        <td>&#10007;</td>
+                        <td>&#10007;</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Chrome</td>
+                        <td>&#10004;</td>
+                        <td>&#10004;</td>
+                        <td>&#10004;</td>
+                        <td>&#10004;</td>
+                        <td>&#10004;</td>
+                        <td>&#10004;</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Firefox</td>
+                        <td>v21</td>
+                        <td>&#10004;</td>
+                        <td>&#10004;</td>
+                        <td>v21</td>
+                        <td>&#10004;</td>
+                        <td>&#10004;</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Safari</td>
+                        <td>&#10004;</td>
+                        <td>&#10004;</td>
+                        <td>&#10007;</td>
+                        <td>&#10004;</td>
+                        <td>&#10007;</td>
+                        <td>&#10007;</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Opera</td>
+                        <td>&#10007;</td>
+                        <td>&#10004;</td>
+                        <td>&#10004;</td>
+                        <td>&#10007;</td>
+                        <td>&#10004;</td>
+                        <td>&#10004;</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p>Momentan beherrschen nur IE10, Opera und Chrome Untertitel.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <section id="footer">
+        <div class="container">
+            <ul class="copyright">
+                <li>Entwickler: Michael Hermelschmidt, Thomas Mohr, Adrian Nitschmann, Niko Rotde</li>
+            </ul>
+        </div>
+    </section>
+</div>
+</body>
+</html>

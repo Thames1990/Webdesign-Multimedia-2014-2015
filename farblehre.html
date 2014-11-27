@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html lang="de">
+<head>
+	<title>Webdesign-Multimedia</title>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	
+	<meta name="author" content="Thomas Mohr, Michael Hermel, Adrian Nitschmann, Niko Rothe">
+	<meta charset="UTF-8">
+	<meta name="description" content="Grundlegende Prinzipien des Webdesign">
+	<meta name="keywords" content="HTML, CSS, Javascript, Photoshop, Perspektive, Farbenlehre, Typographie, Webdesign, Multimedia">
+	
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src="js/skel-layers.js"></script>
+	<script src="js/jquery.scrollzer.js"></script>
+	<script src="js/jquery.scrolly.js"></script>
+	<script src="js/skel.js"></script>
+	<script src="js/init.js"></script>
+	
+	<script>
+		function easterEggMode() {
+			var img = document.getElementById("avatar").src;
+			
+			if (img.indexOf("images/avatar.jpg") != -1) {
+				document.getElementById("avatar").src  = "images/avatar alt.jpg";
+			} else {
+				document.getElementById("avatar").src = "images/avatar.jpg";
+			}
+		}
+	</script>
+	
+	<noscript>
+		<link rel="stylesheet" href="css/skel.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-xlarge.css" />
+	</noscript>
+</head>
+
+<body>
+<div id="wrapper"> 
+	
+	<!-- Header -->
+	<section id="header" class="skel-layers-fixed">
+		<header>
+			<span class="image avatar"><img src="images/avatar.jpg" alt="avatar" id="avatar" onDblClick="easterEggMode()"/></span>
+			<h1 id="logo"><a href="index.html">Webdesign-Multimedia</a></h1>
+		</header>
+		<nav id="nav">
+			<ul>
+				<li><a href="#one" class="active">Synästhesie</a></li>
+				<li><a href="#two">Farbtypenlehre</a></li>
+				<li><a href="#three">Kontrast</a></li>
+			</ul>
+		</nav>
+	</section>
+	
+	<!-- Main -->
+	<div id="main"> 
+		
+		<!-- One -->
+		<section id="one">
+			<div class="container">
+				<header class="major">
+					<h2>Farbenlehre</h2>
+					<p>Synästhesie</p>
+				</header>
+				<p>Die Synästhesie (von altgriech. συναισϑάνομαι synaisthanomai „mitempfinden“ oder „zugleich wahrnehmen“) bezeichnet hauptsächlich die Kopplung zweier oder mehrerer physisch getrennter Bereiche der Wahrnehmung, etwa Farbe und Temperatur (beispielsweise die Verbindung „warmes Grün“), im engeren Sinne die Wahrnehmung von Sinnesreizen durch Miterregung der Verarbeitungszentren im Gehirn eines Sinnesorgans, wenn ein anderes gereizt wird. Menschen, die Wahrnehmungen derart verknüpft erfahren, werden als Synästhetiker bezeichnet.</p>
+			</div>
+		</section>
+		
+		<!-- Two -->
+		<section id="two">
+			<div class="container">
+				<h2>Farbtypenlehre</h2>
+				<p>Die Farbtypenlehre ist eine Theorie, die anhand von Hautton, Augen- und Haarfarbe eine Zuordnung bestimmter Farbtabellen für Kleidung und Make-Up herstellt. Damit soll das Aussehen eines bestimmten Menschen über seine Zuordnung zu einem Farbtyp optimal mit seinem Äußeren harmonieren.</p>
+				<p>Die Farbtypenlehre ist durch Farbkreise zu verdeutlichen. Die wichtigsten Konzepte von Farbkreisen sind die von Johann Wolfgang von Goethe und von Johannes Itten.</p>
+				<div class="features">
+					<article>
+						<a href="images/Farblehre/Farbkreis Goethe.jpg" class="image" target="_blank"><img src="images/Farblehre/Farbkreis Goethe.jpg" alt="Farbkreis Goethe" title="Farbkreis Goethe"/></a>
+						<div class="inner">
+							<h4>Farbkreis Johann Wolfgang von Goethe</h4>
+							<p>Goethe versuchte, das Phänomen Farbe in seiner Gesamtheit zu erfassen und zu beschreiben, also nicht einseitig physikalisch oder lediglich von einem ästhetischen oder praktisch-bezogenen Standpunkt aus beurteilt und erklärt.</p>
+						</div>
+					</article>
+					<article>
+						<a href="images/Farblehre/Farbkreis Itten.png" class="image" target="_blank"><img src="images/Farblehre/Farbkreis Itten.png" alt="Farbkreis Itten" title="Farbkreis Itten"/></a>
+						<div class="inner">
+							<h4>Farbkreis Johannes Itten</h4>
+							<p>„Geometrische und rhythmische Formen, Probleme der Proportionen und der expressiven Bildkomposition wurden durchgearbeitet. Neu waren die Aufgaben mit Texturen und das Ausarbeiten der subjektiven Formen. Neben der Lehre von den polaren Kontrasten brachten die Übungen zur Lockerung und Konzentration der Schüler erstaunliche Erfolge. Der schöpferische Automatismus wurde von mir als einer der wichtigsten Faktoren künstlerischen Schaffens erkannt. Ich selbst arbeitete an geometrisch-abstrakten Bildern, die auf sorgfältigen Bildkonstruktionen beruhten“</p>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Three -->
+		<section id="three">
+			<div class="container">
+				<h2>Kontraste nach Itten</h2>
+				<div class="features">
+					<article>
+						<a href="images/Farblehre/Farbe-an-sich-Kontrast.jpg" class="image" target="_blank"><img src="images/Farblehre/Farbe-an-sich-Kontrast.jpg" alt="Farbe-an-sich-Kontrast" title="Farbe-an-sich-Kontrast"/></a>
+						<div class="inner">
+							<h4>Farbe-an-sich-Kontrast</h4>
+							<p>Der Farbe-an-sich-Kontrast ist der einfachste aller Farbkontraste, er wird auch Farbton-Kontrast genannt. Er entsteht zwangsläufig, sobald mindestens zwei Farben in reiner, ungebrochener Form zusammenkommen.</p>
+						</div>
+					</article>
+					<article>
+						<a href="images/Farblehre/Hell-Dunkel-Kontrast.jpg" class="image" target="_blank"><img src="images/Farblehre/Hell-Dunkel-Kontrast.jpg" alt="Hell-Dunkel-Kontrast" title="Hell-Dunkel-Kontrast"/></a>
+						<div class="inner">
+							<h4>Hell-Dunkel-Kontrast</h4>
+							<p>Der Hell-Dunkel-Kontrast kommt bei den unbunten Farben Schwarz, Weiß und Grau und im gleichen Maße bei den Buntfarben vor. Es ist jener Kontrast, der durch die unterschiedliche Farbhelligkeit zweier Farben entsteht.</p>
+						</div>
+					</article>
+					<article>
+						<a href="images/Farblehre/Kalt-Warm-Kontrast.jpg" class="image" target="_blank"><img src="images/Farblehre/Kalt-Warm-Kontrast.jpg" alt="Kalt-Warm-Kontrast" title="Kalt-Warm-Kontrast"/></a>
+						<div class="inner">
+							<h4>Kalt-Warm-Kontrast</h4>
+							<p>Der Kalt-Warm-Kontrast nimmt die Wirkung aus dem Empfinden, dass Farben warm oder kalt wirken. Eine solche Farbauswahl und deren Zusammenstellung bestimmen Form, Aufbau und Ausdruck eines Bildes.</p>
+						</div>
+					</article>
+					<article>
+						<a href="images/Farblehre/Qualitätskontrast.jpg" class="image" target="_blank"><img src="images/Farblehre/Qualitätskontrast.jpg" alt="Qualitätskontrast" title="Qualitätskontrast"/></a>
+						<div class="inner">
+							<h4>Qualitätskontrast</h4>
+							<p>Der Qualitätskontrast, auch als Intensitätskontrast bezeichnet, ist der Kontrast, der zwischen gesättigten, leuchtenden Farben und gebrochenen, stumpfen, trüben Farben entsteht, also durch Unterschiede in der Farbqualität.</p>
+						</div>
+					</article>
+					<article>
+						<a href="images/Farblehre/Quantitätskontrast.jpg" class="image" target="_blank"><img src="images/Farblehre/Quantitätskontrast.jpg" alt="Quantitätskontrast" title="Quantitätskontrast"/></a>
+						<div class="inner">
+							<h4>Quantitätskontrast</h4>
+							<p>Der Quantitätskontrast, auch Proportionskontrast genannt, entsteht durch die Gegenüberstellung verschieden großer Farbflächen. Wenn diese in einem ausgewogenen Verhältnis zueinander stehen, ist die optische Wirkung der Farben gleich intensiv und alles wirkt harmonisch. Jede Farbe benötigt zudem den ihrer Leuchtkraft gemäßen Raum.</p>
+						</div>
+					</article>
+					<article>
+						<a href="images/Farblehre/Komplementärkontrast.jpg" class="image" target="_blank"><img src="images/Farblehre/Komplementärkontrast.jpg" alt="Komplementärkontrast" title="Komplementärkontrast"/></a>
+						<div class="inner">
+							<h4>Komplementärkontrast</h4>
+							<p>Der Komplementärkontrast ist der Kontrast, der zwischen zwei komplementären Farben entsteht. Komplementäre Farbe sind solche, die miteinander gemischt einen neutralen Grauton ergeben.</p>
+						</div>
+					</article>
+					<article>
+						<a href="images/Farblehre/Simultankontrast.jpg" class="image" target="_blank"><img src="images/Farblehre/Simultankontrast.jpg" alt="Simultankontrast" style="border:solid" title="Simultankontrast"/></a>
+						<div class="inner">
+							<h4>Simultankontrast</h4>
+							<p>Der Simultankontrast beschreibt das gleichzeitige (simultane) Wechselwirken von nebeneinanderliegenden Farbflächen. Im Zusammenspiel der Teile kommt es zu einer „optischen Überflutung“. Der Sehsinn sucht zu einer dargestellten Farbe die Komplementärfarbe, um ein „Farbganzes“ herzustellen. Fehlt dieser Farbeindruck so stellt die Wahrnehmung bei einer angrenzenden Farbe sie in einer Nuance her.</p>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+	</div>
+	
+	<!-- Footer -->
+	<section id="footer">
+		<div class="container">
+			<ul class="copyright">
+				<li>Entwickler: Michael Hermelschmidt, Thomas Mohr, Adrian Nitschmann, Niko Rothe</li>
+			</ul>
+		</div>
+	</section>
+</div>
+</body>
+</html>

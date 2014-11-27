@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="de">
+<head>
+    <title>Webdesign-Multimedia</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <meta name="author" content="Thomas Mohr, Michael Hermel, Adrian Nitschmann, Niko Rothe">
+    <meta charset="UTF-8">
+    <meta name="description" content="Grundlegende Prinzipien des Webdesign">
+    <meta name="keywords" content="HTML, CSS, Javascript, Photoshop, Perspektive, Farbenlehre, Typographie, Webdesign, Multimedia">
+
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/skel-layers.js"></script>
+    <script src="js/jquery.scrollzer.js"></script>
+    <script src="js/jquery.scrolly.js"></script>
+    <script src="js/skel.js"></script>
+    <script src="js/init.js"></script>
+
+    <script>
+        function easterEggMode() {
+            var img = document.getElementById("avatar").src;
+
+            if (img.indexOf("images/avatar.jpg") != -1) {
+                document.getElementById("avatar").src  = "images/avatar alt.jpg";
+            } else {
+                document.getElementById("avatar").src = "images/avatar.jpg";
+            }
+        }
+    </script>
+
+    <noscript>
+        <link rel="stylesheet" href="css/skel.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style-xlarge.css" />
+    </noscript>
+</head>
+
+<body>
+<div id="wrapper">
+
+    <!-- Header -->
+    <section id="header" class="skel-layers-fixed">
+        <header>
+            <span class="image avatar"><img src="images/avatar.jpg" alt="avatar" id="avatar" onDblClick="easterEggMode()"/></span>
+            <h1 id="logo"><a href="index.html">Webdesign-Multimedia</a></h1>
+        </header>
+        <nav id="nav">
+            <ul>
+                <li><a href="#one" class="active">Definition</a></li>
+                <li><a href="#two">Mikrotypographie</a></li>
+                <li><a href="#three">Makrotypographie</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- Main -->
+    <div id="main">
+
+        <!-- One -->
+        <section id="one">
+            <div class="container">
+                <header class="major">
+                    <h2>Typographie</h2>
+                    <p>Definition</p>
+                </header>
+                <p>Der Begriff Typografie oder Typographie (griechisch τυπογραφία typographía, von τύπος týpos ‚Schlag‘, ‚Abdruck‘, ‚Figur‘, ‚Typ‘ und -graphie) lässt sich auf mehrere Bereiche anwenden. Im engeren Sinne bezieht sich die Typografie auf die Kunst und das Handwerk des Druckens, bei dem mit beweglichen Lettern (Typen) die Texte zusammengesetzt werden, insbesondere in Hochdruckverfahren. In der Medientheorie steht Typografie für gedruckte Schrift in Abgrenzung zu Handschrift (Chirografie) und elektronischen sowie nicht literalen Texten. Meist bezeichnet Typografie heute jedoch den Gestaltungsprozess, der mittels Schrift, Bildern, Linien, Flächen und typografischem Raum auf Druckwerke und elektronische Medien angewendet wird, unabhängig von beweglichen Typen (Typografie für digitale Texte). Typografie umfasst nicht nur die Gestaltung eines Layouts und den Entwurf von Schriften. Vielmehr kann man den Begriff bis zur richtigen Auswahl des Papiers oder des Einbands ausweiten und sogar von typografischer Kalligrafie oder kalligrafischer Typografie sprechen.</p>
+            </div>
+        </section>
+
+        <!-- Two -->
+        <section id="two">
+            <div class="container">
+                <h2>Mikrotypographie</h2>
+                <p>Segment der angewandten Typographie, auch als Detailtypographie bezeichnet. Im Gegensatz zur Makrotypographie beschreibt die Mikrotypographie die Schrift und ihre Anwendung selbst. Mikrotypographie umfasst sowohl die Typometrie von Buchstaben, Ziffern und Sonderzeichen, als auch deren ins Detail gehende Anwendung im Schriftsatz.</p>
+                <ul>
+                    <li>Schriftart</li>
+                    <li>Kapitälchen</li>
+                    <li>Ligaturen</li>
+                    <li>Satzzeichen</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Three -->
+        <section id="three">
+            <div class="container">
+                <h2>Makrotypographie</h2>
+                <p>Segment der angewandten Typographie. Im Gegensatz zur Mikrotypographie beschreibt die Makrotypographie den optischen Gesamtkomplex einer gestalterischen Schriftsatzarbeit. </p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section id="footer">
+            <div class="container">
+                <ul class="copyright">
+                    <li>Entwickler: Michael Hermelschmidt, Thomas Mohr, Adrian Nitschmann, Niko Rothe</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</div>
+</body>
+</html>
