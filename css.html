@@ -10,10 +10,10 @@
     <meta name="keywords" content="HTML, CSS, Javascript, Photoshop, Perspektive, Farbenlehre, Typographie, Webdesign, Multimedia">
 
     <script src="js/jquery-2.1.1.js"></script>
-    <script src="js/skel-layers.js"></script>
     <script src="js/jquery.scrollzer.js"></script>
     <script src="js/jquery.scrolly.js"></script>
     <script src="js/skel.js"></script>
+    <script src="js/skel-layers.js"></script>
     <script src="js/init.js"></script>
 
     <script>
@@ -21,7 +21,7 @@
             var img = document.getElementById("avatar").src;
 
             if (img.indexOf("images/avatar.jpg") != -1) {
-                document.getElementById("avatar").src  = "images/avatar alt.jpg";
+                document.getElementById("avatar").src = "images/avatar alt.jpg";
             } else {
                 document.getElementById("avatar").src = "images/avatar.jpg";
             }
@@ -47,11 +47,7 @@
         <nav id="nav">
             <ul>
                 <li><a href="#one" class="active">Entwicklung</a></li>
-                <li><a href="#two">CSS vs HTML</a></li>
-                <li><a href="#three">Link-Tag</a></li>
-                <li><a href="#four">Basis-Syntax</a></li>
-                <li><a href="#five">Strukturierung</a></li>
-                <li><a href="#six">Medien</a></li>
+                <li><a href="#two">Syntax</a></li>
             </ul>
         </nav>
     </section>
@@ -74,217 +70,37 @@
         <!-- Two -->
         <section id="two">
             <div class="container">
-                <h2>CSS vs HTML</h2>
-                <p style="margin-bottom: auto">Der Style der Seite kann in reinem HTML wie folgt festgelegt werden:</p>
-                <pre>
-                    <code>&lt;html&gt;
-    ...
-    &lt;body bgcolor=&quot;black&quot;&gt;
-        ...
-        &lt;div bgcolor=&quot;red&quot;&gt;...&lt;/div&gt;
-        ...
-        &lt;div bgcolor=&quot;red&quot;&gt;...&lt;/div&gt;
-        ...
-        &lt;div bgcolor=&quot;red&quot;&gt;...&lt;/div&gt;
-        ...
-    &lt;/body&gt;
-&lt;/html&gt;</code>
-                </pre>
-                <p style="margin-bottom: auto">Der Style kann durch die Kombination aus HTML und CSS wie folgt festgelegt werden:</p>
-                <pre>
-                    <code>&lt;html&gt;&lt;head&gt;
-    ...
-    &lt;style&gt;
-        body {
-            background-color:black;
-        }
-
-        div {
-            background-color:red;
-        }
-    &lt;/style&gt;&lt;/head&gt;&lt;body&gt;
-    ...
-    &lt;div&gt;...&lt;/div&gt; ...
-    &lt;div&gt;...&lt;/div&gt; ...
-&lt;/body&gt;&lt;/html&gt;</code>
-                </pre>
-                <p> <a href="http://de.selfhtml.org/css/formate/einbinden.htm" target="_blank">Weitere Informationen zum Vergleich von der Anwendung von Stylesheets durch CSS und HTML</a> </p>
-            </div>
-        </section>
-
-        <!-- Three -->
-        <section id="three">
-            <div class="container">
-                <h2>Link-Tag</h2>
-                <p>Der Link-Tag verweist auf eine CSS Datei, die von mehreren HTML-Seiten gleichzeitig genutzt werden kann. Dadurch spart man sich Speicherplatz und Ladezeit.</p>
-                <pre><code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;<br>href=&quot;config/style.css&quot; media=&quot;screen&quot;&gt;</code></pre>
-                <p>Hierbei wird eine logische Dateibeziehung (link = Verweis, rel = relationship) auf das "stylesheet" erstellt. Dies gibt den Bezug zu einer Datei (style.css) mit Style-Definitionen, die zur Darstellung herangezogen werden.</p>
-            </div>
-        </section>
-
-        <!-- Four -->
-        <section id="four">
-            <div class="container">
-                <h2>Basis-Syntax</h2>
-
-                <a href="http://de.selfhtml.org/css/eigenschaften/schrift.htm" target="_blank">Weitere Informationen zur Textformatierung</a> </div>
-        </section>
-
-        <!-- Five -->
-        <section id="five">
-            <div class="container">
-                <h2>Strukturierung</h2>
-                <p> Strukturierung erfolgt mittels sogenannter Bereiche.</p>
-                <table width="100%" border="1">
-                    <colgroup width="50%" span="2">
-                    </colgroup>
-                    <tbody>
-                    <tr>
-                        <th>HTML</th>
-                        <th>Strukturierung</th>
-                    </tr>
-                    <tr>
-                        <td><code>&lt;div&gt;</code></td>
-                        <td>Bereiche</td>
-                    </tr>
-                    <tr>
-                        <td><code>&lt;aside&gt;</code></td>
-                        <td>Nebeninformationen</td>
-                    </tr>
-                    <tr>
-                        <td><code>&lt;header&gt;</code></td>
-                        <td>Seitenkopf</td>
-                    </tr>
-                    <tr>
-                        <td><code>&lt;footer&gt;</code></td>
-                        <td>Fußzeile</td>
-                    </tr>
-                    <tr>
-                        <td><code>&lt;nav&gt;</code></td>
-                        <td>Navigation</td>
-                    </tr>
-                    <tr>
-                        <td><code>&lt;article&gt;</code></td>
-                        <td>Abgeschlossener Inhalt</td>
-                    </tr>
-                    <tr>
-                        <td><code>&lt;section&gt;</code></td>
-                        <td>Abschnitt</td>
-                    </tr>
-                    </tbody>
-                </table>
-                <p>Tabellen sind für tabellarische Inhalte (z.B. wissenschaftliche Ergebnisse) und <strong>nicht</strong> etwa für die Webseitenstrukturierung gedacht.</p>
-                <table>
-                    <tbody>
-                    <tr>
-                        <td rowspan="2">Cell 1</td>
-                        <td>Cell 2</td>
-                        <td>Cell 3</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">Cell 4</td>
-                    </tr>
-                    </tbody>
-                </table>
-                <p>Diese Tabelle werden durch den folgenden Code repräsentiert:</p>
-				<pre>
-<code>&lt;table&gt;
-    &lt;tr&gt;
-    &lt;td rowspan=&quot;2&quot;&gt;Cell 1&lt;/td&gt;
-    &lt;td&gt;Cell 2&lt;/td&gt;
-    &lt;td&gt;Cell 3&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-    &lt;td colspan=&quot;2&quot;&gt;Cell 4&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;/table&gt;</code>
-            </pre>
-            </div>
-        </section>
-
-        <!-- Six -->
-        <section id="six">
-            <div class="container">
-                <h2>Medien</h2>
-                <p> Externe Dateien, z.B. Bilder, sollten möglichst relativ referenziert werden. Relative Pfade suchen in dem Ordner, in dem die Quelldatei liegt und orientieren sich an dessen Struktur. Anstatt eines absoluten Pfades, wie z.B. <code>"C:\Users\...\images\bild.jpg"</code> sollte ein relativer Pfad, wie <code>"images/bild.jpg"</code> verwendet werden. Dieser findet das Bild unabhängig vom Pfad des Ordners. </p>
-                <p> Bilder werden mit dem HTML-Tag &lt;img&gt; eingebunden. Das Bild "logo.png" wird im Verzeichnis "images" eingebunden. Das Attribut "alt" wird benötigt, falls das Bild nicht vorhanden ist. In diesem Fall kann man ein Fehlerbild oder einen Fehlertext darstellen. <br>
-                    <code>&lt;img src=&quot;images/logo.png&quot; alt=&quot;Logo&quot;&gt;</code><br>
-                    <a href="http://de.selfhtml.org/html/referenz/attribute.htm#img" target="_blank">Weitere Informationen zu Attributen von Bildern</a> </p>
-                <p> Links können unter HTML wie folgt verwendet werden: <br>
-                    <code>&lt;a href=&quot;https://www.google.de/&quot;&gt;Google&lt;/a&gt;</code> </p>
-                <p> Bei einzelnen Punkten innerhalb eines Dokuments spricht man von "Ankern":<br>
-                    <code>&lt;a id=&quot;Anker&quot;&gt;&lt;/a&gt;</code><br>
-                    Hiermit definiert man einen Anker mit der ID "Anker". Dieser kann wie folgt referenziert werden: <br>
-                    <code>&lt;a href=&quot;#Anker&quot;&gt;Klick mich!&lt;/a&gt;</code> </p>
-                <p>Seit HTML 5 gibt es die Möglichkeit, Audio und Video direkt einzubinden, ganz ohne Flash-Plugins. Leider beherrschen nicht alle Browser diese Formate.</p>
-                <table width="100%" border="1">
-                    <tbody>
-                    <tr>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"><strong>Audio</strong></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"><strong>Video</strong></th>
-                        <th scope="col"></th>
-                    </tr>
-                    <tr>
-                        <td scope="row"></td>
-                        <td>MP3</td>
-                        <td>Wav</td>
-                        <td>Ogg</td>
-                        <td>MP4</td>
-                        <td>WebM</td>
-                        <td>Ogg</td>
-                    </tr>
-                    <tr>
-                        <td scope="row">Internet Explorer</td>
-                        <td>&#10004;</td>
-                        <td>&#10007;</td>
-                        <td>&#10007;</td>
-                        <td>&#10004;</td>
-                        <td>&#10007;</td>
-                        <td>&#10007;</td>
-                    </tr>
-                    <tr>
-                        <td scope="row">Chrome</td>
-                        <td>&#10004;</td>
-                        <td>&#10004;</td>
-                        <td>&#10004;</td>
-                        <td>&#10004;</td>
-                        <td>&#10004;</td>
-                        <td>&#10004;</td>
-                    </tr>
-                    <tr>
-                        <td scope="row">Firefox</td>
-                        <td>v21</td>
-                        <td>&#10004;</td>
-                        <td>&#10004;</td>
-                        <td>v21</td>
-                        <td>&#10004;</td>
-                        <td>&#10004;</td>
-                    </tr>
-                    <tr>
-                        <td scope="row">Safari</td>
-                        <td>&#10004;</td>
-                        <td>&#10004;</td>
-                        <td>&#10007;</td>
-                        <td>&#10004;</td>
-                        <td>&#10007;</td>
-                        <td>&#10007;</td>
-                    </tr>
-                    <tr>
-                        <td scope="row">Opera</td>
-                        <td>&#10007;</td>
-                        <td>&#10004;</td>
-                        <td>&#10004;</td>
-                        <td>&#10007;</td>
-                        <td>&#10004;</td>
-                        <td>&#10004;</td>
-                    </tr>
-                    </tbody>
-                </table>
-                <p>Momentan beherrschen nur IE10, Opera und Chrome Untertitel.</p>
+                <h2>Syntax</h2>
+                <h4>Stylesheet</h4>
+                <p>Als Stylesheet wird eine Datei oder ein Abschnitt innerhalb eines Dokuments bezeichnet, der aus CSS-Regelsätzen besteht.</p>
+                <h4>Regelsätze</h4>
+                <p>In CSS sind Eigenschaften innerhalb von Regelsätzen organisiert. Ein Regelsatz besteht aus:</p>
+                <ul>
+                    <li>Einem Selektor oder einer Gruppe von Selektoren, gefolgt von</li>
+                    <li>einem durch geschweifte Klammern begrenzten Bereich, in dem Eigenschaften ein Wert zugewiesen wird.</li>
+                </ul>
+<pre><code>Selektor { Eigenschaft1: Wert; Eigenschaft2: Wert; }
+    Selektor Eins, Selektor Zwei { Eigenschaft: Wert; }</code></pre>
+                <p>Hier zwei Beispiele für einen Regelsatz. Der erste Regelsatz besteht aus einem Selektor, dem zwei Eigenschaften zugewiesen werden. Der zweite Regelsatz besteht aus zwei voneinander unabhängigen Selektoren, denen dieselbe Eigenschaft zugewiesen wird. Ein Format, das mehrere Elemente eines Dokuments anspricht, muss daher nur einmal definiert werden.</p>
+                <p>Ein Stylesheet kann schon durch das Vorhandensein einer einzigen Regel entstehen.</p>
+                <h4>Kommentare</h4>
+                <p>Um die Übersicht zu behalten oder bestimmte Regelsätze zu erläutern ist es möglich, innerhalb von Stylesheets Kommentare zu verfassen. Ein Kommentar beginnt mit den Zeichen „/*“ und endet mit dem ersten Auftreten der Zeichen „*/“. Das bedeutet, dass Kommentare nicht ineinander verschachtelt werden können.</p>
+<pre><code>/* Dies ist ein Kommentar.
+    Er besitzt keine Auswirkungen. */
+    /* Verschachtelte /* Kommentare sind */ nicht möglich */</code></pre>
+                <p>Kommentare dürfen sich über mehrere Zeilen erstrecken. Jedoch ist es selbst durch das mehrfache Auftreten der Zeichen „/*“ nicht möglich, Kommentare zu verschachteln.</p>
+                <p><b>Beachten Sie:</b> Die aus vielen Programmiersprachen bekannten einzeiligen Kommentare gibt es in CSS <i>nicht</i>.</p>
+                <h4>Eigenschaften und Werte (Deklaration)</h4>
+                <p>Bereits im Abschnitt „Regelsätze“ haben Sie das allgemeine Aussehen einer Deklaration (also einer Eigenschaft-Wert-Zuordnung) gesehen: Dem Namen der Eigenschaft folgt ein Doppelpunkt, dem wiederum der Wert folgt, der der Eigenschaft zugewiesen wird.
+                    Es gibt Eigenschaften, denen kann nicht nur ein Wert, sondern mehrere Werte zugewiesen werden. In diesen Fällen werden die einzelnen Werte durch ein Leerzeichen voneinander getrennt.</p>
+                <pre><code>Selektor { Eigenschaft: Wert 1.0; }</code></pre>
+                <p>Dieses Beispiel zeigt eine Eigenschaft, der zwei Werte zugewiesen werden. Einmal ein Schlüsselwort („Wert“) und eine Zahl („1.0“).</p>
+                <h5>„shorthand“-Eigenschaften</h5>
+                <p>Werden einer Eigenschaft mehrere Werte zugewiesen, handelt es sich üblicherweise um eine so genannte „shorthand“-Eigenschaft. Dabei handelt es sich um Eigenschaften, die mehrere andere Eigenschaften zusammenfassen.</p>
+<pre><code>Überschrift { Schrift-Größe: 200%; Schrift-Stil: kursiv; }
+    Selektor { Schrift: 200% kursiv; }</code></pre>
+                <p>Bei der Eigenschaft „Schrift“ handelt es sich um eine „shorthand“-Eigenschaft, die die detailierteren Eigenschaften „Schrift-Größe“ und „Schrift-Stil“ kombiniert.</p>
+                <p> <a href="http://de.selfhtml.org/css/formate/einbinden.htm" target="_blank">Weitere Informationen zur Syntax von CSS</a> </p>
             </div>
         </section>
     </div>
