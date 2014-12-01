@@ -16,18 +16,6 @@
     <script src="js/skel-layers.js"></script>
     <script src="js/init.js"></script>
 
-    <script>
-        function easterEggMode() {
-            var img = document.getElementById("avatar").src;
-
-            if (img.indexOf("images/avatar.jpg") != -1) {
-                document.getElementById("avatar").src = "images/avatar alt.jpg";
-            } else {
-                document.getElementById("avatar").src = "images/avatar.jpg";
-            }
-        }
-    </script>
-
     <noscript>
         <link rel="stylesheet" href="css/skel.css" />
         <link rel="stylesheet" href="css/style.css" />
@@ -80,14 +68,14 @@
                     <li>einem durch geschweifte Klammern begrenzten Bereich, in dem Eigenschaften ein Wert zugewiesen wird.</li>
                 </ul>
 <pre><code>Selektor { Eigenschaft1: Wert; Eigenschaft2: Wert; }
-    Selektor Eins, Selektor Zwei { Eigenschaft: Wert; }</code></pre>
+Selektor Eins, Selektor Zwei { Eigenschaft: Wert; }</code></pre>
                 <p>Hier zwei Beispiele für einen Regelsatz. Der erste Regelsatz besteht aus einem Selektor, dem zwei Eigenschaften zugewiesen werden. Der zweite Regelsatz besteht aus zwei voneinander unabhängigen Selektoren, denen dieselbe Eigenschaft zugewiesen wird. Ein Format, das mehrere Elemente eines Dokuments anspricht, muss daher nur einmal definiert werden.</p>
                 <p>Ein Stylesheet kann schon durch das Vorhandensein einer einzigen Regel entstehen.</p>
                 <h4>Kommentare</h4>
                 <p>Um die Übersicht zu behalten oder bestimmte Regelsätze zu erläutern ist es möglich, innerhalb von Stylesheets Kommentare zu verfassen. Ein Kommentar beginnt mit den Zeichen „/*“ und endet mit dem ersten Auftreten der Zeichen „*/“. Das bedeutet, dass Kommentare nicht ineinander verschachtelt werden können.</p>
 <pre><code>/* Dies ist ein Kommentar.
-    Er besitzt keine Auswirkungen. */
-    /* Verschachtelte /* Kommentare sind */ nicht möglich */</code></pre>
+Er besitzt keine Auswirkungen. */
+/* Verschachtelte /* Kommentare sind */ nicht möglich */</code></pre>
                 <p>Kommentare dürfen sich über mehrere Zeilen erstrecken. Jedoch ist es selbst durch das mehrfache Auftreten der Zeichen „/*“ nicht möglich, Kommentare zu verschachteln.</p>
                 <p><b>Beachten Sie:</b> Die aus vielen Programmiersprachen bekannten einzeiligen Kommentare gibt es in CSS <i>nicht</i>.</p>
                 <h4>Eigenschaften und Werte (Deklaration)</h4>
@@ -98,7 +86,7 @@
                 <h5>„shorthand“-Eigenschaften</h5>
                 <p>Werden einer Eigenschaft mehrere Werte zugewiesen, handelt es sich üblicherweise um eine so genannte „shorthand“-Eigenschaft. Dabei handelt es sich um Eigenschaften, die mehrere andere Eigenschaften zusammenfassen.</p>
 <pre><code>Überschrift { Schrift-Größe: 200%; Schrift-Stil: kursiv; }
-    Selektor { Schrift: 200% kursiv; }</code></pre>
+Selektor { Schrift: 200% kursiv; }</code></pre>
                 <p>Bei der Eigenschaft „Schrift“ handelt es sich um eine „shorthand“-Eigenschaft, die die detailierteren Eigenschaften „Schrift-Größe“ und „Schrift-Stil“ kombiniert.</p>
                 <p> <a href="http://de.selfhtml.org/css/formate/einbinden.htm" target="_blank">Weitere Informationen zur Syntax von CSS</a> </p>
             </div>

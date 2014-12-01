@@ -228,8 +228,6 @@
 		-ms-appearance: none;
 		appearance: none;
 		border-radius: 5px;
-		border: none;
-		border: solid 2px #e4e4e4;
 		color: inherit;
 		display: block;
 		outline: 0;
@@ -264,7 +262,7 @@
 			content: '\f078';
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
+			font-family: FontAwesome, sans-serif;
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
@@ -330,7 +328,7 @@
 			input[type="radio"] + label:before {
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
-				font-family: FontAwesome;
+				font-family: FontAwesome, sans-serif;
 				font-style: normal;
 				font-weight: normal;
 				text-transform: none !important;
@@ -435,7 +433,7 @@
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
+			font-family: FontAwesome, sans-serif;
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
@@ -547,7 +545,7 @@
 				ul.feature-icons li:before {
 					-moz-osx-font-smoothing: grayscale;
 					-webkit-font-smoothing: antialiased;
-					font-family: FontAwesome;
+					font-family: FontAwesome, sans-serif;
 					font-style: normal;
 					font-weight: normal;
 					text-transform: none !important;
@@ -1011,6 +1009,12 @@
 						color: #4acaa8 !important;
 					}
 
+					#header > nav ul li a:hover {
+						/* TODO change highlight color */
+						background: #555;
+						color: #e0e0e0 !important;
+					}
+
 				#header > nav ul li:first-child {
 					border-top: 0;
 				}
@@ -1039,9 +1043,7 @@
 /* One */
 
 	#one:before {
-		background-image: url("../images/banner.jpg");
-		background-position: top right;
-		background-repeat: no-repeat;
+		background: url("../images/banner.jpg") no-repeat top right;
 		background-size: cover;
 		animation:infinite;
 		animation-direction:normal;
