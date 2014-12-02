@@ -943,7 +943,8 @@
 			}
 
 		#header > header {
-			padding: 3em;
+			/* Find perfect value to fix cutting off navbar content */
+			padding: 1.5em;
 		}
 
 			#header > header .avatar {
@@ -1010,8 +1011,8 @@
 					}
 
 					#header > nav ul li a:hover {
-						/* TODO change highlight color */
-						background: #555;
+						/* TODO change hover effect */
+						background: rgba(85, 85, 85, 0.25);
 						color: #e0e0e0 !important;
 					}
 
@@ -1045,8 +1046,6 @@
 	#one:before {
 		background: url("../images/banner.jpg") no-repeat top right;
 		background-size: cover;
-		animation:infinite;
-		animation-direction:normal;
 		content: '';
 		display: block;
 		height: 15em;
