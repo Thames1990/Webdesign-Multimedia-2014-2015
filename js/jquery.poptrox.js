@@ -44,9 +44,9 @@
 					usePopupEasyClose:				true,						// If true, popup can be closed by clicking on it anywhere
 					usePopupForceClose:				false,						// If true, popup can be closed even while content is loading
 					usePopupLoader:					true,						// If true, show the popup loader
-					usePopupCloser:					true,						// If true, show the popup closer button/link
+					usePopupCloser:					false,						// If true, show the popup closer button/link
 					usePopupCaption:				true,						// If true, show the popup image caption
-					usePopupNav:					false,						// If true, show (and use) popup navigation
+					usePopupNav:					true,						// If true, show (and use) popup navigation
 					usePopupDefaultStyling:			true,						// If true, default popup styling will be applied (background color, text color, etc)
 					popupBackgroundColor:			'#FFFFFF',					// (Default Style) Popup background color (when usePopupStyling = true)
 					popupTextColor:					'#000000',					// (Default Style) Popup text color (when usePopupStyling = true)
