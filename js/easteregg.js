@@ -1,4 +1,3 @@
-
 function easterEggMode() {
 	
 var img2 = document.getElementById("avatar").src;
@@ -40,36 +39,35 @@ function rotate() {
 	 $(document).mousemove(mouse);
 } 
 
-	function nMaus() {
-		var offX = 10;          
-		var offY = 10; 
-		var img3 = document.getElementById("mouseimage");
-		var safe = 1;
-		
-		img3.style.display = "block";
-		
-			$(document).mousemove(function(e){
-    			$("#mouseimage").css({left:e.pageX + offX, top:e.pageY + offY});
-			});
-		
-			document.onkeydown = function(event) {
-				
-				
-  				if (event.keyCode == 13) {
-					
-					if  (safe==1){
-						safe=0;
-						
-   					img3.src  = "images/nikoExplosion.gif";
+function nMaus() {
+	var offX = 10;
+	var offY = 10;
+	var img3 = document.getElementById("mouseimage");
+	var safe = 1;
 
-					setTimeout(function(){img3.src  = ""},2999);		
-					setTimeout(function(){img3.src  = "images/nikoNeu.gif"},3000);
-					setTimeout(function(){img3.src  = ""},4199);	
-					setTimeout(function(){img3.src  = "images/niko1.gif"}, 4200);
-					setTimeout(function(){safe=1}, 4200);
-					}
-					
- 		 		}
+	img3.style.display = "block";
+
+		$(document).mousemove(function(e){
+			$("#mouseimage").css({left:e.pageX + offX, top:e.pageY + offY});
+		});
+
+		document.onkeydown = function(event) {
+
+
+			if (event.keyCode == 13) {
+
+				if  (safe==1){
+					safe=0;
+
+				img3.src  = "images/nikoExplosion.gif";
+
+				setTimeout(function(){img3.src  = ""},2999);
+				setTimeout(function(){img3.src  = "images/nikoNeu.gif"},3000);
+				setTimeout(function(){img3.src  = ""},4199);
+				setTimeout(function(){img3.src  = "images/niko1.gif"}, 4200);
+				setTimeout(function(){safe=1}, 4200);
+				}
+
 			}
-	}
-
+		}
+}

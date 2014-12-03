@@ -10,6 +10,7 @@
         <meta name="keywords" content="HTML, CSS, Javascript, Photoshop, Perspektive, Farbenlehre, Typographie, Webdesign, Multimedia">
 
         <script src="js/jquery-2.1.1.js"></script>
+        <script src="js/jquery.poptrox.js"></script>
         <script src="js/jquery.scrollzer.js"></script>
         <script src="js/jquery.scrolly.js"></script>
         <script src="js/skel.js"></script>
@@ -82,28 +83,30 @@
                                 <h3>Perspektive</h3>
                                 <p>Perspektive (von lateinisch perspicere‚ hindurchsehen, hindurchblicken) bezeichnet die räumlichen, insbesondere linearen Verhältnisse von Objekten im Raum: Das Abstandsverhältnis von Objekten im Raum in Bezug auf den Standort des Betrachters. Damit ist die Perspektive stets an den Ort des Betrachters gebunden und kann nur durch Veränderung der Orte der Objekte und des Betrachters im Raum verändert werden.</p>
                                         <div class="features">
-                                                <article>
-                                                        <a href="images/Perspektive/Zentralperspektive.JPG" class="image" target="_blank"><img src="images/Perspektive/Zentralperspektive.JPG" alt="Zentralperspektive" title="Zentralperspektive"/></a>
-                                                        <div class="inner">
-                                                        <h4>Zentralperspektive</h4>
-                                                        <p>Zentralprojektion, eine Raumfläche liegt parallel zur Bildebene, diese wird bildparallel abgebildet, die andere orthogonal dazu – deren Raumflächen fluchten in einem Punkt.</p>
-                                                        </div>
-                                                </article>
-                                                <article>
-                                                        <a href="images/Perspektive/Froschperspektive.JPG" class="image" target="_blank"><img src="images/Perspektive/Froschperspektive.JPG" alt="Froschperspektive" title="Froschperspektive"/></a>
-                                                        <div class="inner">
-                                                        <h4>Froschperspektive</h4>
-                                                        <p>Zentralprojektion, es gibt keine bildebenenparallelen Raumkanten, der Augpunkt liegt unter dem abgebildeten Gegenstand.</p>
-                                                        </div>
-                                                </article>
-                                                <article>
-                                                        <a href="images/Perspektive/Vogelperspektive.JPG" class="image" target="_blank"><img src="images/Perspektive/Vogelperspektive.JPG" alt="Vogelperspektive" title="Vogelperspektive"/></a>
-                                                        <div class="inner">
-                                                        <h4>Vogelperspektive</h4>
-                                                        <p>Zentralprojektion, es gibt keine bildebenenparallelen Raumkanten, der Augpunkt liegt über dem abgebildeten Gegenstand.</p>
-                                                        </div>
-                                                </article>
-                                                <p><a href="perspektive.html">Weitere Informationen zu Perspektiven</a></p>
+                                                <div id="gallery">
+                                                        <article>
+                                                                <a href="images/Perspektive/Zentralperspektive.JPG" class="image"><img src="images/Perspektive/Zentralperspektive.JPG" alt="Zentralperspektive" title="Zentralperspektive"/></a>
+                                                                <div class="inner">
+                                                                        <h4>Zentralperspektive</h4>
+                                                                        <p>Zentralprojektion, eine Raumfläche liegt parallel zur Bildebene, diese wird bildparallel abgebildet, die andere orthogonal dazu – deren Raumflächen fluchten in einem Punkt.</p>
+                                                                </div>
+                                                        </article>
+                                                        <article>
+                                                                <a href="images/Perspektive/Froschperspektive.JPG" class="image"><img src="images/Perspektive/Froschperspektive.JPG" alt="Froschperspektive" title="Froschperspektive"/></a>
+                                                                <div class="inner">
+                                                                        <h4>Froschperspektive</h4>
+                                                                        <p>Zentralprojektion, es gibt keine bildebenenparallelen Raumkanten, der Augpunkt liegt unter dem abgebildeten Gegenstand.</p>
+                                                                </div>
+                                                        </article>
+                                                        <article>
+                                                                <a href="images/Perspektive/Vogelperspektive.JPG" class="image"><img src="images/Perspektive/Vogelperspektive.JPG" alt="Vogelperspektive" title="Vogelperspektive"/></a>
+                                                                <div class="inner">
+                                                                        <h4>Vogelperspektive</h4>
+                                                                        <p>Zentralprojektion, es gibt keine bildebenenparallelen Raumkanten, der Augpunkt liegt über dem abgebildeten Gegenstand.</p>
+                                                                </div>
+                                                        </article>
+                                                        <p><a href="perspektive.html">Weitere Informationen zu Perspektiven</a></p>
+                                                </div>
                                         </div>
                         </div>
                 </section>
@@ -175,6 +178,11 @@
                         </ul>
                 </div>
         </section>
+
+        <script>
+                var foo = $("#gallery");
+                foo.poptrox();
+        </script>
 </div>
 </body>
 </html>
