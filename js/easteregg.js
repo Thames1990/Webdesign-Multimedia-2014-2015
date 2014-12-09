@@ -4,9 +4,9 @@ var img2 = document.getElementById("avatar").src;
 			
 	if (img2.indexOf("images/avatar.jpg") != -1) {
 		$(document).scrollTop(0);
-		document.getElementById("one").style.backgroundImage = "url(images/bannerstart.gif)";
-		setTimeout(function() {document.getElementById("one").style.backgroundImage = "url(images/banner2.jpg)"},5500);
-		document.getElementById("avatar").src  = "images/avatar alt.jpg";
+		document.getElementById("one").style.backgroundImage = "url(images/EasterEgg/bannerstart.gif)";
+		setTimeout(function() {document.getElementById("one").style.backgroundImage = "url(images/EasterEgg/banner2.jpg)"},5500);
+		document.getElementById("avatar").src  = "images/EasterEgg/avatar alt.jpg";
 		rotate();
 		nMaus();
 		
@@ -47,9 +47,20 @@ function nMaus() {
 
 	img3.style.display = "block";
 
-		$(document).mousemove(function(e){
-			$("#mouseimage").css({left:e.pageX + offX, top:e.pageY + offY});
-		});
+	$(document).mousemove(function(e){
+
+		$("#mouseimage").css({left:e.pageX + offX, top:e.pageY + offY});
+
+		if ( e.pageX > ($(document).width()-200)){
+			$("#mouseimage").css({left:e.pageX - 150, top:e.pageY + offY});
+		}
+		if ( e.pageY > ($(document).height()-200)){
+			$("#mouseimage").css({left:e.pageX - offX, top:e.pageY - 150});
+		}
+		if ( e.pageY > ($(document).height()-200) && e.pageX > ($(document).width()-200)){
+			$("#mouseimage").css({left:e.pageX - 150, top:e.pageY - 150});
+		}
+	});
 
 		document.onkeydown = function(event) {
 
@@ -59,12 +70,12 @@ function nMaus() {
 				if  (safe==1){
 					safe=0;
 
-				img3.src  = "images/nikoExplosion.gif";
+				img3.src  = "images/EasterEgg/nikoExplosion.gif";
 
 				setTimeout(function(){img3.src  = ""},2999);
-				setTimeout(function(){img3.src  = "images/nikoNeu.gif"},3000);
+				setTimeout(function(){img3.src  = "images/EasterEgg/nikoNeu.gif"},3000);
 				setTimeout(function(){img3.src  = ""},4199);
-				setTimeout(function(){img3.src  = "images/niko1.gif"}, 4200);
+				setTimeout(function(){img3.src  = "images/EasterEgg/niko1.gif"}, 4200);
 				setTimeout(function(){safe=1}, 4200);
 				}
 
