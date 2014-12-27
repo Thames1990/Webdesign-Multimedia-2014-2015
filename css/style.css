@@ -198,6 +198,7 @@
 			margin-top: -0.75em;
 		}
 
+/* TODO delete? */
 /* Form */
 
 	form {
@@ -949,7 +950,7 @@
 			}
 
 		#header > header {
-			/* Find perfect value to fix cutting off navbar content */
+			/* TODO Find perfect value to fix cutting off navbar content */
 			padding: 1.5em;
 		}
 
@@ -1050,21 +1051,17 @@
 
 /* One */
 	#one {
-		background-image:url(../images/banner.jpg);
-		background-repeat:no-repeat;
-		background-position:10000px 10000px;
+		background: url(../images/banner.jpg) no-repeat 10000px 10000px;
 	}
 
 	#one:before {
 
+		background: no-repeat top right;
 		background-image: inherit;
-		background-position: top right;
-		background-repeat: no-repeat;
 		background-size: cover;
-		animation:infinite;
-		animation-direction:normal;
 		content: '';
 		display: block;
+		/* TODO optimize banner height */
 		height: 15em;
 		max-height:inherit;
 		max-width:inherit;
