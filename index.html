@@ -175,7 +175,7 @@
                 <section id="eight">
                         <div class="container">
                                 <div class="features">
-                                        <h3>CMS</h3>
+                                        <h3>Content-Management-System</h3>
                                         <p>Gluten resisteres, tanquam neuter indictio.</p>
                                         <p><a href="cms.html">Weitere Informationen zu CMS</a></p>
                                 </div>
@@ -187,7 +187,7 @@
                         <div class="container">
                                 <div class="features">
                                         <h3>Fotoserien</h3>
-                                        <p>Vae, mons!</p>
+                                        <p>Hier finden Sie eine Auswahl der Fotoserien, welche im Wintersemester 2014/2015 im Modul Webdesign-Multimedia entstanden.</p>
                                         <p><a href="fotoserien.html">Weitere Informationen zu den Fotoserien</a></p>
                                 </div>
                         </div>
@@ -204,8 +204,33 @@
         </section>
 
         <script>
-                $(document).ready(function ($) {
-                        $("#gallery").poptrox();
+                var isMobile = {
+                        Android: function() {
+                                return navigator.userAgent.match(/Android/i);
+                        },
+                        BlackBerry: function() {
+                                return navigator.userAgent.match(/BlackBerry/i);
+                        },
+                        iOS: function() {
+                                return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+                        },
+                        Opera: function() {
+                                return navigator.userAgent.match(/Opera Mini/i);
+                        },
+                        Windows: function() {
+                                return navigator.userAgent.match(/IEMobile/i);
+                        },
+                        any: function() {
+                                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS());
+                        }
+                };
+
+                jQuery(document).ready(function() {
+                        if (!isMobile.any()) {
+                                var galleryId = $("#gallery");
+                                galleryId.poptrox();
+                        }
+
                 });
         </script>
 </div>
