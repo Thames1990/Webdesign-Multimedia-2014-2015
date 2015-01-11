@@ -13,6 +13,7 @@
     <script src="js/skel.js"></script>
     <script src="js/skel-layers.js"></script>
     <script src="js/init.js"></script>
+    <script src="js/lightbox.js"></script>
 
     <noscript>
         <link rel="stylesheet" href="css/skel.css" />
@@ -53,37 +54,6 @@
         </section>
 
     </div>
-
-    <script>
-        var isMobile = {
-            Android: function() {
-                return navigator.userAgent.match(/Android/i);
-            },
-            BlackBerry: function() {
-                return navigator.userAgent.match(/BlackBerry/i);
-            },
-            iOS: function() {
-                return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-            },
-            Opera: function() {
-                return navigator.userAgent.match(/Opera Mini/i);
-            },
-            Windows: function() {
-                return navigator.userAgent.match(/IEMobile/i);
-            },
-            any: function() {
-                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS());
-            }
-        };
-
-        jQuery(document).ready(function() {
-            if (!isMobile.any()) {
-                var galleryId = $("#gallery");
-                galleryId.poptrox();
-            }
-
-        });
-    </script>
 
     <!-- Footer -->
     <section id="footer">

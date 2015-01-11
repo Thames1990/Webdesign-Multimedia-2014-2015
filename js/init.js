@@ -23,6 +23,7 @@
 					height: 44,
 					position: 'top-left',
 					side: 'top',
+					//TODO add onclick open index.html for mobile variants
 					html: '<span class="toggle" data-action="toggleLayer" data-args="sidePanel"></span><span class="title" data-action="copyText" data-args="logo"></span>'
 				},
 				sidePanel: {

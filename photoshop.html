@@ -6,7 +6,7 @@
 
     <meta name="author" content="Thomas Mohr, Michael Hermel, Adrian Nitschmann, Niko Rothe">
     <meta charset="UTF-8">
-
+    
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/jquery.poptrox.js"></script>
     <script src="js/jquery.scrollzer.js"></script>
@@ -14,6 +14,7 @@
     <script src="js/skel.js"></script>
     <script src="js/skel-layers.js"></script>
     <script src="js/init.js"></script>
+    <script src="js/lightbox.js"></script>
 
     <noscript>
         <link rel="stylesheet" href="css/skel.css" />
@@ -28,7 +29,13 @@
     <!-- Header -->
     <section id="header" class="skel-layers-fixed">
         <header>
-            <span class="image avatar"><img src="images/avatar.jpg" alt="avatar" id="avatar" onDblClick="easterEggMode()"/></span>
+            <span class="image avatar">
+                <img
+                        src="images/avatar.jpg"
+                        alt="avatar"
+                        id="avatar"
+                        onDblClick="easterEggMode()"/>
+            </span>
             <h1 id="logo"><a href="index.html">Webdesign Multimedia</a></h1>
         </header>
         <nav id="nav">
@@ -65,13 +72,26 @@
                     <p>Sie können sich Photoshop-Ebenen wie transparente Folien vorstellen, die übereinander angeordnet sind. Durch die transparenten Bereiche einer Ebene können Sie die darunter liegenden Ebenen sehen. Sie bewegen eine Ebene, um den Inhalt auf der Ebene zu positionieren, so als würden Sie eine Transparentfolie in einen Stapel schieben. Sie können auch die Deckkraft einer Ebene ändern, um den Inhalt teilweise transparent zu machen.</p>
                     <div class="features">
                         <article>
-                            <a href="images/Photoshop/Ebenen/ebenen.jpg" class="image"><img src="images/Photoshop/Ebenen/ebenen.jpg" alt="Ebenen" title="Ebenen"/></a>
+                            <a href="images/Photoshop/Ebenen/ebenen.jpg" class="image">
+                                <img
+                                        src="images/Photoshop/Ebenen/ebenen.jpg"
+                                        onclick="lightbox()"
+                                        alt="Ebenen"
+                                        title="Ebenen"/>
+                            </a>
                             <div class="inner">
                                 <p>Ebenen werden zum Ausführen von Aufgaben wie dem Anordnen mehrerer Bilder, dem Hinzufügen von Vektorgrafikformen oder dem Hinzufügen von Text zu einem Bild verwendet. Sie können einen Ebenenstil anwenden, um einen Spezialeffekt, z. B. einen Schlagschatten oder einen Schein, hinzuzufügen.</p>
                             </div>
                         </article>
                         <article>
-                            <a href="images/Photoshop/Ebenen/ebenen.gif" class="image"><img src="images/Photoshop/Ebenen/ebenen.gif" style="border:solid" alt="Ebenen" title="Ebenen"/></a>
+                            <a href="images/Photoshop/Ebenen/ebenen.gif" class="image">
+                                <img
+                                        src="images/Photoshop/Ebenen/ebenen.gif"
+                                        onclick="lightbox()"
+                                        style="border:solid"
+                                        alt="Ebenen"
+                                        title="Ebenen"/>
+                            </a>
                             <div class="inner">
                                 <p>In diesem Beispiel wird das Bild in die Ebenen "Fassade", "Fenster" und "Fensterrahmen" unterteilt.</p>
                                 <p>Mit mehreren Ebenen kann man einzelne Elemente des Bildes individuell bearbeiten und zum Beispiel die Fassade verändern, ohne dass die angewandten Effekte auf alle Ebenen angewandt werden.</p>
@@ -89,7 +109,13 @@
                     <p>Ziehen Sie mit dem Lineal eine Gerade und richten Sie das Bild über die obere Menüleiste durch "Bild -> Bilddrehung -> Per Eingabe" aus. Photoshop erkennt automatisch, ob es sich um eine horizontale oder vertikale Linie handelt und richtet das Bild an diesem "Horizont" aus.</p>
                     <div class="features">
                         <article>
-                            <a href="images/Photoshop/Ausrichtung/Fenster%20Lineal%20Ausrichtung.jpg" class="image"><img src="images/Photoshop/Ausrichtung/Fenster%20Lineal%20Ausrichtung.jpg" alt="Lineal Ausrichtung" title="Lineal Ausrichtung"/></a>
+                            <a href="images/Photoshop/Ausrichtung/Fenster%20Lineal%20Ausrichtung.jpg" class="image">
+                                <img
+                                        src="images/Photoshop/Ausrichtung/Fenster%20Lineal%20Ausrichtung.jpg"
+                                        onclick="lightbox()"
+                                        alt="Lineal Ausrichtung"
+                                        title="Lineal Ausrichtung"/>
+                            </a>
                             <div class="inner">
                                 <p>Alternativ kann man auch ab Photoshop CS6 über das "Freistellungswerkzeug" das Bild gerade ausrichten. Der Vorteil dieser Methode ist, dass Photoshop das Bild automatisch zurecht schneidet.</p>
                             </div>
@@ -106,25 +132,49 @@
                     <div class="features">
                         <h3>Gradiationskurven</h3>
                         <article>
-                            <a href="images/Photoshop/Gradiationskurven/Graditationskurven.png" class="image"><img src="images/Photoshop/Gradiationskurven/Graditationskurven.png" alt="Graditationskurven" title="Graditationskurven"/></a>
+                            <a href="images/Photoshop/Gradiationskurven/Graditationskurven.png" class="image">
+                                <img
+                                        src="images/Photoshop/Gradiationskurven/Graditationskurven.png"
+                                        onclick="lightbox()"
+                                        alt="Graditationskurven"
+                                        title="Graditationskurven"/>
+                            </a>
                             <div class="inner">
                                 <p>Gradationskurven sind ein sehr mächtiges Tool, das - wenn man es gekonnt einsetzt - andere Einstellungsdialoge wie Helligkeit/Kontrast unbrauchbar macht. Um sich aber mit den Gradationskurven vertraut zu machen, bedarf es etwas Einarbeitung und Wissen über das Verhalten von Farb- und Grautönen.</p>
                             </div>
                         </article>
                         <article>
-                            <a href="images/Photoshop/Fenster.jpg" class="image"><img src="images/Photoshop/Fenster.jpg" alt="Original" title="Original"></a>
+                            <a href="images/Photoshop/Fenster.jpg" class="image">
+                                <img
+                                        src="images/Photoshop/Fenster.jpg"
+                                        onclick="lightbox()"
+                                        alt="Original"
+                                        title="Original">
+                            </a>
                             <div class="inner">
                                 <p>Dies ist das Bild des Fensters ohne jegliche Korrektur. Wie wir hier sehen können wirkt das Bild allgemein zu dunkel. Dies können wir durch das Gradiationskurven-Tool verändern.</p>
                             </div>
                         </article>
                         <article>
-                            <a href="images/Photoshop/Gradiationskurven/Gradiationskurve%20Fenster.png" class="image"><img src="images/Photoshop/Gradiationskurven/Gradiationskurve%20Fenster.png" alt="Gradiationskurve Fenster" title="Gradiationskurve Fenster"></a>
+                            <a href="images/Photoshop/Gradiationskurven/Gradiationskurve%20Fenster.png" class="image">
+                                <img
+                                        src="images/Photoshop/Gradiationskurven/Gradiationskurve%20Fenster.png"
+                                        onclick="lightbox()"
+                                        alt="Gradiationskurve Fenster"
+                                        title="Gradiationskurve Fenster">
+                            </a>
                             <div class="inner">
                                 <p>Mit dem Gradiationskurven-Tool können wir nun viele Änderungen vornehmen. Einerseits ändern wir hier die Tiefen (Anfang der Kurve), die Höhen (Ende der Kurve), sowie den allgemeinen Kontrast und die Helligkeit anhand der Kurvenform.</p>
                             </div>
                         </article>
                         <article>
-                            <a href="images/Photoshop/Gradiationskurven/Fenster%20korrigiert.jpg" class="image"><img src="images/Photoshop/Gradiationskurven/Fenster%20korrigiert.jpg" alt="Fenster mit Änderung der Gradiationskurve" title="Fenster mit Änderung der Gradiationskurve"></a>
+                            <a href="images/Photoshop/Gradiationskurven/Fenster%20korrigiert.jpg" class="image">
+                                <img
+                                        src="images/Photoshop/Gradiationskurven/Fenster%20korrigiert.jpg"
+                                        onclick="lightbox()"
+                                        alt="Fenster mit Änderung der Gradiationskurve"
+                                        title="Fenster mit Änderung der Gradiationskurve">
+                            </a>
                             <div class="inner">
                                 <p>Nach der Bearbeitung des Bildes durch das Gradiationskurven-Tool wirkt das Bild nun deutlich heller und insgesamt besser abgestimmt zwischen Helligkeit und Kontrast.</p>
                             </div>
@@ -132,19 +182,37 @@
                         <h3>Farbton/Sättigung</h3>
                         <p>Mit dem Befehl „Farbton/Sättigung“ können Sie den Farbton, die Sättigung und die Helligkeit eines bestimmten Farbbereichs in einem Bild anpassen oder alle Farben im Bild gleichzeitig korrigieren. Diese Korrektur eignet sich speziell für die Feineinstellung von Farben in CMYK-Bildern, sodass diese innerhalb des Farbumfangs des jeweiligen Ausgabegeräts liegen.</p>
                         <article>
-                            <a href="images/Photoshop/Farbton/Cyanotopie.jpg" class="image"><img src="images/Photoshop/Farbton/Cyanotopie.jpg" alt="Cyanotopie" title="Cyanotopie"></a>
+                            <a href="images/Photoshop/Farbton/Cyanotopie.jpg" class="image">
+                                <img
+                                        src="images/Photoshop/Farbton/Cyanotopie.jpg"
+                                        onclick="lightbox()"
+                                        alt="Cyanotopie"
+                                        title="Cyanotopie">
+                            </a>
                             <div class="inner">
                                 <p>Cyanotypie ist eine der ältesten Methoden, Bilder auf Trägermaterialien zu fixieren. Kurz gesagt kommt die Blaufärbung durch die dabei eingesetzten Chemikalien zustande. Dieser Effekt kann auch digital in Photoshop erreicht werden.</p>
                             </div>
                         </article>
                         <article>
-                            <a href="images/Photoshop/Farbton/Sepia.jpg" class="image"><img src="images/Photoshop/Farbton/Sepia.jpg" alt="Sepia" title="Sepia"></a>
+                            <a href="images/Photoshop/Farbton/Sepia.jpg" class="image">
+                                <img
+                                        src="images/Photoshop/Farbton/Sepia.jpg"
+                                        onclick="lightbox()"
+                                        alt="Sepia"
+                                        title="Sepia">
+                            </a>
                             <div class="inner">
                                 <p>Die Fotos der Großeltern sind nicht mit Sepia-Effekt fotografiert worden, sondern waren ursprünglich schwarz-weiß. Durch UV-Strahlung ist der Schwarz-Anteil im Laufe der Jahre zu einem Braunton verblasst, und der ehemals weiße Bildteil ist vergilbt. Dieser Effekt kann auch digital in Photoshop erreicht werden.</p>
                             </div>
                         </article>
                         <article>
-                            <a href="images/Photoshop/Farbton/Starke%20Saettigung.jpg" class="image"><img src="images/Photoshop/Farbton/Starke%20Saettigung.jpg" alt="Starke Sättigung" title="Starke Sättigung"></a>
+                            <a href="images/Photoshop/Farbton/Starke%20Saettigung.jpg" class="image">
+                                <img
+                                        src="images/Photoshop/Farbton/Starke%20Saettigung.jpg"
+                                        onclick="lightbox()"
+                                        alt="Starke Sättigung" 
+                                        title="Starke Sättigung">
+                            </a>
                             <div class="inner">
                                 <p>Die Farbsättigung, auch Sättigung, ist – neben Farbton und Helligkeit – eine der drei vom Menschen als grundlegend empfundenen Eigenschaften einer Farbe. Sie beschreibt die Qualität der Farbwirkung. Spezielle Wertigkeiten wie Buntheit, Farbigkeit (Farbintensität), Chromatizität, Farbtiefe, Brillanz, im Gegenteil Graustich, Stumpfheit, beschreiben verwandte Phänomene für bunte und unbunte Farben.</p>
                             </div>
@@ -160,14 +228,26 @@
                     <p>Dodge and Burn (zu deutsch Abwedeln und Nachbelichten) ist eine Technik die es schon lange vor Photoshop in Dunkelkammer gab. Die Technik wird größtenteils dafür verwendet einem Bild einen eigenen Stil zu verpassen, so kann damit zb. malerische oder auch surreale Effekte erzielen.</p>
                     <div class="features">
                         <article>
-                            <a href="images/Photoshop/Dodge%20&%20Burn/Dodge.jpg" class="image"><img src="images/Photoshop/Dodge%20&%20Burn/Dodge.jpg" alt="Dodge" title="Dodge"/></a>
+                            <a href="images/Photoshop/Dodge%20&%20Burn/Dodge.jpg" class="image">
+                                <img
+                                        src="images/Photoshop/Dodge%20&%20Burn/Dodge.jpg"
+                                        onclick="lightbox()"
+                                        alt="Dodge"
+                                        title="Dodge"/>
+                            </a>
                             <div class="inner">
                                 <p>Der Abwedler erhält Bildbereiche (sichtbar auf der rechten Seite der Fassade).</p>
                                 <p>Damit kann man den Fokus auf bestimmte Bildbereiche erhöhen.</p>
                             </div>
                         </article>
                         <article>
-                            <a href="images/Photoshop/Dodge%20&%20Burn/Burn.jpg" class="image"><img src="images/Photoshop/Dodge%20&%20Burn/Burn.jpg" alt="Burn" title="Burn"/></a>
+                            <a href="images/Photoshop/Dodge%20&%20Burn/Burn.jpg" class="image">
+                                <img
+                                        src="images/Photoshop/Dodge%20&%20Burn/Burn.jpg"
+                                        onclick="lightbox()"
+                                        alt="Burn"
+                                        title="Burn"/>
+                            </a>
                             <div class="inner">
                                 <p>Der Nachbelichter dunkelt Bildbereiche ab (sichtbar auf der linken Seite der Fassade).</p>
                                 <p>Damit kann man den Fokus auf bestimmte Bildbereiche minimieren.</p>
@@ -187,37 +267,6 @@
                 </ul>
             </div>
         </section>
-
-        <script>
-            var isMobile = {
-                Android: function() {
-                    return navigator.userAgent.match(/Android/i);
-                },
-                BlackBerry: function() {
-                    return navigator.userAgent.match(/BlackBerry/i);
-                },
-                iOS: function() {
-                    return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-                },
-                Opera: function() {
-                    return navigator.userAgent.match(/Opera Mini/i);
-                },
-                Windows: function() {
-                    return navigator.userAgent.match(/IEMobile/i);
-                },
-                any: function() {
-                    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS());
-                }
-            };
-
-            jQuery(document).ready(function() {
-                if (!isMobile.any()) {
-                    var galleryId = $("#gallery");
-                    galleryId.poptrox();
-                }
-
-            });
-        </script>
     </div>
 
 </div>
