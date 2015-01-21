@@ -7,7 +7,7 @@
     <meta name="author" content="Thomas Mohr, Michael Hermel, Adrian Nitschmann, Niko Rothe">
     <meta charset="UTF-8">
 
-    <script src="js/jquery-2.1.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/jquery.poptrox.js"></script>
     <script src="js/jquery.scrollzer.js"></script>
     <script src="js/jquery.scrolly.js"></script>
@@ -25,7 +25,7 @@
 
 </head>
 
-<body onload="">
+<body>
 <div id="wrapper">
 
     <!-- Header -->
@@ -281,20 +281,6 @@
             </div>
         </section>
     </div>
-    
-    <script>
-        function setBannerHeight() {
-            var header_height = $("header").outerHeight();
-
-            $('head').append('<style>' +
-            '#one:before{' +
-            'height: '+header_height+'px;' +
-            '}'+
-            '</style>')
-        }
-        window.onload = setBannerHeight();
-        window.onresize = setBannerHeight();
-    </script>
 
     <!-- Footer -->
     <section id="footer">
@@ -304,6 +290,22 @@
             </ul>
         </div>
     </section>
+
+    <script>
+        function setBannerHeight() {
+            var header_height = $("header").outerHeight();
+            $('head').append('<style>' +
+            '#one:before{' +
+            'height: ' + header_height + 'px;' +
+            '}' +
+            '</style>')
+        }
+
+        window.onload = setBannerHeight();
+        //TODO find a way to call setBannerHeight() onresize without deactivating mobile layouts and text wrapping
+        //        window.onresize = setBannerHeight();
+    </script>
+
 </div>
 <img id="mouseimage" src="images/EasterEgg/niko1.gif"/>
 </body>

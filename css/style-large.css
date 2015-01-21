@@ -6,18 +6,18 @@
 
 /* Basic */
 
-	body, input, select, textarea {
-		font-size: 11pt;
-	}
+body, input, select, textarea {
+    font-size: 11pt;
+}
 
 /* Header */
 
-	#header {
-		width: 20em;
-	}
+#header {
+    width: 20em;
+}
 
 /* Wrapper */
 
-	#wrapper {
-		padding-right: 20em;
-	}
+#wrapper {
+    padding-right: 20em;
+}

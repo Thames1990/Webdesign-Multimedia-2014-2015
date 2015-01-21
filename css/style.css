@@ -950,12 +950,13 @@ input[type="button"]:disabled,
 }
 
 #header > header {
+    /* TODO Find perfect value to fix cutting off navbar content */
     padding: 2em;
 }
 
 #header > header .avatar {
     display: block;
-    margin: 0 auto 1em auto;
+    margin: 0 auto 2.25em auto;
     width: 7em;
 }
 
@@ -1059,6 +1060,8 @@ input[type="button"]:disabled,
     background-size: cover;
     content: '';
     display: block;
+    /* TODO optimize banner height */
+    /* TODO set size equal to header */
     height: 16em;
     max-height: inherit;
     max-width: inherit;

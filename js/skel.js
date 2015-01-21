@@ -9,7 +9,7 @@
  UMD Wrapper (github.com/umdjs/umd/blob/master/returnExports.js | @umdjs + @nason)
  */
 
-var skel = (function() {
+var skel = (function () {
 
     /**************************************************************************/
     /* skel Object                                                            */
@@ -156,44 +156,44 @@ var skel = (function() {
             r: 'html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:\'\';content:none}table{border-collapse:collapse;border-spacing:0}body{-webkit-text-size-adjust:none}',
 
             // Grid cells.
-            gc: function(x) {
-                return	'.\\31 2u'+x+',.\\31 2u\\24'+x+'{width:100%;clear:none;margin-left:0}' +
-                    '.\\31 1u'+x+',.\\31 1u\\24'+x+'{width:91.6666666667%;clear:none;margin-left:0}' +
-                    '.\\31 0u'+x+',.\\31 0u\\24'+x+'{width:83.3333333333%;clear:none;margin-left:0}' +
-                    '.\\39 u'+x+',.\\39 u\\24'+x+'{width:75%;clear:none;margin-left:0}' +
-                    '.\\38 u'+x+',.\\38 u\\24'+x+'{width:66.6666666667%;clear:none;margin-left:0}' +
-                    '.\\37 u'+x+',.\\37 u\\24'+x+'{width:58.3333333333%;clear:none;margin-left:0}' +
-                    '.\\36 u'+x+',.\\36 u\\24'+x+'{width:50%;clear:none;margin-left:0}' +
-                    '.\\35 u'+x+',.\\35 u\\24'+x+'{width:41.6666666667%;clear:none;margin-left:0}' +
-                    '.\\34 u'+x+',.\\34 u\\24'+x+'{width:33.3333333333%;clear:none;margin-left:0}' +
-                    '.\\33 u'+x+',.\\33 u\\24'+x+'{width:25%;clear:none;margin-left:0}' +
-                    '.\\32 u'+x+',.\\32 u\\24'+x+'{width:16.6666666667%;clear:none;margin-left:0}' +
-                    '.\\31 u'+x+',.\\31 u\\24'+x+'{width:8.3333333333%;clear:none;margin-left:0}' +
-                    '.\\31 2u\\24'+x+'+*,' +
-                    '.\\31 1u\\24'+x+'+*,' +
-                    '.\\31 0u\\24'+x+'+*,' +
-                    '.\\39 u\\24'+x+'+*,' +
-                    '.\\38 u\\24'+x+'+*,' +
-                    '.\\37 u\\24'+x+'+*,' +
-                    '.\\36 u\\24'+x+'+*,' +
-                    '.\\35 u\\24'+x+'+*,' +
-                    '.\\34 u\\24'+x+'+*,' +
-                    '.\\33 u\\24'+x+'+*,' +
-                    '.\\32 u\\24'+x+'+*,' +
-                    '.\\31 u\\24'+x+'+*{' +
+            gc: function (x) {
+                return '.\\31 2u' + x + ',.\\31 2u\\24' + x + '{width:100%;clear:none;margin-left:0}' +
+                    '.\\31 1u' + x + ',.\\31 1u\\24' + x + '{width:91.6666666667%;clear:none;margin-left:0}' +
+                    '.\\31 0u' + x + ',.\\31 0u\\24' + x + '{width:83.3333333333%;clear:none;margin-left:0}' +
+                    '.\\39 u' + x + ',.\\39 u\\24' + x + '{width:75%;clear:none;margin-left:0}' +
+                    '.\\38 u' + x + ',.\\38 u\\24' + x + '{width:66.6666666667%;clear:none;margin-left:0}' +
+                    '.\\37 u' + x + ',.\\37 u\\24' + x + '{width:58.3333333333%;clear:none;margin-left:0}' +
+                    '.\\36 u' + x + ',.\\36 u\\24' + x + '{width:50%;clear:none;margin-left:0}' +
+                    '.\\35 u' + x + ',.\\35 u\\24' + x + '{width:41.6666666667%;clear:none;margin-left:0}' +
+                    '.\\34 u' + x + ',.\\34 u\\24' + x + '{width:33.3333333333%;clear:none;margin-left:0}' +
+                    '.\\33 u' + x + ',.\\33 u\\24' + x + '{width:25%;clear:none;margin-left:0}' +
+                    '.\\32 u' + x + ',.\\32 u\\24' + x + '{width:16.6666666667%;clear:none;margin-left:0}' +
+                    '.\\31 u' + x + ',.\\31 u\\24' + x + '{width:8.3333333333%;clear:none;margin-left:0}' +
+                    '.\\31 2u\\24' + x + '+*,' +
+                    '.\\31 1u\\24' + x + '+*,' +
+                    '.\\31 0u\\24' + x + '+*,' +
+                    '.\\39 u\\24' + x + '+*,' +
+                    '.\\38 u\\24' + x + '+*,' +
+                    '.\\37 u\\24' + x + '+*,' +
+                    '.\\36 u\\24' + x + '+*,' +
+                    '.\\35 u\\24' + x + '+*,' +
+                    '.\\34 u\\24' + x + '+*,' +
+                    '.\\33 u\\24' + x + '+*,' +
+                    '.\\32 u\\24' + x + '+*,' +
+                    '.\\31 u\\24' + x + '+*{' +
                     'clear:left;' +
                     '}' +
-                    '.\\-11u'+x+'{margin-left:91.6666666667%}' +
-                    '.\\-10u'+x+'{margin-left:83.3333333333%}' +
-                    '.\\-9u'+x+'{margin-left:75%}' +
-                    '.\\-8u'+x+'{margin-left:66.6666666667%}' +
-                    '.\\-7u'+x+'{margin-left:58.3333333333%}' +
-                    '.\\-6u'+x+'{margin-left:50%}' +
-                    '.\\-5u'+x+'{margin-left:41.6666666667%}' +
-                    '.\\-4u'+x+'{margin-left:33.3333333333%}' +
-                    '.\\-3u'+x+'{margin-left:25%}' +
-                    '.\\-2u'+x+'{margin-left:16.6666666667%}' +
-                    '.\\-1u'+x+'{margin-left:8.3333333333%}'
+                    '.\\-11u' + x + '{margin-left:91.6666666667%}' +
+                    '.\\-10u' + x + '{margin-left:83.3333333333%}' +
+                    '.\\-9u' + x + '{margin-left:75%}' +
+                    '.\\-8u' + x + '{margin-left:66.6666666667%}' +
+                    '.\\-7u' + x + '{margin-left:58.3333333333%}' +
+                    '.\\-6u' + x + '{margin-left:50%}' +
+                    '.\\-5u' + x + '{margin-left:41.6666666667%}' +
+                    '.\\-4u' + x + '{margin-left:33.3333333333%}' +
+                    '.\\-3u' + x + '{margin-left:25%}' +
+                    '.\\-2u' + x + '{margin-left:16.6666666667%}' +
+                    '.\\-1u' + x + '{margin-left:8.3333333333%}'
 
             }
 
@@ -387,7 +387,7 @@ var skel = (function() {
          * @param {string} p Property.
          * @return {bool} True if property is supported, false if not.
          */
-        canUseProperty: function(p) {
+        canUseProperty: function (p) {
 
             if (!_.canUseProperty_element)
                 _.canUseProperty_element = document.createElement('div');
@@ -395,12 +395,12 @@ var skel = (function() {
             var e = _.canUseProperty_element.style,
                 up = p.charAt(0).toUpperCase() + p.slice(1);
 
-            return	(
+            return (
             p in e
-            ||	('Moz' + up) in e
-            ||	('Webkit' + up) in e
-            ||	('O' + up) in e
-            ||	('ms' + up) in e
+            || ('Moz' + up) in e
+            || ('Webkit' + up) in e
+            || ('O' + up) in e
+            || ('ms' + up) in e
             );
 
         },
@@ -410,11 +410,11 @@ var skel = (function() {
          * @param {object} x Target object.
          * @param {object} y Source object.
          */
-        extend: function(x, y) {
+        extend: function (x, y) {
 
             var k;
 
-            _.iterate(y, function(k) {
+            _.iterate(y, function (k) {
 
                 if (_.isArray(y[k])) {
 
@@ -444,7 +444,7 @@ var skel = (function() {
          * @param {mixed} Variable.
          * @return {Array} Array.
          */
-        getArray: function(x) {
+        getArray: function (x) {
 
             if (_.isArray(x))
                 return x;
@@ -458,16 +458,16 @@ var skel = (function() {
          * @param {string} x CSS measurement.
          * @return {Array} Results, where element 0 = (float) numeric part, and 1 = (string) unit part.
          */
-        parseMeasurement: function(x) {
+        parseMeasurement: function (x) {
 
             var a, tmp;
 
             // Not a string? Just assume it's in px.
             if (typeof x !== 'string')
-                a = [x,'px'];
+                a = [x, 'px'];
             // Fluid shortcut?
             else if (x == 'fluid')
-                a = [100,'%'];
+                a = [100, '%'];
             // Okay, hard way it is ...
             else {
 
@@ -477,10 +477,10 @@ var skel = (function() {
 
                 // Missing units? Assume it's in px.
                 if (tmp.length < 3 || !tmp[2])
-                    a = [parseFloat(x),'px'];
+                    a = [parseFloat(x), 'px'];
                 // Otherwise, we have a winrar.
                 else
-                    a = [parseFloat(tmp[1]),tmp[2]];
+                    a = [parseFloat(tmp[1]), tmp[2]];
 
             }
 
@@ -495,7 +495,7 @@ var skel = (function() {
          * @param {string} k Breakpoint ID.
          * @return {bool} Breakpoint applicability.
          */
-        canUse: function(k) {
+        canUse: function (k) {
 
             return (
             _.breakpoints[k]
@@ -509,11 +509,11 @@ var skel = (function() {
          * @param {Array} a Array of breakpoint IDs.
          * @return {bool} Breakpoint state.
          */
-        hasActive: function(a) {
+        hasActive: function (a) {
 
             var result = false;
 
-            _.iterate(a, function(i) {
+            _.iterate(a, function (i) {
                 result = result || _.isActive(a[i]);
             });
 
@@ -526,7 +526,7 @@ var skel = (function() {
          * @param {string} k Breakpoint ID.
          * @return {bool} Breakpoint state.
          */
-        isActive: function(k) {
+        isActive: function (k) {
 
             return (_.indexOf(_.stateId, _.sd + k) !== -1);
 
@@ -535,7 +535,7 @@ var skel = (function() {
         /**
          * Determines if a lock is in effect.
          */
-        isLocked: function() {
+        isLocked: function () {
 
             return (!!_.vars.lock && _.isArray(_.vars.lock));
 
@@ -546,13 +546,13 @@ var skel = (function() {
          * @param {integer} w Width.
          * @param {integer} h Height.
          */
-        lock: function(w, h) {
+        lock: function (w, h) {
 
             // Set var.
             _.vars.lock = [w, h];
 
             // Set cookie.
-            document.cookie =	_.lcn + '=' + _.vars.lock.join('_') +
+            document.cookie = _.lcn + '=' + _.vars.lock.join('_') +
             (_.config.lock.path ? ';path=' + _.config.lock.path : '') +
             (_.config.lock.permanent ? ';expires=Tue, 19 Jan 2038 03:14:07 GMT' : '');
 
@@ -566,13 +566,13 @@ var skel = (function() {
         /**
          * Removes a previously set viewport lock and reloads the page.
          */
-        unlock: function() {
+        unlock: function () {
 
             // Clear var.
             _.vars.lock = null;
 
             // Clear cookie.
-            document.cookie =	_.lcn + '=' +
+            document.cookie = _.lcn + '=' +
             (_.config.lock.path ? ';path=' + _.config.lock.path : '') +
             ';expires=Thu, 01 Jan 1970 01:02:03 GMT';
 
@@ -588,14 +588,14 @@ var skel = (function() {
          * @param {object} x Object.
          * @return mixed Value.
          */
-        useActive: function(x) {
+        useActive: function (x) {
 
             if (typeof x !== 'object')
                 return x;
 
             var v = null;
 
-            _.iterate(x, function(i) {
+            _.iterate(x, function (i) {
 
                 if (v !== null)
                     return;
@@ -614,7 +614,7 @@ var skel = (function() {
          * @param {string} k Breakpoint ID.
          * @return {bool} Breakpoint state.
          */
-        wasActive: function(k) {
+        wasActive: function (k) {
 
             return (_.indexOf(_.vars.lastStateId, _.sd + k) !== -1);
 
@@ -625,7 +625,7 @@ var skel = (function() {
         /**
          * Applies all row transforms.
          */
-        applyRowTransforms: function(state) {
+        applyRowTransforms: function (state) {
 
             // RTL: Performs a few adjustments to get things working nicely on RTL.
             if (_.config.RTL) {
@@ -646,11 +646,11 @@ var skel = (function() {
             // Get "important" cells.
 
             // Via zoom.
-            for (i=1; i <= _.maxGridZoom; i++) {
+            for (i = 1; i <= _.maxGridZoom; i++) {
 
                 a = _.getElementsByClassName('important(' + i + ')');
 
-                _.iterate(a, function(k) {
+                _.iterate(a, function (k) {
                     cells.push(a[k]);
                 });
 
@@ -659,12 +659,12 @@ var skel = (function() {
             // Via collapse.
             a = _.getElementsByClassName('important(collapse)');
 
-            _.iterate(a, function(k) {
+            _.iterate(a, function (k) {
                 cells.push(a[k]);
             });
 
             // Step through cells.
-            _.iterate(cells, function(i) {
+            _.iterate(cells, function (i) {
 
                 // Just in case.
                 if (i === 'length')
@@ -699,7 +699,7 @@ var skel = (function() {
 
                     placeholder = cell[k];
 
-                    while ( placeholder && placeholder.nodeName == '#text' )
+                    while (placeholder && placeholder.nodeName == '#text')
                         placeholder = placeholder[k];
 
                     // Couldn't find anything? Means this cell's already at the front, so bail.
@@ -731,7 +731,7 @@ var skel = (function() {
 
                     // Cell doesn't need to move? Bail.
                     if (mode == 'c' && state.config.grid.collapse
-                        ||	mode == 'z' && cell[key].zoom <= state.config.grid.zoom)
+                        || mode == 'z' && cell[key].zoom <= state.config.grid.zoom)
                         return;
 
                     // Move cell back to its original location (using our placeholder).
@@ -754,16 +754,16 @@ var skel = (function() {
         /**
          * Reverses all rows.
          */
-        reverseRows: function() {
+        reverseRows: function () {
 
             var x = _.getElementsByClassName('row');
 
-            _.iterate(x, function(i) {
+            _.iterate(x, function (i) {
 
                 if (i === 'length')
                     return;
 
-                var	row = x[i];
+                var row = x[i];
 
                 // If the row has already been reversed, bail.
                 if (row._skel_isReversed)
@@ -772,7 +772,7 @@ var skel = (function() {
                 // Reverse the row.
                 var children = row.children, j;
 
-                for (j=1; j < children.length; j++)
+                for (j = 1; j < children.length; j++)
                     row.insertBefore(children[j], children[0]);
 
                 // Mark it as reversed.
@@ -785,16 +785,16 @@ var skel = (function() {
         /**
          * Unreverses all reversed rows.
          */
-        unreverseRows: function() {
+        unreverseRows: function () {
 
             var x = _.getElementsByClassName('row');
 
-            _.iterate(x, function(i) {
+            _.iterate(x, function (i) {
 
                 if (i === 'length')
                     return;
 
-                var	row = x[i];
+                var row = x[i];
 
                 // If the row hasn't been reversed, bail.
                 if (!row._skel_isReversed)
@@ -803,7 +803,7 @@ var skel = (function() {
                 // Unreverse the row.
                 var children = row.children, j;
 
-                for (j=1; j < children.length; j++)
+                for (j = 1; j < children.length; j++)
                     row.insertBefore(children[j], children[0]);
 
                 // Mark it as unreversed.
@@ -820,7 +820,7 @@ var skel = (function() {
          * @param {string} name Name.
          * @param {function} f Function.
          */
-        bind: function(name, f) {
+        bind: function (name, f) {
             return _.on(name, f);
         },
 
@@ -829,7 +829,7 @@ var skel = (function() {
          * @param {string} name Name.
          * @param {function} f Function.
          */
-        on: function(name, f) {
+        on: function (name, f) {
 
             if (!_.events[name])
                 _.events[name] = [];
@@ -856,7 +856,7 @@ var skel = (function() {
          * Shortcut to register a "change" event.
          * @param {function} f Function.
          */
-        change: function(f) {
+        change: function (f) {
             _.on('change', f);
         },
 
@@ -864,14 +864,14 @@ var skel = (function() {
          * Triggers an event.
          * @param {string} name Name.
          */
-        trigger: function(name) {
+        trigger: function (name) {
 
             if (!_.events[name] || _.events[name].length == 0)
                 return;
 
             var k;
 
-            _.iterate(_.events[name], function(k) {
+            _.iterate(_.events[name], function (k) {
                 (_.events[name][k])();
             });
 
@@ -884,32 +884,32 @@ var skel = (function() {
          * @param {string} id Location ID.
          * @param {DOMHTMLElement} object Location element.
          */
-        registerLocation: function(id, object) {
+        registerLocation: function (id, object) {
 
             if (id == 'head')
-                object._skel_attach = function(x, prepend) {
+                object._skel_attach = function (x, prepend) {
 
                     if (prepend)
-                        this.insertBefore( x, this.firstChild );
+                        this.insertBefore(x, this.firstChild);
                     else {
 
                         // If "me" is in <head>, insert x before "me".
                         if (this === _.me.parentNode)
-                            this.insertBefore( x, _.me );
+                            this.insertBefore(x, _.me);
                         // Otherwise, just append it.
                         else
-                            this.appendChild( x );
+                            this.appendChild(x);
 
                     }
 
                 };
             else
-                object._skel_attach = function(x, prepend) {
+                object._skel_attach = function (x, prepend) {
 
                     if (prepend)
-                        this.insertBefore( x, this.firstChild );
+                        this.insertBefore(x, this.firstChild);
                     else
-                        this.appendChild( x );
+                        this.appendChild(x);
 
                 };
 
@@ -924,7 +924,7 @@ var skel = (function() {
          * @param {string} breakpointId Breakpoint ID.
          * @param {object} o Cache entry.
          */
-        addCachedElementToBreakpoint: function(breakpointId, o) {
+        addCachedElementToBreakpoint: function (breakpointId, o) {
 
             if (_.breakpoints[breakpointId]) {
 
@@ -940,7 +940,7 @@ var skel = (function() {
          * @param {string} stateId State ID.
          * @param {object} o Cache entry.
          */
-        addCachedElementToState: function(stateId, o) {
+        addCachedElementToState: function (stateId, o) {
 
             console.log('[skel] ' + o.id + ': added to state (' + stateId + ')');
 
@@ -955,7 +955,7 @@ var skel = (function() {
          * Attaches an element.
          * @param {object} e Element.
          */
-        attachElement: function(e) {
+        attachElement: function (e) {
 
             var l,
                 id = e.location,
@@ -976,10 +976,10 @@ var skel = (function() {
                 return false;
 
             // Get the element's location.
-            l = _.locations[ id ];
+            l = _.locations[id];
 
             // Attach object.
-            l._skel_attach( e.object, prepend );
+            l._skel_attach(e.object, prepend);
 
             // Mark as attached.
             e.attached = true;
@@ -997,29 +997,29 @@ var skel = (function() {
          * Attaches a list of cached elements to the DOM.
          * @param {Array} list Cache entries to attach.
          */
-        attachElements: function(list) {
+        attachElements: function (list) {
 
             var a = [], w = [], k, l, x;
 
             // Reorganize elements into priority "buckets".
-            _.iterate(list, function(k) {
+            _.iterate(list, function (k) {
 
-                if (!a[ list[k].priority ])
-                    a[ list[k].priority ] = [];
+                if (!a[list[k].priority])
+                    a[list[k].priority] = [];
 
-                a[ list[k].priority ].push(list[k]);
+                a[list[k].priority].push(list[k]);
 
             });
 
             // Step through bucket list (heh).
-            _.iterate(a, function(k) {
+            _.iterate(a, function (k) {
 
                 // Nothing in this one? Skip it.
                 if (a[k].length == 0)
                     return;
 
                 // Step through bucket contents.
-                _.iterate(a[k], function(x) {
+                _.iterate(a[k], function (x) {
 
                     // Attach the element. If doing so fails, save it in our DOMReady bucket.
                     if (!_.attachElement(a[k][x])) {
@@ -1036,8 +1036,8 @@ var skel = (function() {
             // Walk through our DOMReady bucket.
             if (w.length > 0) {
 
-                _.DOMReady(function() {
-                    _.iterate(w, function(k) {
+                _.DOMReady(function () {
+                    _.iterate(w, function (k) {
                         _.attachElement(w[k]);
                     });
                 });
@@ -1051,7 +1051,7 @@ var skel = (function() {
          * @param {object} x Element.
          * @return {object} Cache entry.
          */
-        cacheElement: function(x) {
+        cacheElement: function (x) {
 
             // Add to elements.
             _.cache.elements[x.id] = x;
@@ -1068,7 +1068,7 @@ var skel = (function() {
          * @param {integer} priority Priority.
          * @return {object} Cache entry.
          */
-        cacheNewElement: function(id, object, location, priority) {
+        cacheNewElement: function (id, object, location, priority) {
 
             var x;
 
@@ -1087,16 +1087,16 @@ var skel = (function() {
          * Detaches all cached elements from the DOM.
          * @param {array} exclude Elements to exclude.
          */
-        detachAllElements: function(exclude) {
+        detachAllElements: function (exclude) {
 
             var k, x, l = {};
 
             // Build exclusion list (for faster lookups).
-            _.iterate(exclude, function(k) {
+            _.iterate(exclude, function (k) {
                 l[exclude[k].id] = true;
             });
 
-            _.iterate(_.cache.elements, function(id) {
+            _.iterate(_.cache.elements, function (id) {
 
                 // In our exclusion list? Bail.
                 if (id in l)
@@ -1113,7 +1113,7 @@ var skel = (function() {
          * Detaches a cached element from the DOM.
          * @param {string} id Cache entry ID.
          */
-        detachElement: function(id) {
+        detachElement: function (id) {
 
             var e = _.cache.elements[id], x;
 
@@ -1147,7 +1147,7 @@ var skel = (function() {
          * @param {string} id Cache entry ID.
          * @return {?object} Cache entry, or null if it doesn't exist.
          */
-        getCachedElement: function(id) {
+        getCachedElement: function (id) {
 
             if (_.cache.elements[id])
                 return _.cache.elements[id];
@@ -1164,7 +1164,7 @@ var skel = (function() {
          * @param {integer} priority Priority.
          * @return {object} Element.
          */
-        newElement: function(id, object, location, priority) {
+        newElement: function (id, object, location, priority) {
             return {
                 'id': id,
                 'object': object,
@@ -1180,9 +1180,9 @@ var skel = (function() {
          * @param {string} id ID.
          * @return {bool} True on success, false on failure.
          */
-        removeCachedElementFromBreakpoint: function(breakpointId, id) {
+        removeCachedElementFromBreakpoint: function (breakpointId, id) {
 
-            _.iterate(_.breakpoints[breakpointId].elements, function(k) {
+            _.iterate(_.breakpoints[breakpointId].elements, function (k) {
 
                 if (_.breakpoints[breakpointId].elements[k].id == id) {
 
@@ -1203,9 +1203,9 @@ var skel = (function() {
          * @param {string} id ID.
          * @return {bool} True on success, false on failure.
          */
-        removeCachedElementFromState: function(stateId, id) {
+        removeCachedElementFromState: function (stateId, id) {
 
-            _.iterate(_.cache.stateElements[stateId], function(k) {
+            _.iterate(_.cache.stateElements[stateId], function (k) {
 
                 if (_.cache.stateElements[stateId][k].id == id) {
 
@@ -1225,7 +1225,7 @@ var skel = (function() {
          * @param {string} id ID.
          * @return {bool} True on success, false on failure.
          */
-        uncacheElement: function(id) {
+        uncacheElement: function (id) {
 
             // Doesn't exist? Bail.
             if (!(id in _.cache.elements))
@@ -1244,9 +1244,9 @@ var skel = (function() {
          * Switches to a different state.
          * @param {string} newStateId New state ID.
          */
-        changeState: function(newStateId) {
+        changeState: function (newStateId) {
 
-            var	breakpointIds, location, state,
+            var breakpointIds, location, state,
                 a, x, i, id, s1, s2;
 
             // 1. Set last state var.
@@ -1263,7 +1263,7 @@ var skel = (function() {
                 console.log('[skel] - not cached. building ...');
 
                 // 3.1. Build state.
-                _.cache.states[_.stateId] = { config: {}, elements: [], values: {} };
+                _.cache.states[_.stateId] = {config: {}, elements: [], values: {}};
                 state = _.cache.states[_.stateId];
 
                 // 3.2. Build composite configuration.
@@ -1276,7 +1276,7 @@ var skel = (function() {
                 _.extend(state.config, _.defaults.config_breakpoint);
 
                 // Then layer on each active breakpoint's config.
-                _.iterate(breakpointIds, function(k) {
+                _.iterate(breakpointIds, function (k) {
                     _.extend(state.config, _.breakpoints[breakpointIds[k]].config);
                 });
 
@@ -1310,7 +1310,7 @@ var skel = (function() {
 
                     // Force a quick poll in case we didn't catch the locked width and/or height
                     // the first time around.
-                    window.setTimeout(function() {
+                    window.setTimeout(function () {
                         _.poll();
                     }, 0);
 
@@ -1388,7 +1388,7 @@ var skel = (function() {
                     x = _.cacheNewElement(
                         id,
                         _.newInline(
-                            '.container{margin-left:auto;margin-right:auto;width:' + (C*1)+Cu +
+                            '.container{margin-left:auto;margin-right:auto;width:' + (C * 1) + Cu +
                             (
                                 CLocked
                                     ?
@@ -1398,10 +1398,10 @@ var skel = (function() {
                                 '}'
                                     :
                                 '}' +
-                                '.container.\\31 25\\25{width:100%;max-width:' + (C*1.25)+Cu + ';min-width:' + C + '}' +
-                                '.container.\\37 5\\25{width:' + (C*0.75)+Cu + '}' +
-                                '.container.\\35 0\\25{width:' + (C*0.5)+Cu + '}' +
-                                '.container.\\32 5\\25{width:' + (C*0.25)+Cu + '}'
+                                '.container.\\31 25\\25{width:100%;max-width:' + (C * 1.25) + Cu + ';min-width:' + C + '}' +
+                                '.container.\\37 5\\25{width:' + (C * 0.75) + Cu + '}' +
+                                '.container.\\35 0\\25{width:' + (C * 0.5) + Cu + '}' +
+                                '.container.\\32 5\\25{width:' + (C * 0.25) + Cu + '}'
                             )
                         ),
                         'head',
@@ -1441,41 +1441,39 @@ var skel = (function() {
                     x = _.cacheNewElement(
                         'iGG' + state.config.grid.gutters[0] + '_' + state.config.grid.gutters[1],
                         _.newInline(
-
                             // Normal.
-                            '.row>*{padding:' + (H*1)+Hu + ' 0 0 ' + (V*1)+Vu + '}' +
-                            '.row{margin:' + (H*-1)+Hu + ' 0 -1px ' + (V*-1)+Vu + '}' +
-                            '.row.uniform>*{padding:' + (V*1)+Vu + ' 0 0 ' + (V*1)+Vu + '}' +
-                            '.row.uniform{margin:' + (V*-1)+Vu + ' 0 -1px ' + (V*-1)+Vu + '}' +
+                            '.row>*{padding:' + (H * 1) + Hu + ' 0 0 ' + (V * 1) + Vu + '}' +
+                            '.row{margin:' + (H * -1) + Hu + ' 0 -1px ' + (V * -1) + Vu + '}' +
+                            '.row.uniform>*{padding:' + (V * 1) + Vu + ' 0 0 ' + (V * 1) + Vu + '}' +
+                            '.row.uniform{margin:' + (V * -1) + Vu + ' 0 -1px ' + (V * -1) + Vu + '}' +
 
                                 // 200%
-                            '.row.\\32 00\\25>*{padding:' + (H*2)+Hu + ' 0 0 ' + (V*2)+Vu + '}' +
-                            '.row.\\32 00\\25{margin:' + (H*-2)+Hu + ' 0 -1px ' + (V*-2)+Vu + '}' +
-                            '.row.uniform.\\32 00\\25>*{padding:' + (V*2)+Vu + ' 0 0 ' + (V*2)+Vu + '}' +
-                            '.row.uniform.\\32 00\\25{margin:' + (V*-2)+Vu + ' 0 -1px ' + (V*-2)+Vu + '}' +
+                            '.row.\\32 00\\25>*{padding:' + (H * 2) + Hu + ' 0 0 ' + (V * 2) + Vu + '}' +
+                            '.row.\\32 00\\25{margin:' + (H * -2) + Hu + ' 0 -1px ' + (V * -2) + Vu + '}' +
+                            '.row.uniform.\\32 00\\25>*{padding:' + (V * 2) + Vu + ' 0 0 ' + (V * 2) + Vu + '}' +
+                            '.row.uniform.\\32 00\\25{margin:' + (V * -2) + Vu + ' 0 -1px ' + (V * -2) + Vu + '}' +
 
                                 // 150%
-                            '.row.\\31 50\\25>*{padding:' + (H*1.5)+Hu + ' 0 0 ' + (V*1.5)+Vu + '}' +
-                            '.row.\\31 50\\25{margin:' + (H*-1.5)+Hu + ' 0 -1px ' + (V*-1.5)+Vu + '}' +
-                            '.row.uniform.\\31 50\\25>*{padding:' + (V*1.5)+Vu + ' 0 0 ' + (V*1.5)+Vu + '}' +
-                            '.row.uniform.\\31 50\\25{margin:' + (V*-1.5)+Vu + ' 0 -1px ' + (V*-1.5)+Vu + '}' +
+                            '.row.\\31 50\\25>*{padding:' + (H * 1.5) + Hu + ' 0 0 ' + (V * 1.5) + Vu + '}' +
+                            '.row.\\31 50\\25{margin:' + (H * -1.5) + Hu + ' 0 -1px ' + (V * -1.5) + Vu + '}' +
+                            '.row.uniform.\\31 50\\25>*{padding:' + (V * 1.5) + Vu + ' 0 0 ' + (V * 1.5) + Vu + '}' +
+                            '.row.uniform.\\31 50\\25{margin:' + (V * -1.5) + Vu + ' 0 -1px ' + (V * -1.5) + Vu + '}' +
 
                                 // 50%
-                            '.row.\\35 0\\25>*{padding:' + (H*0.5)+Hu + ' 0 0 ' + (V*0.5)+Vu + '}' +
-                            '.row.\\35 0\\25{margin:' + (H*-0.5)+Hu + ' 0 -1px ' + (V*-0.5)+Vu + '}' +
-                            '.row.uniform.\\35 0\\25>*{padding:' + (V*0.5)+Vu + ' 0 0 ' + (V*0.5)+Vu + '}' +
-                            '.row.uniform.\\35 0\\25{margin:' + (V*-0.5)+Vu + ' 0 -1px ' + (V*-0.5)+Vu + '}' +
+                            '.row.\\35 0\\25>*{padding:' + (H * 0.5) + Hu + ' 0 0 ' + (V * 0.5) + Vu + '}' +
+                            '.row.\\35 0\\25{margin:' + (H * -0.5) + Hu + ' 0 -1px ' + (V * -0.5) + Vu + '}' +
+                            '.row.uniform.\\35 0\\25>*{padding:' + (V * 0.5) + Vu + ' 0 0 ' + (V * 0.5) + Vu + '}' +
+                            '.row.uniform.\\35 0\\25{margin:' + (V * -0.5) + Vu + ' 0 -1px ' + (V * -0.5) + Vu + '}' +
 
                                 // 25%
-                            '.row.\\32 5\\25>*{padding:' + (H*0.25)+Hu + ' 0 0 ' + (V*0.25)+Vu + '}' +
-                            '.row.\\32 5\\25{margin:' + (H*-0.25)+Hu + ' 0 -1px ' + (V*-0.25)+Vu + '}' +
-                            '.row.uniform.\\32 5\\25>*{padding:' + (V*0.25)+Vu + ' 0 0 ' + (V*0.25)+Vu + '}' +
-                            '.row.uniform.\\32 5\\25{margin:' + (V*-0.25)+Vu + ' 0 -1px ' + (V*-0.25)+Vu + '}' +
+                            '.row.\\32 5\\25>*{padding:' + (H * 0.25) + Hu + ' 0 0 ' + (V * 0.25) + Vu + '}' +
+                            '.row.\\32 5\\25{margin:' + (H * -0.25) + Hu + ' 0 -1px ' + (V * -0.25) + Vu + '}' +
+                            '.row.uniform.\\32 5\\25>*{padding:' + (V * 0.25) + Vu + ' 0 0 ' + (V * 0.25) + Vu + '}' +
+                            '.row.uniform.\\32 5\\25{margin:' + (V * -0.25) + Vu + ' 0 -1px ' + (V * -0.25) + Vu + '}' +
 
                                 // 0%
                             '.row.\\30 \\25>*{padding:0}' +
                             '.row.\\30 \\25{margin:0 0 -1px 0}'
-
                         ),
                         'head',
                         3
@@ -1496,7 +1494,7 @@ var skel = (function() {
                     // Generate CSS.
                     s1 = '';
 
-                    for (i=1; i <= state.config.grid.zoom; i++)
+                    for (i = 1; i <= state.config.grid.zoom; i++)
                         s1 += _.css.gc('\\28 ' + i + '\\29');
 
                     // Build Element.
@@ -1554,7 +1552,7 @@ var skel = (function() {
                     s2 = [];
 
                     // Get element.
-                    _.iterate(_.breakpoints, function(k) {
+                    _.iterate(_.breakpoints, function (k) {
 
                         if (_.indexOf(breakpointIds, k) !== -1)
                             s1.push('.not-' + k);
@@ -1581,7 +1579,7 @@ var skel = (function() {
 
                 // ELEMENT: Breakpoint-specific.
 
-                _.iterate(breakpointIds, function(k) {
+                _.iterate(breakpointIds, function (k) {
 
                     // styleSheet*
                     if (_.breakpoints[breakpointIds[k]].config.href) {
@@ -1607,7 +1605,7 @@ var skel = (function() {
                     if (_.breakpoints[breakpointIds[k]].elements.length > 0) {
 
                         // Push elements to state.
-                        _.iterate(_.breakpoints[breakpointIds[k]].elements, function(x) {
+                        _.iterate(_.breakpoints[breakpointIds[k]].elements, function (x) {
                             console.log('[skel] -- ' + _.breakpoints[breakpointIds[k]].elements[x].id + ': added (via breakpoint)');
                             state.elements.push(_.breakpoints[breakpointIds[k]].elements[x]);
                         });
@@ -1620,8 +1618,8 @@ var skel = (function() {
                 if (_.cache.stateElements[_.stateId]) {
 
                     // Add elements to state cache.
-                    _.iterate(_.cache.stateElements[_.stateId], function(i) {
-                        state.elements.push( _.cache.stateElements[_.stateId][i] );
+                    _.iterate(_.cache.stateElements[_.stateId], function (i) {
+                        state.elements.push(_.cache.stateElements[_.stateId][i]);
                     });
 
                     // Empty bucket.
@@ -1646,7 +1644,7 @@ var skel = (function() {
             _.attachElements(state.elements);
 
             // 6. Apply row transforms.
-            _.DOMReady(function() {
+            _.DOMReady(function () {
                 _.applyRowTransforms(state);
             });
 
@@ -1658,7 +1656,7 @@ var skel = (function() {
             _.trigger('change');
 
             // 9. Trigger activate/deactivate events.
-            _.iterate(_.breakpoints, function(k) {
+            _.iterate(_.breakpoints, function (k) {
 
                 // Breakpoint is now active ...
                 if (_.isActive(k)) {
@@ -1686,15 +1684,15 @@ var skel = (function() {
          * Gets the current state ID.
          * @return {string} State ID.
          */
-        getStateId: function() {
+        getStateId: function () {
 
             if (_.forceDefaultState
-                &&	_.config.defaultState)
+                && _.config.defaultState)
                 return _.config.defaultState;
 
             var stateId = '';
 
-            _.iterate(_.breakpoints, function(k) {
+            _.iterate(_.breakpoints, function (k) {
                 if ((_.breakpoints[k].test)())
                     stateId += _.sd + k;
             });
@@ -1706,7 +1704,7 @@ var skel = (function() {
         /**
          * Polls for state changes.
          */
-        poll: function() {
+        poll: function () {
 
             var newStateId = '';
 
@@ -1747,7 +1745,7 @@ var skel = (function() {
         /**
          * Forces a state update. Typically called after the cache has been modified by something other than Skel (like a plugin).
          */
-        updateState: function() {
+        updateState: function () {
 
             var a, b, k, j, list = [];
 
@@ -1760,7 +1758,7 @@ var skel = (function() {
             a = _.stateId.substring(1).split(_.sd)
 
             // Step through active state's breakpoints.
-            _.iterate(a, function(k) {
+            _.iterate(a, function (k) {
                 b = _.breakpoints[a[k]];
 
                 // No elements? Skip it.
@@ -1768,7 +1766,7 @@ var skel = (function() {
                     return;
 
                 // Add the breakpoint's elements to the state's cache.
-                _.iterate(b.elements, function(j) {
+                _.iterate(b.elements, function (j) {
                     //console.log('- added new breakpoint element ' + b.elements[j].id + ' to state ' + _.stateId);
                     _.cache.states[_.stateId].elements.push(b.elements[j]);
                     list.push(b.elements[j]);
@@ -1780,9 +1778,9 @@ var skel = (function() {
             if (_.cache.stateElements[_.stateId]) {
 
                 // Add the pending elements to the state's cache.
-                _.iterate(_.cache.stateElements[_.stateId], function(i) {
-                    _.cache.states[_.stateId].elements.push( _.cache.stateElements[_.stateId][i] );
-                    list.push( _.cache.stateElements[_.stateId][i] );
+                _.iterate(_.cache.stateElements[_.stateId], function (i) {
+                    _.cache.states[_.stateId].elements.push(_.cache.stateElements[_.stateId][i]);
+                    list.push(_.cache.stateElements[_.stateId][i]);
                 });
 
                 // Empty pending bucket.
@@ -1807,7 +1805,7 @@ var skel = (function() {
          * @param {string} s Inner HTML.
          * @return {DOMHTMLElement} Div element.
          */
-        newDiv: function(s) {
+        newDiv: function (s) {
 
             var o = document.createElement('div');
             o.innerHTML = s;
@@ -1821,7 +1819,7 @@ var skel = (function() {
          * @param {string} s Style rules.
          * @return {DOMHTMLElement} Style element.
          */
-        newInline: function(s) {
+        newInline: function (s) {
 
             var o;
 
@@ -1839,7 +1837,7 @@ var skel = (function() {
          * @param {string} content Content.
          * @return {DOMHTMLElement} Meta element.
          */
-        newMeta: function(name, content) {
+        newMeta: function (name, content) {
 
             var o = document.createElement('meta');
             o.name = name;
@@ -1854,7 +1852,7 @@ var skel = (function() {
          * @param {string} href Stylesheet's href.
          * @return {DOMHTMLElement} Link element.
          */
-        newStyleSheet: function(href) {
+        newStyleSheet: function (href) {
 
             var o = document.createElement('link');
             o.rel = 'stylesheet';
@@ -1872,7 +1870,7 @@ var skel = (function() {
          * @param {object} plugin Plugin.
          * @param {object} config Config.
          */
-        initPlugin: function(plugin, config) {
+        initPlugin: function (plugin, config) {
 
             // Extend defaults with user config (if it exists).
             if (typeof config == 'object')
@@ -1889,7 +1887,7 @@ var skel = (function() {
          * @param {string} id Plugin ID.
          * @param {object} plugin Plugin.
          */
-        registerPlugin: function(id, plugin) {
+        registerPlugin: function (id, plugin) {
 
             if (!plugin) {
 
@@ -1921,7 +1919,7 @@ var skel = (function() {
          * @param {object} config Config.
          * @param {object} pluginConfig Plugin config.
          */
-        init: function(config, pluginConfig) {
+        init: function (config, pluginConfig) {
 
             console.log('[skel] starting init ...');
 
@@ -1942,10 +1940,10 @@ var skel = (function() {
             // If pluginConfig is provided as a second param to init() (deprecated) and it's
             // an object, copy it to config.plugins (where plugin configs are supposed to go).
             if (pluginConfig
-                &&	typeof pluginConfig == 'object')
+                && typeof pluginConfig == 'object')
                 _.config.plugins = pluginConfig;
 
-            _.iterate(_.plugins, function(id) {
+            _.iterate(_.plugins, function (id) {
                 _.initPlugin(
                     _.plugins[id],
                     (id in _.config.plugins) ? _.config.plugins[id] : null
@@ -1960,7 +1958,7 @@ var skel = (function() {
         /**
          * Initializes the API.
          */
-        initAPI: function() {
+        initAPI: function () {
 
             var x, a, ua = navigator.userAgent;
 
@@ -2006,7 +2004,7 @@ var skel = (function() {
                 windows: 'Windows NT'
             };
 
-            _.iterate(a, function(k) {
+            _.iterate(a, function (k) {
 
                 if (ua.match(new RegExp(a[k], 'g')))
                     _.vars.deviceType = k;
@@ -2070,12 +2068,12 @@ var skel = (function() {
             // Lock.
             x = document.cookie.split(';');
 
-            _.iterate(x, function(i) {
+            _.iterate(x, function (i) {
 
                 var y = x[i].split('=');
 
                 if (y[0].replace(/^\s+|\s+$/g, '') == _.lcn
-                    &&	y[1].length > 0) {
+                    && y[1].length > 0) {
 
                     _.vars.lock = y[1].split('_');
                     return;
@@ -2089,14 +2087,14 @@ var skel = (function() {
         /**
          * Initializes the config.
          */
-        initConfig: function(config) {
+        initConfig: function (config) {
 
             var fArgs = [], preloads = [];
 
             // If no config is provided, or if one is provided without any breakpoints defined,
             // switch to static mode.
             if (!config
-                ||	!('breakpoints' in config)) {
+                || !('breakpoints' in config)) {
 
                 _.isStatic = true;
 
@@ -2126,8 +2124,8 @@ var skel = (function() {
 
             // Gutters.
             if ('grid' in _.config
-                &&	'gutters' in _.config.grid
-                &&	!_.isArray(_.config.grid.gutters))
+                && 'gutters' in _.config.grid
+                && !_.isArray(_.config.grid.gutters))
                 _.config.grid.gutters = [_.config.grid.gutters, _.config.grid.gutters];
 
             // Extend base breakpoint config.
@@ -2151,7 +2149,7 @@ var skel = (function() {
             _.defaults.config_breakpoint.containers = _.config.containers;
 
             // Process breakpoints config.
-            _.iterate(_.config.breakpoints, function(id) {
+            _.iterate(_.config.breakpoints, function (id) {
 
                 var b, c = {}, s, m;
 
@@ -2185,7 +2183,7 @@ var skel = (function() {
                         m = '(min-width: ' + parseInt(s.substring(0, s.length - 1)) + 'px)';
 
                     // Range (X-Y)
-                    else if (_.indexOf(s,'-') != -1) {
+                    else if (_.indexOf(s, '-') != -1) {
 
                         s = s.split('-');
                         m = '(min-width: ' + parseInt(s[0]) + 'px) and (max-width: ' + parseInt(s[1]) + 'px)';
@@ -2201,7 +2199,7 @@ var skel = (function() {
 
                     // Gutters.
                     if ('gutters' in c.grid
-                        &&	!_.isArray(c.grid.gutters))
+                        && !_.isArray(c.grid.gutters))
                         c.grid.gutters = [c.grid.gutters, c.grid.gutters];
 
                     // Update maxGridZoom.
@@ -2216,12 +2214,14 @@ var skel = (function() {
                 b = {};
                 _.extend(b, _.defaults.breakpoint);
                 b.config = _.config.breakpoints[id];
-                b.test = function() { return _.matchesMedia(c.media); };
+                b.test = function () {
+                    return _.matchesMedia(c.media);
+                };
                 b.elements = [];
 
                 // Preload stylesheet.
                 if (_.config.preload
-                    &&	b.config.href)
+                    && b.config.href)
                     preloads.push(b.config.href);
 
                 // Replace original.
@@ -2233,19 +2233,19 @@ var skel = (function() {
             });
 
             // Process events config.
-            _.iterate(_.config.events, function(k) {
+            _.iterate(_.config.events, function (k) {
                 _.on(k, _.config.events[k]);
             });
 
             // Handle stylesheet preloads if we have them (and we're not working locally).
             if (preloads.length > 0
-                &&	window.location.protocol != 'file:') {
+                && window.location.protocol != 'file:') {
 
-                _.DOMReady(function() {
+                _.DOMReady(function () {
 
                     var k, h = document.getElementsByTagName('head')[0], x = new XMLHttpRequest();
 
-                    _.iterate(preloads, function(k) {
+                    _.iterate(preloads, function (k) {
 
                         console.log('[skel] ' + preloads[k] + ': preloaded');
                         x.open('GET', preloads[k], false);
@@ -2262,7 +2262,7 @@ var skel = (function() {
         /**
          * Initializes various pre-generated (non-state-dependent) elements.
          */
-        initElements: function() {
+        initElements: function () {
 
             var a = [];
 
@@ -2337,7 +2337,7 @@ var skel = (function() {
         /**
          * Initializes browser events.
          */
-        initEvents: function() {
+        initEvents: function () {
 
             var o;
 
@@ -2345,32 +2345,36 @@ var skel = (function() {
             if (!_.config.pollOnce && !_.isStatic) {
 
                 // On resize.
-                _.on('resize', function() { _.poll(); });
+                _.on('resize', function () {
+                    _.poll();
+                });
 
                 // On orientation change.
-                _.on('orientationChange', function() { _.poll(); });
+                _.on('orientationChange', function () {
+                    _.poll();
+                });
 
             }
 
             // Hack: Fix stupid iOS orientation/input placeholder bug.
             if (_.vars.deviceType == 'ios') {
 
-                _.DOMReady(function() {
+                _.DOMReady(function () {
 
-                    _.on('orientationChange', function() {
+                    _.on('orientationChange', function () {
 
                         // Get all inputs.
                         var inputs = document.getElementsByTagName('input');
 
                         // Temporarily clear placeholders.
-                        _.iterate(inputs, function(i) {
+                        _.iterate(inputs, function (i) {
                             inputs[i]._skel_placeholder = inputs[i].placeholder;
                             inputs[i].placeholder = '';
                         });
 
                         // Then, after a short delay, put them back.
-                        window.setTimeout(function() {
-                            _.iterate(inputs, function(i) {
+                        window.setTimeout(function () {
+                            _.iterate(inputs, function (i) {
                                 inputs[i].placeholder = inputs[i]._skel_placeholder;
                             });
                         }, 100);
@@ -2385,74 +2389,149 @@ var skel = (function() {
             if (window.onresize)
                 _.on('resize', window.onresize);
 
-            window.onresize = function() { _.trigger('resize'); };
+            window.onresize = function () {
+                _.trigger('resize');
+            };
 
             if (window.onorientationchange)
                 _.on('orientationChange', window.onorientationchange);
 
-            window.onorientationchange = function() { _.trigger('orientationChange'); };
+            window.onorientationchange = function () {
+                _.trigger('orientationChange');
+            };
 
         },
 
         /**
          * Initializes utility methods.
          */
-        initUtilityMethods: function() {
+        initUtilityMethods: function () {
 
             // _.DOMReady (based on github.com/ded/domready by @ded; domready (c) Dustin Diaz 2014 - License MIT)
 
             // Hack: Use older version for browsers that don't support addEventListener (*cough* IE8).
             if (!document.addEventListener)
-                !function(e,t){_.DOMReady = t()}("domready",function(e){function p(e){h=1;while(e=t.shift())e()}var t=[],n,r=!1,i=document,s=i.documentElement,o=s.doScroll,u="DOMContentLoaded",a="addEventListener",f="onreadystatechange",l="readyState",c=o?/^loaded|^c/:/^loaded|c/,h=c.test(i[l]);return i[a]&&i[a](u,n=function(){i.removeEventListener(u,n,r),p()},r),o&&i.attachEvent(f,n=function(){/^c/.test(i[l])&&(i.detachEvent(f,n),p())}),e=o?function(n){self!=top?h?n():t.push(n):function(){try{s.doScroll("left")}catch(t){return setTimeout(function(){e(n)},50)}n()}()}:function(e){h?e():t.push(e)}});
+                !function (e, t) {
+                    _.DOMReady = t()
+                }("domready", function (e) {
+                    function p(e) {
+                        h = 1;
+                        while (e = t.shift())e()
+                    }
+
+                    var t = [], n, r = !1, i = document, s = i.documentElement, o = s.doScroll, u = "DOMContentLoaded", a = "addEventListener", f = "onreadystatechange", l = "readyState", c = o ? /^loaded|^c/ : /^loaded|c/, h = c.test(i[l]);
+                    return i[a] && i[a](u, n = function () {
+                        i.removeEventListener(u, n, r), p()
+                    }, r), o && i.attachEvent(f, n = function () {
+                        /^c/.test(i[l]) && (i.detachEvent(f, n), p())
+                    }), e = o ? function (n) {
+                        self != top ? h ? n() : t.push(n) : function () {
+                            try {
+                                s.doScroll("left")
+                            } catch (t) {
+                                return setTimeout(function () {
+                                    e(n)
+                                }, 50)
+                            }
+                            n()
+                        }()
+                    } : function (e) {
+                        h ? e() : t.push(e)
+                    }
+                });
             // And everyone else.
             else
-                !function(e,t){_.DOMReady = t()}("domready",function(){function s(t){i=1;while(t=e.shift())t()}var e=[],t,n=document,r="DOMContentLoaded",i=/^loaded|^c/.test(n.readyState);return n.addEventListener(r,t=function(){n.removeEventListener(r,t),s()}),function(t){i?t():e.push(t)}});
+                !function (e, t) {
+                    _.DOMReady = t()
+                }("domready", function () {
+                    function s(t) {
+                        i = 1;
+                        while (t = e.shift())t()
+                    }
+
+                    var e = [], t, n = document, r = "DOMContentLoaded", i = /^loaded|^c/.test(n.readyState);
+                    return n.addEventListener(r, t = function () {
+                        n.removeEventListener(r, t), s()
+                    }), function (t) {
+                        i ? t() : e.push(t)
+                    }
+                });
 
             // _.getElementsByClassName
 
             // Wrap existing method if it exists.
             if (document.getElementsByClassName)
-                _.getElementsByClassName = function(className) { return document.getElementsByClassName(className); }
+                _.getElementsByClassName = function (className) {
+                    return document.getElementsByClassName(className);
+                }
             // Otherwise, polyfill.
             else
-                _.getElementsByClassName = function(className) { var d = document; if (d.querySelectorAll) return d.querySelectorAll(('.' + className.replace(' ', ' .')).replace(/\.([0-9])/, '.\\3$1 ')); else return []; }
+                _.getElementsByClassName = function (className) {
+                    var d = document;
+                    if (d.querySelectorAll) return d.querySelectorAll(('.' + className.replace(' ', ' .')).replace(/\.([0-9])/, '.\\3$1 ')); else return [];
+                }
 
             // _.indexOf
 
             // Wrap existing method if it exists.
             if (Array.prototype.indexOf)
-                _.indexOf = function(x,b) { return x.indexOf(b) };
+                _.indexOf = function (x, b) {
+                    return x.indexOf(b)
+                };
             // Otherwise, polyfill.
             else
-                _.indexOf = function(x,b){if (typeof x=='string') return x.indexOf(b);var c,a=(b)?b:0,e;if(!this){throw new TypeError()}e=this.length;if(e===0||a>=e){return -1}if(a<0){a=e-Math.abs(a)}for(c=a;c<e;c++){if(this[c]===x){return c}}return -1};
+                _.indexOf = function (x, b) {
+                    if (typeof x == 'string') return x.indexOf(b);
+                    var c, a = (b) ? b : 0, e;
+                    if (!this) {
+                        throw new TypeError()
+                    }
+                    e = this.length;
+                    if (e === 0 || a >= e) {
+                        return -1
+                    }
+                    if (a < 0) {
+                        a = e - Math.abs(a)
+                    }
+                    for (c = a; c < e; c++) {
+                        if (this[c] === x) {
+                            return c
+                        }
+                    }
+                    return -1
+                };
 
             // _.isArray
 
             // Wrap existing method if it exists.
             if (Array.isArray)
-                _.isArray = function(x) { return Array.isArray(x) };
+                _.isArray = function (x) {
+                    return Array.isArray(x)
+                };
             // Otherwise, polyfill.
             else
-                _.isArray = function(x) { return (Object.prototype.toString.call(x) === '[object Array]') };
+                _.isArray = function (x) {
+                    return (Object.prototype.toString.call(x) === '[object Array]')
+                };
 
             // _.iterate
 
             // Use Object.keys if it exists (= better performance).
             if (Object.keys)
-                _.iterate = function(a, f) {
+                _.iterate = function (a, f) {
 
                     if (!a)
                         return [];
 
                     var i, k = Object.keys(a);
 
-                    for (i=0; k[i]; i++)
+                    for (i = 0; k[i]; i++)
                         (f)(k[i]);
 
                 };
             // Otherwise, fall back on hasOwnProperty (= slower, but works on older browsers).
             else
-                _.iterate = function(a, f) {
+                _.iterate = function (a, f) {
 
                     if (!a)
                         return [];
@@ -2469,7 +2548,7 @@ var skel = (function() {
 
             // Default: Use matchMedia (all modern browsers)
             if (window.matchMedia)
-                _.matchesMedia = function(query) {
+                _.matchesMedia = function (query) {
 
                     if (query == '')
                         return true;
@@ -2480,7 +2559,7 @@ var skel = (function() {
 
             // Polyfill 1: Use styleMedia/media (IE9, older Webkit) (derived from github.com/paulirish/matchMedia.js)
             else if (window.styleMedia || window.media)
-                _.matchesMedia = function(query) {
+                _.matchesMedia = function (query) {
 
                     if (query == '')
                         return true;
@@ -2493,12 +2572,12 @@ var skel = (function() {
 
             // Polyfill 2: Use getComputed Style (???) (derived from github.com/paulirish/matchMedia.js)
             else if (window.getComputedStyle)
-                _.matchesMedia = function(query) {
+                _.matchesMedia = function (query) {
 
                     if (query == '')
                         return true;
 
-                    var	style = document.createElement('style'),
+                    var style = document.createElement('style'),
                         script = document.getElementsByTagName('script')[0],
                         info = null;
 
@@ -2524,14 +2603,14 @@ var skel = (function() {
                 // Force default state (if one is specified).
                 _.forceDefaultState = true;
 
-                _.matchesMedia = function(query) {
+                _.matchesMedia = function (query) {
 
                     // Empty query? Always succeed.
                     if (query == '')
                         return true;
 
                     // Parse query.
-                    var s, a, b, k, values = { 'min-width': null, 'max-width': null },
+                    var s, a, b, k, values = {'min-width': null, 'max-width': null},
                         found = false;
 
                     a = query.split(/\s+and\s+/);
@@ -2548,7 +2627,7 @@ var skel = (function() {
 
                             if (b.length == 2) {
 
-                                values[ b[0].replace(/^\s+|\s+$/g, '') ] = parseInt( b[1] );
+                                values[b[0].replace(/^\s+|\s+$/g, '')] = parseInt(b[1]);
                                 found = true;
 
                             }
@@ -2566,9 +2645,9 @@ var skel = (function() {
                         h = document.documentElement.clientHeight;
 
                     if ((values['min-width'] !== null && w < values['min-width'])
-                        ||	(values['max-width'] !== null && w > values['max-width'])
-                        ||	(values['min-height'] !== null && h < values['min-height'])
-                        ||	(values['max-height'] !== null && h > values['max-height']))
+                        || (values['max-width'] !== null && w > values['max-width'])
+                        || (values['min-height'] !== null && h < values['min-height'])
+                        || (values['max-height'] !== null && h > values['max-height']))
                         return false;
 
                     return true;
@@ -2583,7 +2662,7 @@ var skel = (function() {
          * Preinitializes skel.
          * This is called as soon as skel is loaded.
          */
-        preInit: function() {
+        preInit: function () {
 
             // Only needed when testing the unminified source on IE<9.
             //if (!window.console)
@@ -2603,13 +2682,13 @@ var skel = (function() {
             _.registerLocation('html', document.getElementsByTagName('html')[0]);
             _.registerLocation('head', document.getElementsByTagName('head')[0]);
 
-            _.DOMReady(function() {
+            _.DOMReady(function () {
                 _.registerLocation('body', document.getElementsByTagName('body')[0]);
             });
 
             // Hack: IE viewport fix.
             if (_.vars.browser == 'ie'
-                &&	_.vars.IEVersion >= 10)
+                && _.vars.IEVersion >= 10)
                 _.attachElement(_.newElement(
                     'msie-viewport-fix',
                     _.newInline('@-ms-viewport{width:device-width}'),
@@ -2629,11 +2708,12 @@ var skel = (function() {
 
         // applyRowTransforms.
         // Row transforms don't work (RTL stuff), so we eliminate them entirely.
-        _.applyRowTransforms = function(state) { };
+        _.applyRowTransforms = function (state) {
+        };
 
         // newInline.
         // Can't create <style> elements on the fly, but this <span> workaround does the trick.
-        _.newInline = function(s) {
+        _.newInline = function (s) {
 
             var o;
 
@@ -2652,7 +2732,7 @@ var skel = (function() {
 })();
 
 // UMD Wrapper (github.com/umdjs/umd/blob/master/returnExports.js | @umdjs + @nason)
-(function(root, factory) {
+(function (root, factory) {
 
     // AMD.
     if (typeof define === 'function' && define.amd)
@@ -2666,4 +2746,6 @@ var skel = (function() {
     else
         root.skel = factory();
 
-}(this, function() { return skel; }));
+}(this, function () {
+    return skel;
+}));

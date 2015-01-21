@@ -1,5 +1,5 @@
 /* jquery.scrollzer v0.2 | (c) n33 | n33.co @n33co | MIT + GPLv2 */
-jQuery.scrollzer = function(e, t) {
+jQuery.scrollzer = function (e, t) {
     var n = !1,
         r = "object",
         i = "clearTimeout",
@@ -9,7 +9,7 @@ jQuery.scrollzer = function(e, t) {
         a = "activeClassName",
         f = jQuery(window),
         l = jQuery(document);
-    f.load(function() {
+    f.load(function () {
         var c, h, p, d, v, m, g, y, b, w, E = jQuery.extend({
                 activeClassName: "active",
                 suffix: "-link",
@@ -24,15 +24,15 @@ jQuery.scrollzer = function(e, t) {
             if (p.length < 1 || d.length < 1) continue;
             h = {}, h.link = d, h[r] = p, S[e[c]] = h, x = x.add(d)
         }
-        y = function() {
+        y = function () {
             var e;
             for (c in S) e = S[c], e.start = Math.ceil(e[r].offset().top) - E.pad, e.end = e.start + Math.ceil(e[r].innerHeight());
             f.trigger("scroll")
-        }, f.resize(function() {
+        }, f.resize(function () {
             window[i](g), g = window[s](y, 250)
-        }), w = function() {
+        }), w = function () {
             x[o](u)
-        }, f.scroll(function() {
+        }, f.scroll(function () {
             var e = 0,
                 t = n;
             v = f.scrollTop(), window[i](b), b = window[s](w, 250);
