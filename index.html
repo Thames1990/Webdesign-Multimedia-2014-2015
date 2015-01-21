@@ -16,7 +16,6 @@
     <script src="js/init.js"></script>
     <script src="js/easteregg.js"></script>
     <script src="js/lightbox.js"></script>
-    <script src="js/height.js"></script>
 
     <noscript>
         <link rel="stylesheet" href="css/skel.css"/>
@@ -26,7 +25,7 @@
 
 </head>
 
-<body>
+<body onload="">
 <div id="wrapper">
 
     <!-- Header -->
@@ -284,16 +283,17 @@
     </div>
     
     <script>
-        //TODO set banner height
         function setBannerHeight() {
             var header_height = $("header").outerHeight();
-//            $("#one:before").css({"height": header_height + "px"});
-//            document.getElementById("one").style.height = header_height;
-//            window.getComputedStyle(document.querySelector("#one"), ":before").getPropertyValue("height").replace("16em", header_height);
-            //TODO reload css
+
+            $('head').append('<style>' +
+            '#one:before{' +
+            'height: '+header_height+'px;' +
+            '}'+
+            '</style>')
         }
-        
         window.onload = setBannerHeight();
+        window.onresize = setBannerHeight();
     </script>
 
     <!-- Footer -->
