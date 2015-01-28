@@ -3,9 +3,13 @@
  html5up.net | @n33co
  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
  */
+
 (function ($) {
 
+
+
     skel.init({
+
         reset: 'full',
         breakpoints: {
             global: {href: 'css/style.css', containers: '45em', grid: {gutters: ['2em', 0]}},
@@ -38,7 +42,7 @@
                     position: 'top-left',
                     side: 'top',
                     //TODO add onclick open index.html for mobile variants
-                    html: '<span class="toggle" data-action="toggleLayer" data-args="sidePanel"></span><span class="title" data-action="copyText" data-args="logo"></span>'
+                    html: '<span class="toggle" data-action="toggleLayer" data-args="sidePanel"></span><span class="title" data-action="copyHTML" data-args="logo"></span>'
                 },
                 sidePanel: {
                     breakpoints: 'medium',
