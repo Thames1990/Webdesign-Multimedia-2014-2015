@@ -2,8 +2,8 @@ function easterEggMode() {
     var avatar = document.getElementById("avatar").src;
 
     /*
-    Aktivierung des EasterEgg mode.
-    Änderung des Avatar und des Banners.
+     Aktivierung des EasterEgg mode.
+     Änderung des Avatar und des Banners.
      */
     if (avatar.indexOf("images/avatar.jpg") != -1) {
         $(document).scrollTop(0);

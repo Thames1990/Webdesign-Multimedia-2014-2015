@@ -198,7 +198,6 @@ header.major h2 + p {
     margin-top: -0.75em;
 }
 
-/* TODO delete? */
 /* Form */
 
 form {
@@ -1060,8 +1059,6 @@ input[type="button"]:disabled,
     background-size: cover;
     content: '';
     display: block;
-    /* TODO optimize banner height */
-    /* TODO set size equal to header */
     height: 16em;
     max-height: inherit;
     max-width: inherit;

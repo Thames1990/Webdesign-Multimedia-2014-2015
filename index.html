@@ -5,8 +5,10 @@
     <link rel="shortcut icon" href="images/favicon.ico">
 
     <meta name="author" content="Thomas Mohr, Michael Hermel, Adrian Nitschmann, Niko Rothe">
-    <meta name="keywords" content="Webdesign, Multimedia, Perspektive, Photoshop, HTML, CSS, Cascading Style Sheets, Farblehre, Typographie, CMS, Content Management System, Fotoserien">
-    <meta name="description" content="Vorlesungsbegleitende Seite zum Modul Webdesign-Multimedia der Philipps-Universität Marburg">
+    <meta name="keywords"
+          content="Webdesign, Multimedia, Perspektive, Photoshop, HTML, CSS, Cascading Style Sheets, Farblehre, Typographie, CMS, Content Management System, Fotoserien">
+    <meta name="description"
+          content="Vorlesungsbegleitende Seite zum Modul Webdesign-Multimedia der Philipps-Universität Marburg">
     <meta charset="UTF-8">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -275,10 +277,8 @@
             <div class="container">
                 <div class="features">
                     <h3>Fotoserien</h3>
-
                     <p>Hier finden Sie eine Auswahl der Fotoserien, welche im Wintersemester 2014/2015 im Modul
                         Webdesign-Multimedia entstanden.</p>
-
                     <p><a href="fotoserien.html">Weitere Informationen zu den Fotoserien</a></p>
                 </div>
             </div>
@@ -297,6 +297,7 @@
     <script>
         function setBannerHeight() {
             var header_height = $("header").outerHeight();
+
             $('head').append('<style>' +
             '#one:before{' +
             'height: ' + header_height + 'px;' +
@@ -305,8 +306,6 @@
         }
 
         window.onload = setBannerHeight();
-        //TODO find a way to call setBannerHeight() onresize without deactivating mobile layouts and text wrapping
-        //        window.onresize = setBannerHeight();
     </script>
 
 </div>

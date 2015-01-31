@@ -25,6 +25,5 @@ function lightbox() {
             var galleryId = $("#gallery");
             galleryId.poptrox();
         }
-
     });
 }
