@@ -16,3 +16,4 @@ TODO finish easter-egg
 TODO use external script for setBannerHeight()
 TODO use minimal javascript files
 TODO update favicon
+TODO use "skel.on('!small !medium', function());" to activate features, when mobile layouts aren't active
