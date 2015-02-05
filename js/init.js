@@ -99,7 +99,7 @@
 
             if (skel.vars.IEVersion < 10) {
                 $.fn.n33_formerize = function () {
-                    var _fakes = new Array(), _form = $(this);
+                    var _fakes = [], _form = $(this);
                     _form.find('input[type=text],textarea').each(function () {
                         var e = $(this);
                         if (e.val() == '' || e.val() == e.attr('placeholder')) {
@@ -198,7 +198,7 @@
                             }
                         });
                         window.setTimeout(function () {
-                            for (x in _fakes) _fakes[x].trigger('formerize_sync');
+                            for (var x in _fakes) _fakes[x].trigger('formerize_sync');
                         }, 10);
                     });
                     return _form;

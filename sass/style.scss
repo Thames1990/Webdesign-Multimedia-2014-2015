@@ -878,7 +878,7 @@ input[type="button"],
   }
 
   > header {
-    padding: 3em;
+    padding: 2em;
 
     .avatar {
       display: block;
@@ -981,9 +981,7 @@ input[type="button"],
 
 #one {
   &:before {
-    background-image: url('../images/banner.jpg');
-    background-position: top right;
-    background-repeat: no-repeat;
+    background: url('../images/banner.jpg') no-repeat top right;
     background-size: cover;
     content: '';
     display: block;
