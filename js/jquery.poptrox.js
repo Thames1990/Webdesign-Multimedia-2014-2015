@@ -5,7 +5,7 @@
     // Disables selection
     $.fn.poptrox_disableSelection = function () {
         return $(this).css('user-select', 'none').css('-khtml-user-select', 'none').css('-moz-user-select', 'none').css('-o-user-select', 'none').css('-webkit-user-select', 'none');
-    }
+    };
 
     // Poptrox prototype method
     $.fn.poptrox = function (options) {
@@ -27,7 +27,7 @@
         // Settings
         var settings = $.extend({
 
-            preload: false,                             // If true, preload fullsize images in the background
+            preload: true,                              // If true, preload fullsize images in the background
             baseZIndex: 1000,                           // Base Z-Index
             fadeSpeed: 300,                             // Global fade speed
             overlayColor: '#000000',                    // Overlay color
@@ -86,7 +86,7 @@
             queue = [],
             navPos = 0,
             isLocked = false,
-            cache = new Array();
+            cache = [];
 
         function updateWH() {
 
@@ -620,6 +620,8 @@
             // Determine caption.
 
             // No caption setting? Use default (title attribute of image).
+            var c;
+
             if (!settings.caption)
                 c = i.attr('title');
 
