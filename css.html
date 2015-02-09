@@ -16,6 +16,7 @@
     <script src="js/skel.min.js"></script>
     <script src="js/skel-layers.min.js"></script>
     <script src="js/init.js"></script>
+    <script src="js/cssExample.js"></script>
 
     <noscript>
         <link rel="stylesheet" href="css/skel.css"/>
@@ -127,6 +128,33 @@
 
                 <p><a href="http://de.selfhtml.org/css/formate/einbinden.htm" target="_blank">Weitere Informationen zur
                     Syntax von CSS</a></p>
+            </div>
+        </section>
+
+
+        <!-- three -->
+        <section id="three">
+            <div class="container">
+                <header class="major">
+                   <!-- <h2>CSS</h2> -->
+
+                    <h4>Beispiel</h4>
+                </header>
+                <p>Dies ist ein Beispiel einer Klasse in einer css-Datei</p>
+                <pre><code><example id="cssExample">example {
+    Color: <input class="inputExample" id ="cssExampleColorInput" oninput="refreshExample()">;
+    background-color: <input class="inputExample" id ="cssExampleBackground-ColorInput" oninput="refreshExample()">;
+    font-size: <input class="inputExample" id ="cssExampleFont-SizeInput" oninput="refreshExample()">;
+    font-style: <input class="inputExample" id ="cssExampleFont-StyleInput" oninput="refreshExample()">;
+    font-weight: <input class="inputExample" id ="cssExampleFont-WeightInput" oninput="refreshExample()">;
+    line-height: <input class="inputExample" id ="cssExampleLine-HeightInput" oninput="refreshExample()">;
+    display: <input class="inputExample" id ="cssExampleDisplayInput" oninput="refreshExample()">;
+}</example></code></pre>
+                <p>Für die einzelnen Eigenschaften können verschiedene Werte eingetragen werden.
+                Farben kann man entweder direkt beschreiben (z.B. red, blue, yellow)
+                    oder als hexadezimale Zahlenwerte (z.B.#ffffff, #147adf, #666).
+                Die Schriftgröße (font-size) kann man sowohl in Pixeln angeben (z.B. 25px, 50px), als auch
+                Prozentwerte oder direkte Bezeichner (z.B. large, small)</p>
             </div>
         </section>
     </div>

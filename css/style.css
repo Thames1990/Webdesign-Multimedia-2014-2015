@@ -51,6 +51,23 @@ p {
     margin: 0 0 2.25em 0;
 }
 
+example {
+    color: #ffffff;
+    font-size: 100%;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100%;
+    display: block;
+}
+
+.inputExample {
+    height: 22px;
+    width: 100px;
+    vertical-align: middle;
+    vertical-text-align: center;
+    font-size: small;
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: #777;
     font-weight: bold;
@@ -1101,3 +1118,4 @@ input[type="button"]:disabled,
     display: none;
     z-index: 10;
 }
+
