@@ -84,8 +84,16 @@
                         wird.
                     </li>
                 </ul>
-<pre><code>Selektor { Eigenschaft1: Wert; Eigenschaft2: Wert; }
-    Selektor Eins, Selektor Zwei { Eigenschaft: Wert; }</code></pre>
+
+                <pre><code>Selektor {
+    Eigenschaft1: Wert;
+    Eigenschaft2: Wert;
+}
+
+Selektor Eins, Selektor Zwei {
+    Eigenschaft: Wert;
+}</code></pre>
+
                 <p>Hier zwei Beispiele für einen Regelsatz. Der erste Regelsatz besteht aus einem Selektor, dem zwei
                     Eigenschaften zugewiesen werden. Der zweite Regelsatz besteht aus zwei voneinander unabhängigen
                     Selektoren, denen dieselbe Eigenschaft zugewiesen wird. Ein Format, das mehrere Elemente eines
@@ -98,31 +106,43 @@
                     Stylesheets Kommentare zu verfassen. Ein Kommentar beginnt mit den Zeichen „/*“ und endet mit dem
                     ersten Auftreten der Zeichen „*/“. Das bedeutet, dass Kommentare nicht ineinander verschachtelt
                     werden können.</p>
-<pre><code>/* Dies ist ein Kommentar.
-    Er besitzt keine Auswirkungen. */
-    /* Verschachtelte /* Kommentare sind */ nicht möglich */</code></pre>
+
+                <pre><code>/* Dies ist ein Kommentar. Er besitzt keine Auswirkungen. */
+/* Verschachtelte /* Kommentare sind */ nicht möglich */</code></pre>
+
                 <p>Kommentare dürfen sich über mehrere Zeilen erstrecken. Jedoch ist es selbst durch das mehrfache
-                    Auftreten der Zeichen „/*“ nicht möglich, Kommentare zu verschachteln.</p>
-
-                <p><b>Beachten Sie:</b> Die aus vielen Programmiersprachen bekannten einzeiligen Kommentare gibt es in
+                    Auftreten der Zeichen „/*“ nicht möglich, Kommentare zu verschachteln.
+                    <br><b>Beachten Sie:</b> Die aus vielen Programmiersprachen bekannten einzeiligen Kommentare gibt es in
                     CSS <i>nicht</i>.</p>
-                <h4>Eigenschaften und Werte (Deklaration)</h4>
 
+                <h4>Eigenschaften und Werte (Deklaration)</h4>
                 <p>Bereits im Abschnitt „Regelsätze“ haben Sie das allgemeine Aussehen einer Deklaration (also einer
                     Eigenschaft-Wert-Zuordnung) gesehen: Dem Namen der Eigenschaft folgt ein Doppelpunkt, dem wiederum
                     der Wert folgt, der der Eigenschaft zugewiesen wird.
                     Es gibt Eigenschaften, denen kann nicht nur ein Wert, sondern mehrere Werte zugewiesen werden. In
                     diesen Fällen werden die einzelnen Werte durch ein Leerzeichen voneinander getrennt.</p>
-                <pre><code>Selektor { Eigenschaft: Wert 1.0; }</code></pre>
+                <pre><code>Selektor {
+    Eigenschaft: Wert 1.0;
+}</code></pre>
+
                 <p>Dieses Beispiel zeigt eine Eigenschaft, der zwei Werte zugewiesen werden. Einmal ein Schlüsselwort
                     („Wert“) und eine Zahl („1.0“).</p>
-                <h5>„shorthand“-Eigenschaften</h5>
 
+                <h5>„shorthand“-Eigenschaften</h5>
                 <p>Werden einer Eigenschaft mehrere Werte zugewiesen, handelt es sich üblicherweise um eine so genannte
                     „shorthand“-Eigenschaft. Dabei handelt es sich um Eigenschaften, die mehrere andere Eigenschaften
                     zusammenfassen.</p>
-<pre><code>Überschrift { Schrift-Größe: 200%; Schrift-Stil: kursiv; }
-    Selektor { Schrift: 200% kursiv; }</code></pre>
+
+                <pre><code>Überschrift {
+    Schrift-Größe: 200%;
+    Schrift-Stil: kursiv;
+}
+
+Selektor {
+    Schrift: 200%
+    kursiv;
+}</code></pre>
+
                 <p>Bei der Eigenschaft „Schrift“ handelt es sich um eine „shorthand“-Eigenschaft, die die detailierteren
                     Eigenschaften „Schrift-Größe“ und „Schrift-Stil“ kombiniert.</p>
 
@@ -131,32 +151,55 @@
             </div>
         </section>
 
-
         <!-- three -->
         <section id="three">
             <div class="container">
                 <header class="major">
-                   <!-- <h2>CSS</h2> -->
-
                     <h4>Beispiel</h4>
                 </header>
                 <p>Dies ist ein Beispiel einer Klasse in einer css-Datei</p>
+
                 <pre><code><example id="cssExample">example {
-    Color: <input class="inputExample" id ="cssExampleColorInput" oninput="refreshExample()">;
-    background-color: <input class="inputExample" id ="cssExampleBackground-ColorInput" oninput="refreshExample()">;
-    font-size: <input class="inputExample" id ="cssExampleFont-SizeInput" oninput="refreshExample()">;
-    font-style: <input class="inputExample" id ="cssExampleFont-StyleInput" oninput="refreshExample()">;
-    font-weight: <input class="inputExample" id ="cssExampleFont-WeightInput" oninput="refreshExample()">;
-    line-height: <input class="inputExample" id ="cssExampleLine-HeightInput" oninput="refreshExample()">;
-    display: <input class="inputExample" id ="cssExampleDisplayInput" oninput="refreshExample()">;
+    color: <input
+                            class="inputExample"
+                            id ="cssExampleColorInput"
+                            oninput="refreshExample()">;
+    background-color: <input
+                            class="inputExample"
+                            id ="cssExampleBackground-ColorInput"
+                            oninput="refreshExample()">;
+    font-size: <input
+                            class="inputExample"
+                            id ="cssExampleFont-SizeInput"
+                            oninput="refreshExample()">;
+    font-style: <input
+                            class="inputExample"
+                            id ="cssExampleFont-StyleInput"
+                            oninput="refreshExample()">;
+    font-weight: <input
+                            class="inputExample"
+                            id ="cssExampleFont-WeightInput"
+                            oninput="refreshExample()">;
+    line-height: <input
+                            class="inputExample"
+                            id ="cssExampleLine-HeightInput"
+                            oninput="refreshExample()">;
+    display: <input
+                            class="inputExample"
+                            id ="cssExampleDisplayInput"
+                            oninput="refreshExample()">;
 }</example></code></pre>
+
+                <!-- TODO mehr Erklärungen -->
                 <p>Für die einzelnen Eigenschaften können verschiedene Werte eingetragen werden.
                 Farben kann man entweder direkt beschreiben (z.B. red, blue, yellow)
                     oder als hexadezimale Zahlenwerte (z.B.#ffffff, #147adf, #666).
                 Die Schriftgröße (font-size) kann man sowohl in Pixeln angeben (z.B. 25px, 50px), als auch
                 Prozentwerte oder direkte Bezeichner (z.B. large, small)</p>
-            </div>
-        </section>
+
+                <!-- Siehe dazu http://www.simonewebdesign.it/demo/html5editor/ -->
+                <pre><code contenteditable="true">Es wäre cool den Code direkt im Code-Block editieren zu können.</code></pre>
+
     </div>
 
     <!-- Footer -->
