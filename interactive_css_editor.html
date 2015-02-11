@@ -10,30 +10,33 @@
           content="Vorlesungsbegleitende Seite zum Modul Webdesign-Multimedia der Philipps-Universität Marburg">
     <meta charset="UTF-8">
 
-    <style class="default">* {
-        transition: all .5s ease;
-    }
+    <style>
+        * {
+            transition: all .5s ease;
+        }
 
-    head, [contenteditable] {
-        display: block;
-    }
+        head, [contenteditable] {
+            display: block;
+        }
 
-    style.default, script.default {
-        display: none;
-    }
+        style {
+            font-family: Consolas, monospace;
+            white-space: pre-wrap;
+            padding: 1em 1em;
+            width: 50%;
+            float: left;
+        }
 
-    style, script {
-        font-family: Consolas, monospace;
-        white-space: pre-wrap;
-        word-wrap: break-word;
-        padding: 1em 1em;
-        width:50%;
-        float: left;
-    }</style>
+        p {
+            color: white;
+            padding: 1em 1em;
+            float: right;
+        }
+    </style>
 </head>
 
 <body>
-<style contenteditable>html {
+<style contenteditable scoped="scoped">html {
     /* Schriftart */
     font-family: "Lato", sans-serif;
     /* Textgröße */
@@ -61,7 +64,7 @@ style, script {
     background: white;
 }</style>
 
-<p style="color: white; padding: 1em 1em; float: right">
+<p>
     <!-- TODO add description -->
     TODO
 </p>
