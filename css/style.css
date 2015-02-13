@@ -1101,20 +1101,3 @@ input[type="button"]:disabled,
     display: none;
     z-index: 10;
 }
-
-example {
-    color: #ffffff;
-    font-size: 100%;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1.5em;
-    display: block;
-}
-
-    .inputExample {
-        height: 22px;
-        width: 100px;
-        vertical-align: middle;
-        vertical-text-align: center;
-        font-size: small;
-    }

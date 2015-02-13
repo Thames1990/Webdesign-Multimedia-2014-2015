@@ -51,7 +51,6 @@
                 <li><a href="#one" class="active">Inhalte der Vorlesung</a></li>
                 <li><a href="#two">Perspektive</a></li>
                 <li><a href="#three">Photoshop</a></li>
-                <!-- TODO merge HTML and CSS -->
                 <li><a href="#four">HTML</a></li>
                 <li><a href="#five">CSS</a></li>
                 <li><a href="#six">Farblehre</a></li>
@@ -295,18 +294,31 @@
         </div>
     </section>
 
+    <!-- Dynamically resize banner height -->
     <script>
-        function setBannerHeight() {
-            var header_height = $("header").outerHeight();
+        var header_height = $("header").outerHeight();
 
-            $('head').append('<style>' +
-            '#one:before{' +
-            'height: ' + header_height + 'px;' +
-            '}' +
-            '</style>')
+        $('head').append('<style>' +
+        '#one:before{' +
+        'height: ' + header_height + 'px;' +
+        '}' +
+        '</style>')
+    </script>
+
+    <!-- Night theme -->
+    <script>
+        <!-- TODO add switch -->
+        var currentTime = new Date().getHours();
+
+        if (currentTime >= 20 || (currentTime <= 7)) {
+            if (document.body) {
+                $('head').append('<style>' +
+                '#wrapper{' +
+                'background: #000000;' +
+                '}' +
+                '</style>')
+            }
         }
-
-        $(window).resize(setBannerHeight());
     </script>
 
     <!-- Debug code to check screen resolutions and their breakpoints
