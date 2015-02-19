@@ -305,22 +305,6 @@
         '</style>')
     </script>
 
-    <!-- Night theme -->
-    <script>
-        <!-- TODO add switch -->
-        var currentTime = new Date().getHours();
-
-        if (currentTime >= 20 || (currentTime <= 7)) {
-            if (document.body) {
-                $('head').append('<style>' +
-                '#wrapper{' +
-                'background: #000000;' +
-                '}' +
-                '</style>')
-            }
-        }
-    </script>
-
     <!-- Debug code to check screen resolutions and their breakpoints
     <script>
         if (skel.isActive('xsmall'))
