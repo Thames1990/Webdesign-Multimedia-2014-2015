@@ -10,6 +10,11 @@
           content="Vorlesungsbegleitende Seite zum Modul Webdesign-Multimedia der Philipps-Universität Marburg">
     <meta charset="UTF-8">
 
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-layers.min.js"></script>
+    <script src="js/init.js"></script>
+
     <style>
         * {
             transition: all .5s ease;
@@ -23,51 +28,66 @@
             font-family: Consolas, monospace;
             white-space: pre-wrap;
             padding: 1em 1em;
-            width: 50%;
-            float: left;
         }
 
         p {
             color: white;
             padding: 1em 1em;
-            float: right;
         }
     </style>
 </head>
 
 <body>
-<style contenteditable scoped="scoped">html {
-    /* Schriftart */
-    font-family: "Lato", sans-serif;
-    /* Textgröße */
-    font-size: 1em;
-    /* Abstand zum Rand */
-    margin: 5em;
-}
+<div class="row">
+    <div class="6u">
+        <style contenteditable scoped="scoped">html {
+            /* Schriftart */
+            font-family: "Lato", sans-serif;
+            /* Textgröße */
+            font-size: 1em;
+            /* Abstand zum Rand */
+            margin: 5em;
+        }
 
-body {
-    /* Hintergrund Farbe */
-    background: #4ACAA8;
-    /* Text Farbe */
-    color: black;
-}
+        body {
+            /* Hintergrund Farbe */
+            background: #4ACAA8;
+            /* Text Farbe */
+            color: black;
+        }
 
-title {
-    /* Titel Text Größe */
-    font-size: 3em;
-    /* Titel Text Farbe */
-    color: white;
-}
+        title {
+            /* Titel Text Größe */
+            font-size: 3em;
+            /* Titel Text Farbe */
+            color: white;
+        }
 
-style {
-    /* Textbox Farbe */
-    background: white;
-}</style>
-
-<p>
-    <!-- TODO add description -->
-    TODO
-</p>
+        style {
+            /* Textbox Farbe */
+            background: white;
+        }</style>
+    </div>
+    <div class="6u">
+        <p>
+            Der interaktive CSS-Simulator verdeutlicht die Funktionsweise der CSS-Dateien. <br>
+            Durch Änderung der Werte passt sich die Seite sofort in Echtzeit den neuen Einstellungen an. <br>
+        </p>
+        <p>
+            Änderungen der Klasse "HTML" wirken sich auf die gesamte Seite aus.
+            Änderungen der Klasse "Body" wirken sich auf den Rumpf der Seite aus.
+            Änderungen der Klasse "Title" wirken sich auf die Überschrift der Seite aus.
+            Änderungen der Klasse "Style" wirken sich auf das Feld aus, in welcher die CSS-Dateien angezeigt werden. <br>
+        </p>
+        <h4> Mögliche Eingaben: </h4>
+        <p>
+            Farbe: blue | aqua | #123456 | #565 <br>
+            Schriftart: "lato" | "Source Code Pro" | FontAwesome <br>
+            Textgröße: 1em | 20px | 100% <br>
+            Abstand: 3em | 50px <br>
+        </p>
+    </div>
+</div>
 
 </body>
 </html>
