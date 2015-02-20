@@ -1,4 +1,4 @@
-function banner() {
+function setBannerHeight() {
     var header_height = $("header").outerHeight();
 
     $('head').append('<style>' +
