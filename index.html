@@ -21,6 +21,7 @@
     <script src="js/init.js"></script>
     <script src="js/easteregg.js"></script>
     <script src="js/lightbox.js"></script>
+    <script src="js/banner-resize.js"></script>
 
     <noscript>
         <link rel="stylesheet" href="css/skel.css"/>
@@ -31,6 +32,9 @@
 </head>
 
 <body>
+
+
+
 <div id="wrapper">
 
     <!-- Header -->
@@ -294,16 +298,6 @@
         </div>
     </section>
 
-    <!-- Dynamically resize banner height -->
-    <script>
-        var header_height = $("header").outerHeight();
-
-        $('head').append('<style>' +
-        '#one:before{' +
-        'height: ' + header_height + 'px;' +
-        '}' +
-        '</style>')
-    </script>
 
     <!-- Debug code to check screen resolutions and their breakpoints
     <script>
@@ -319,6 +313,11 @@
             alert('The "xlarge" breakpoint is active.');
     </script>
     -->
+
+    <script language="javascript" type="text/javascript">
+        banner()
+    </script>
+    
 
 </div>
 <img id="mouseimage" src="images/EasterEgg/niko1.gif"/>
