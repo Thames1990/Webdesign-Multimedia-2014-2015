@@ -19,6 +19,7 @@
     <script src="js/skel-layers.min.js"></script>
     <script src="js/init.js"></script>
     <script src="js/lightbox.js"></script>
+    <script src="js/banner.js"></script>
 
     <noscript>
         <link rel="stylesheet" href="css/skel.css"/>
@@ -274,17 +275,8 @@
             </div>
         </section>
 
-        <script>
-            function setBannerHeight() {
-                var header_height = $("header").outerHeight();
-                $('head').append('<style>' +
-                '#one:before{' +
-                'height: ' + header_height + 'px;' +
-                '}' +
-                '</style>')
-            }
-
-            window.onload = setBannerHeight();
+        <script language="javascript" type="text/javascript">
+            setBannerHeight()
         </script>
 
     </div>
