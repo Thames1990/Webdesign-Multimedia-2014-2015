@@ -943,7 +943,6 @@ input[type="button"]:disabled,
 }
 
 #header > header {
-    /* TODO Find perfect value to fix cutting off navbar content */
     padding: 2em;
 }
 
@@ -1011,7 +1010,6 @@ input[type="button"]:disabled,
 }
 
 #header > nav ul li a:hover {
-    /* TODO change hover effect */
     background: rgba(85, 85, 85, 0.25);
     color: #e0e0e0 !important;
 }
