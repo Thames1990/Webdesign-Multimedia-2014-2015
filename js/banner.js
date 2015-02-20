@@ -6,5 +6,4 @@ function setBannerHeight() {
     'height: ' + header_height + 'px;' +
     '}' +
     '</style>')
-
 }
