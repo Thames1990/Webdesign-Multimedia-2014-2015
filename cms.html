@@ -17,6 +17,7 @@
     <script src="js/skel.min.js"></script>
     <script src="js/skel-layers.min.js"></script>
     <script src="js/init.js"></script>
+    <script src="js/lightbox.js"></script>
     <script src="js/banner.js"></script>
 
     <noscript>
@@ -47,96 +48,176 @@
                 <li><a href="#two" >Darstellung</a></li>
                 <li><a href="#three" >Bearbeitung</a></li>
                 <li><a href="#four" >Technische Aufbereitung</a></li>
+                <li><a href="#five">Typische CMS</a></li>
             </ul>
         </nav>
     </section>
 
     <!-- Main -->
-    <div id="main">
+    <div id="gallery">
+        <div id="main">
 
-        <!-- One -->
-        <section id="one">
-            <div class="container">
-                <header class="major">
-                    <h2>Content-Management-System</h2>
-                    <p>Begriffsklärung</p>
-                </header>
-                <p>
-                    Ein Content-Managemant-System oder kurz auch CMS bedeutet wörtlich übersetzt Inhaltsverwaltungssystem.
-                    Hierbei handelt es sich um eine Software, die dazu dient Inhalte gemeinschaftlich zu erstellen, zu
-                    bearbeiten und zu verwalten. Meist wird der Begriff CMS in Bezug auf Programme verwendet, welche
-                    Ausschließlich zum Erstellen von Internetseiten dienen, deswegen müsste es korrekt heißen WCMS,
-                    Web-Content-Management-System. Allgemein kann man mit CMS auch Inhalte anderer Medienformen verwalten.
-                </p>
+            <!-- One -->
+            <section id="one">
+                <div class="container">
+                    <header class="major">
+                        <h2>Content-Management-System</h2>
+                        <p>Begriffsklärung</p>
+                    </header>
+                    <p>Ein Content-Managemant-System oder kurz auch CMS bedeutet wörtlich übersetzt 
+                        Inhaltsverwaltungssystem. Hierbei handelt es sich um eine Software, die dazu dient Inhalte
+                        gemeinschaftlich zu erstellen, zu bearbeiten und zu verwalten. Meist wird der Begriff CMS in
+                        Bezug auf Programme verwendet, welche ausschließlich zum Erstellen von Internetseiten dienen,
+                        deswegen müsste es korrekt heißen WCMS, Web-Content-Management-System. Allgemein kann man mit
+                        CMS auch Inhalte anderer Medienformen verwalten.</p>
+                </div>
+            </section>
 
-            </div>
-        </section>
+            <section id="two">
+                <div class="container">
+                    <h2>Darstellung</h2>
+                    <p>Die zentrale Aufgabe eines Content-Management-Systems ist die aufbereitete Darstellung und
+                        Verwaltung von Webinhalten. Dabei handelt es sich meist nicht nur um Mediendateien sondern auch
+                        um erweiterte Inhalte wie Metadateien und extern eingebundene Daten wie Kalender oder auch
+                        Programmschnittstellen anderer Seiten. Hierfür bieten CMS auch verschiedene Möglichkeiten der
+                        automatischen Inhaltsintegration wie die Gruppierung von Elementen oder auch die Einbindung
+                        maschinenlesbarer Inhalte. Zusätzlich unterstützen die meisten Content-Management-Systeme die
+                        Integration von externen oder teilweise auch eigenen Suchmaschinen.</p>
+                </div>
+            </section>
 
-        <section id="two">
-            <div class="container">
-                <header class="major">
-                    <h2></h2>
-                    <p>Darstellung</p>
-                </header>
-                <p> Die zentrale Aufgabe eines Content-Management-Systems ist die aufbereitete Darstellung und Verwaltung von Webinhalten.
-                Dabei handelt es sich meist nicht nur um Mediendateien sondern auch um erweiterte Inhalte wie Metadateien und extern
-                eingebundene Daten wie Kalender oder auch Programmschnittstellen anderer Seiten.
-                Hierfür bieten CMS auch verschieden Möglichkeiten der automatischen Inhaltsintegration wie die Gruppierung von Elementen
-                oder auch die Einbindung maschinenlesbarer Inhalte.
-                Zusätzlich unterstützen die meisten Content-Management-Systeme die Integration von externen oder teilweise auch
-                eigenen Suchmaschinen.
-                </p>
+            <section id="three">
+                <div class="container">
+                    <h2>Bearbeitung</h2>
+                    <p> Je nach Content-Management-System greift man entweder direkt durch den Browser oder mit einer
+                        eigenen Client-Software darauf zu. Jeder Nutzer besitzt hierzu Anmeldedaten um auf die eigenen
+                        Daten zuzugreifen. Bei einer Gruppe von Nutzern ist es auch möglich einzelnen Nutzern oder auch
+                        Nutzergruppen jeweils spezielle Berechtigungen zuzuweisen.</p>
+                    <p> Die Bearbeitung selbst ist meist sehr intuitiv nachvollziehbar. Hierzu sind in der Regel
+                        keinerlei Vorkenntnisse wie Kenntnisse von Programmiersprachen oder andere Erfahrung
+                        hinsichtlich Webdesigns erforderlich. Auch wird häufig eine Vorschau bereitgestellt die dem
+                        Nutzer seine Veränderungen direkt anzeigt.</p>
+                </div>
+            </section>
 
-            </div>
-        </section>
+            <section id="four">
+                <div class="container">
+                    <h2>Technische Aufbereitung</h2>
+                    
+                    <h4>Statische Systeme</h4>
+                    <p>Die ersten Content-Management-Systeme waren sogenannte <b>s</b>tatische <b>S</b>ysteme. Diese
+                        berechnen anhand der Informationen, die der Nutzer hinterlegt hat die gesamte Seite und
+                        speichern diese dann als Datei auf dem Server des jeweiligen Hosters. Dies hat sehr kurze
+                        Ladezeiten zur Folge und erzeugt wenig Rechenaufwand für den Anbieter. Dadurch eignet sich
+                        dieses System für Seiten mit sehr hohen Besucherzahlen und weniger häufigen Änderungen der
+                        Inhalte.</p>
+                    
+                    <h4>Dynamische Systeme</h4>
+                    <p>Im gegensatz dazu berechnen <b>d</b>ynamische <b>S</b>ysteme die Seite bei jedem Aufruf durch
+                        einen Besucher neu. Dadurch können dynamisch Webinhalte eingebunden werden die sich ständig
+                        ändern, da die Inhalte ständig neu verarbeitet werden. Daraus folgt jedoch ein hoher
+                        Rechenaufwand für den Server, welcher mit steigender Anzahl der Besucher zunimmt.</p>
+                    
+                    <h4>Hybride Systeme</h4>
+                    <p>Deswegen sind <b>h</b>ybride <b>S</b>ysteme die am weitesten verbreitete Lösung. Es wird
+                        unterschieden zwischen Inhalten, welche häufig aktualisiert werden müssen und statischen
+                        Anteilen. Dadurch können jeweils die Vorteile des entsprechenden Systems genutzt werden.</p>
+                </div>
+            </section>
 
-        <section id="three">
-            <div class="container">
-                <header class="major">
-                    <h2></h2>
-                    <p>Bearbeitung</p>
-                </header>
-                <p> Je nach Content-Management-System greift man entweder direkt durch den Browser
-                    oder mit einer eigenen Client-Software darauf zu. Jeder Nutzer besitzt hierzu Anmeldedaten um auf die eigenen Daten zuzugreifen. Bei
-                    einer Gruppe von Nutzern ist es auch möglich einzelnen Nutzern oder auch Nutzergruppen jeweils spezielle Berechtigungen
-                    zuzuweisen. <br>
-                    Die Bearbeitung selbst ist meist sehr intuitiv nachvollziehbar. Hierzu sind in der Regel keinerlei Vorkenntnisse
-                    wie Kenntnisse von Programmiersprachen oder andere Erfahrung hinsichtlich Webdesigns erforderlich.
-                    Auch wird häufig eine Vorschau bereitgestellt die dem Nutzer seine Veränderungen direkt anzeigt.
-                </p>
+            <section id="five">
+                <div class="container">
+                    <h2>Typische CMS</h2>
+                    <div class="features">
+                        <article>
+                            <h4>Wordpress</h4>
+                            <a href="images/CMS/Wordpress_admin_v3.3.png" class="image">
+                                <img
+                                        src="images/CMS/Wordpress_admin_v3_opt.png"
+                                        onclick="lightbox()"
+                                        alt="Wordpress"
+                                        title="Wordpress"/>
+                            </a>
 
-            </div>
-        </section>
+                            <div class="inner">
+                                <p>WordPress ist eine freie Software zur Verwaltung der Inhalte einer Website
+                                    (Texte und Bilder). Sie bietet sich besonders zum Aufbau und zur Pflege eines
+                                    Weblogs an, da sie jeden Beitrag einer oder mehreren frei erstellbaren Kategorien
+                                    zuweisen kann und dazu automatisch die entsprechenden Navigationselemente erzeugt.
+                                    Parallel kann WordPress auch hierarchische Seiten verwalten und gestattet den
+                                    Einsatz als Content-Management-System.</p>
+                            </div>
+                            <div>
+                                <p><br>Weiter bietet das System Leserkommentare mit der Möglichkeit, diese vor der
+                                    Veröffentlichung erst zu prüfen, sowie eine zentrale Linkverwaltung, eine Verwaltung
+                                    der Benutzerrollen und -rechte und die Möglichkeit externer Plug-ins, womit
+                                    WordPress in Richtung eines vollwertigen CMS ausgebaut werden kann.</p>
+                                <p>WordPress basiert auf der Skriptsprache PHP (mindestens PHP 5.2.4) und benötigt eine
+                                    MySQL-Datenbank (mindestens MySQL 5.0.15). Es ist freie Software, die unter der GNU
+                                    General Public License (GPLv2) lizenziert wurde. Laut Aussage der Entwickler legt
+                                    das System besonderen Wert auf Webstandards, Eleganz, Benutzerfreundlichkeit und
+                                    leichte Anpassbarkeit. WordPress entstand auf Basis der Software b2 und hat eine
+                                    stetig wachsende Benutzer- und Entwicklergemeinde.</p>
+                                <a href="http://wpde.org/" target="_blank">Link zur deutschen Webpräsenz von Wordpress</a>
+                            </div>
+                        </article>
 
-        <section id="four">
-            <div class="container">
-                <header class="major">
-                    <h2></h2>
-                    <p>Technische Aufbereitung</p>
-                </header>
+                        <article>
+                            <h4>Typo3</h4>
+                            <a href="images/CMS/TYPO3_Backend.png" class="image">
+                                <img
+                                        src="images/CMS/TYPO3_Backend_opt.png"
+                                        onclick="lightbox()"
+                                        alt="Typo3"
+                                        title="Typo3"/>
+                            </a>
 
-                <h4>Statische Systeme</h4>
-                <p>Die ersten Content-Management-Systeme waren sogenannte <b>s</b>atische <b>S</b>ysteme. Diese berechnen anhand der Informationen,
-                    die der Nutzer hinterlegt hat die gesamte Seite und speichern diese dann als Datei auf dem Server des jeweiligen Hosters.
-                    Dies hat sehr kurze Ladezeiten zur Folge und erzeugt wenig Rechenaufwand für den Anbieter. Dadurch eignet sich dieses System
-                    für Seiten mit sehr hohen Besucherzahlen und weniger häufigen Änderungen der Inhalte.
-                    </p>
-                <h4>Dynamische Systeme</h4>
-                <p>
-                    Im gegensatz dazu berechnen <b>d</b>ynamische <b>S</b>ysteme die Seite bei jedem Aufruf durch einen Besucher neu. Dadurch können dynamisch Webinhalte
-                    eingebunden werden die sich ständig ändern, da die Inhalte ständig neu verarbeitet werden. Daraus folgt jedoch ein hoher Rechenaufwand
-                    für den Server, welcher mit steigender Anzahl der Besucher zunimmt.
-                    </p>
-                <h4>Hybride Systeme</h4>
-                <p>
-                    Deswegen sind <b>h</b>ybride <b>S</b>ysteme die am weitesten verbreitete Lösung. Es wird unterschieden zwischen Inhalten, welche
-                    häufig aktualisiert werden müssen und statischen Anteilen. Dadurch können hemeils die Vorteile des entsprechenden Systems genutzt werden.
-                </p>
+                            <div class="inner">
+                                <p>TYPO3 ist ein freies Content-Management-Framework für Internetseiten, das seit Oktober
+                                    2012 offiziell unter dem Namen TYPO3 CMS angeboten wird. Ursprünglich wurde TYPO3 von
+                                    Kasper Skårhøj entwickelt.</p>
+                            </div>
+                            <p><br>TYPO3 basiert auf der Skriptsprache PHP. Als Datenbank kann MySQL oder MariaDB, aber auch
+                                PostgreSQL oder Oracle eingesetzt werden.</p>
+                            <p>TYPO3 wird von zwei Kernentwicklungsteams beständig weiterentwickelt. Ein Team kümmert sich
+                                um das "TYPO3 CMS", das andere um das neuere "TYPO3 Neos". Die markenrechtlich geschützte
+                                Marke TYPO3 dient zudem seit Oktober 2012 als Heimat für eine Reihe weiterer Produkte.</p>
+                            <p>Zahlreiche Funktionen von TYPO3 können mit Erweiterungen[4] integriert werden, ohne dass ein
+                                eigener Programmcode geschrieben werden muss. Die derzeit über 5000 Erweiterungen stammen
+                                zum größten Teil von Fremdanbietern und sind kostenlos verfügbar. Erhältlich sind unter
+                                anderem Erweiterungen für News, Shop-Systeme oder Diskussionsforen. Das System ist auf
+                                Mehrsprachigkeit ausgelegt und wird von einer Anwender- und Entwicklergemeinde aus aller
+                                Welt betreut. TYPO3 gehört zusammen mit Drupal, Joomla und WordPress zu den bekanntesten
+                                Content-Management-Systemen aus dem Bereich der freien Software und wird im deutschen
+                                Sprachraum besonders häufig eingesetzt.</p>
+                            <a href="http://typo3.org/" target="_blank">Link zur Webpräsenz von Typo3</a>
+                        </article>
 
-            </div>
-        </section>
+                        <article>
+                            <h4>Joomla</h4>
+                            <a href="images/CMS/Joomla!_3_Screenshot_der_Administrator_Seite.jpg" class="image">
+                                <img
+                                        src="images/CMS/Joomla!_3_Screenshot_der_Administrator_Seite_opt.jpg"
+                                        onclick="lightbox()"
+                                        alt="Joomla"
+                                        title="Joomla"/>
+                            </a>
 
-
+                            <div class="inner">
+                                <p>Joomla ([ʤuːmlə], Eigenschreibweise Joomla!) ist ein verbreitetes freies
+                                    Content-Management-System (CMS) zur Erstellung von Webseiten. Joomla steht unter der GNU
+                                    General Public License. Es ist in PHP 5 geschrieben und verwendet MySQL als Datenbank.
+                                </p>
+                            </div>
+                            <p><br>Zusammen mit WordPress, TYPO3, Contao und Drupal gehört es zu den bekanntesten und
+                                meistverwendeten Open-Source-Content-Management-Systemen. Historisch ist Joomla aus dem
+                                Open-Source-Projekt Mambo hervorgegangen.</p>
+                            <a href="http://www.joomla.de/" target="_blank">Link zur deutschen Webpräsenz von Jommla</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
 
     <!-- Footer -->
