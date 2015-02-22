@@ -232,7 +232,6 @@ select,
 textarea {
   @include vendor-property('appearance', 'none');
   border-radius: $size-border-radius;
-  border: none;
   border: solid $size-border-width $color-border2;
   color: inherit;
   display: block;
