@@ -38,7 +38,6 @@
                         alt="avatar"
                         id="avatar"/>
             </span>
-
             <h1 id="logo"><a href="index.html">Webdesign Multimedia</a></h1>
         </header>
         <nav id="nav">
@@ -56,12 +55,11 @@
     <!-- Main -->
     <div id="main">
 
-        <!-- One -->
+        <!-- Entwicklung -->
         <section id="one">
             <div class="container">
                 <header class="major">
                     <h2>Hypertext Markup Language</h2>
-
                     <p>Entwicklung</p>
                 </header>
                 <p>HTML: "<b>H</b>yper<b>t</b>ext <b>M</b>arkup <b>L</b>anguage" ist eine Formatierungssprache wie z.B.
@@ -71,25 +69,21 @@
                     Textattribute wie <b>fett</b>, <i>kursiv</i>, usw. zu verwenden. Seit dem 24. Dezember 1999 wurde
                     HTML in der Version 4.01 weiterentwickelt und erhielt viele neue Möglichkeiten, wie Skripte,
                     Stylesheets, Formulare, usw.</p>
-
                 <p>Ab 2014 steht der neue Standard HTML 5, welcher neue Funktionen unterstüzt wie Video, Audio, lokalen
                     Speicher und dynamische 2D- und 3D-Grafiken, die von HTML4 nicht direkt unterstützt wurden und sich
                     ohne HTML5 nur mit zusätzlichen Plugins (z. B. Adobe Flash) umsetzen ließen. </p>
             </div>
         </section>
 
-        <!-- Two -->
+        <!-- Syntax -->
         <section id="two">
             <div class="container">
                 <h2>Syntax</h2>
-
                 <p> "Befehle" werden als sogenannte <i>Tags</i> dargestellt, z.B. für <b>hervorgehobenen</b> Text:<br>
                     <code>&lt;strong&gt;Fett!&lt;/strong&gt;</code></p>
-
                 <p> Kommentare werden in HTML wie folgt dargestellt:<br>
                     <code>&lt;!-- Kommentar --&gt;<br>
                     </code></p>
-
                 <p> Ein Problem von HTML ist die Darstellung von für HTML reservierten Zeichen wie z.B. &lt;, &gt;, oder
                     &amp;. Diese Sonderzeichen heißen "HTML entities".</p>
                 <table width="100%" border="1">
@@ -119,43 +113,38 @@
             </div>
         </section>
 
-        <!-- Three -->
+        <!-- Strukturierung -->
         <section id="three">
             <div class="container">
                 <h2>Strukturierung</h2>
-				<pre>
-            <code>&lt;!DOCTYPE html&gt;
-                &lt;html&gt;
-                &lt;head&gt;
-                &lt;!-- Hier kommen &quot;Kopfinformationen&quot; rein. --&gt;
-                &lt;meta ... /&gt;
-                &lt;title&gt;Seitentitel&lt;/title&gt;
-                &lt;!-- ... --&gt;
-                &lt;/head&gt;
-                &lt;body&gt;
-                &lt;!-- Hier steht der eigentliche Inhalt. --&gt;
-                &lt;/body&gt;
-                &lt;/html&gt;</code>
-            </pre>
+				<pre> <code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;!-- Hier kommen &quot;Kopfinformationen&quot; rein. --&gt;
+&lt;meta ... /&gt;
+&lt;title&gt;Seitentitel&lt;/title&gt;
+&lt;!-- ... --&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!-- Hier steht der eigentliche Inhalt. --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code> </pre>
                 <p><code>&lt;head&gt;...&lt;/head&gt;</code><br>
                     In den Kopf des Dokuments ("head") kommt alles rein, was nicht zum Inhalt der Seite gehört, wie z.B.
-                    Seitentitel, Meta-Informationen, Skripte, Stylesheets, usw. </p>
-
+                    Seitentitel, Meta-Informationen, Skripte, Stylesheets, usw.</p>
                 <p><code>&lt;body&gt;...&lt;/body&gt;</code><br>
                     In den Körper des Dokuments ("body") kommt der eigentliche Inhalt der Seite, wie z.B. Text, Bilder,
-                    Videos, Sound, Formulare, usw. </p>
+                    Videos, Sound, Formulare, usw.</p>
             </div>
         </section>
 
-        <!-- Four -->
+        <!-- Textformatierung -->
         <section id="four">
             <div class="container">
                 <h2>Textformatierung</h2>
-
                 <p> Überschriften werden durch folgende Tags repräsentiert. “1” ist die gröbste Unterteilung, “2” sind
                     Unter-Sektionen, “3” Unter-Unter-Sektionen, usw. <br>
                     <code>&lt;h1&gt;...&lt;/h1&gt; bis &lt;h6&gt;...&lt;/h6&gt;</code></p>
-
                 <p> HTML bietet verschiedene Tags, die Text verschieden darstellen.</p>
                 <table width="100%" border="1">
                     <colgroup width="50%" span="2">
@@ -179,7 +168,7 @@
                     </tr>
                     </tbody>
                 </table>
-                <p> Intern darf der Text beliebig formatiert werden. Der Browser wird immer einzelne Leerzeichen statt
+                <p>Intern darf der Text beliebig formatiert werden. Der Browser wird immer einzelne Leerzeichen statt
                     mehreren oder Zeilenumbrüchen anzeigen. Zeilenumbrüche und Absätze werden durch "HTML entities" oder
                     Tags dargestellt.</p>
                 <table width="100%" border="1">
@@ -208,11 +197,10 @@
                     Textformatierung</a></div>
         </section>
 
-        <!-- Five -->
+        <!-- Strukturierung -->
         <section id="five">
             <div class="container">
                 <h2>Strukturierung</h2>
-
                 <p> Strukturierung erfolgt mittels sogenannter Bereiche.</p>
                 <table width="100%" border="1">
                     <colgroup width="50%" span="2">
@@ -270,45 +258,40 @@
 				<pre>
 <code>&lt;table&gt;
     &lt;tr&gt;
-    &lt;td rowspan=&quot;2&quot;&gt;Cell 1&lt;/td&gt;
-    &lt;td&gt;Cell 2&lt;/td&gt;
-    &lt;td&gt;Cell 3&lt;/td&gt;
+        &lt;td rowspan=&quot;2&quot;&gt;Cell 1&lt;/td&gt;
+        &lt;td&gt;Cell 2&lt;/td&gt;
+        &lt;td&gt;Cell 3&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-    &lt;td colspan=&quot;2&quot;&gt;Cell 4&lt;/td&gt;
+        &lt;td colspan=&quot;2&quot;&gt;Cell 4&lt;/td&gt;
     &lt;/tr&gt;
-    &lt;/table&gt;</code>
+&lt;/table&gt;</code>
             </pre>
             </div>
         </section>
 
-        <!-- Six -->
+        <!-- Medien -->
         <section id="six">
             <div class="container">
                 <h2>Medien</h2>
-
                 <p> Externe Dateien, z.B. Bilder, sollten möglichst relativ referenziert werden. Relative Pfade suchen
                     in dem Ordner, in dem die Quelldatei liegt und orientieren sich an dessen Struktur. Anstatt eines
                     absoluten Pfades, wie z.B. <code>"C:\Users\...\images\bild.jpg"</code> sollte ein relativer Pfad,
                     wie <code>"images/bild.jpg"</code> verwendet werden. Dieser findet das Bild unabhängig vom Pfad des
                     Ordners. </p>
-
                 <p> Bilder werden mit dem HTML-Tag &lt;img&gt; eingebunden. Das Bild "logo.png" wird im Verzeichnis
                     "images" eingebunden. Das Attribut "alt" wird benötigt, falls das Bild nicht vorhanden ist. In
                     diesem Fall kann man ein Fehlerbild oder einen Fehlertext darstellen. <br>
-                    <code>&lt;img src=&quot;images/logo.png&quot; alt=&quot;Logo&quot;&gt;</code><br>
-                    <a href="http://de.selfhtml.org/html/referenz/attribute.htm#img" target="_blank">Weitere
-                        Informationen zu Attributen von Bildern</a></p>
-
+                    <code>&lt;img src=&quot;images/logo.png&quot; alt=&quot;Logo&quot;&gt;</code><br></p>
+                <a href="http://de.selfhtml.org/html/referenz/attribute.htm#img" target="_blank">Weitere
+                    Informationen zu Attributen von Bildern</a><br><br>
                 <p> Links können unter HTML wie folgt verwendet werden: <br>
                     <code>&lt;a href=&quot;https://www.google.de/&quot;&gt;Google&lt;/a&gt;</code></p>
-
                 <p> Bei einzelnen Punkten innerhalb eines Dokuments spricht man von "Ankern":<br>
                     <code>&lt;a id=&quot;Anker&quot;&gt;&lt;/a&gt;</code><br>
                     Hiermit definiert man einen Anker mit der ID "Anker". Dieser kann wie folgt referenziert werden:
                     <br>
                     <code>&lt;a href=&quot;#Anker&quot;&gt;Klick mich!&lt;/a&gt;</code></p>
-
                 <p>Seit HTML 5 gibt es die Möglichkeit, Audio und Video direkt einzubinden, ganz ohne Flash-Plugins.
                     Leider beherrschen nicht alle Browser diese Formate.</p>
                 <table width="100%" border="1">
